@@ -104,11 +104,11 @@ $config: (
                         <p>
                             To use the viewport variant of a given class, you just need to suffix each class with a
                             viewport selector. For example, if I only want <code>max-h-0</code> to be applied to some
-                            element for <code>lg</code> and above, then I would use the <code>max-h-0-lg</code> class.
+                            element for <code>lg</code> and above, then I would use the <code>lg:max-h-0</code> class.
                         </p>
 
                         <CodeBlock
-                            code={`<div class="max-h-0-lg">
+                            code={`<div class="lg:max-h-0">
     <!-- ... -->
 </div>`}
                             language="html"
