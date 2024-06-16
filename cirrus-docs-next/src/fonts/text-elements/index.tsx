@@ -131,17 +131,17 @@ export const TextElementsPage: React.FC<any> = (props) => {
                         <div className="divider"></div>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <p className="title mb-0">Normal</p>
                                 <p className="font-style-normal">The quick brown fox jumps over the lazy dog.</p>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<p class="font-style-normal">The quick brown fox jumps over the lazy dog.</p>`}
                                     language="htmlbars"
                                 />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <p className="title mb-0">Anchor</p>
                                 <p>
                                     <a href="!#" className="subtitle">
@@ -149,7 +149,7 @@ export const TextElementsPage: React.FC<any> = (props) => {
                                     </a>
                                 </p>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<p><a href="#" class="subtitle">
     The quick brown fox jumps over the lazy dog.
@@ -157,133 +157,133 @@ export const TextElementsPage: React.FC<any> = (props) => {
                                     language="htmlbars"
                                 />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <p className="title mb-0">Emphasis</p>
                                 <p>
                                     <em>The quick brown fox jumps over the lazy dog.</em>
                                 </p>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<p><em>The quick brown fox jumps over the lazy dog.</em></p>`}
                                     language="htmlbars"
                                 />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <p className="title mb-0">Italics</p>
                                 <p className="font-style-italics">The quick brown fox jumps over the lazy dog.</p>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<p class="font-style-italics">The quick brown fox jumps over the lazy dog.</p>`}
                                     language="htmlbars"
                                 />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <p className="title mb-0">Small</p>
                                 <p>
                                     <small>The quick brown fox jumps over the lazy dog.</small>
                                 </p>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<p><small>The quick brown fox jumps over the lazy dog.</small></p>`}
                                     language="htmlbars"
                                 />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <p className="title mb-0">Strong</p>
                                 <p>
                                     <strong>The quick brown fox jumps over the lazy dog.</strong>
                                 </p>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<p><strong>The quick brown fox jumps over the lazy dog.</strong></p>`}
                                     language="htmlbars"
                                 />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <p className="title mb-0">Underline</p>
                                 <p>
                                     <u>The quick brown fox jumps over the lazy dog.</u>
                                 </p>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<p><u>The quick brown fox jumps over the lazy dog.</u></p>`}
                                     language="htmlbars"
                                 />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <p className="title mb-0">Uppercase</p>
                                 <p className="uppercase">The quick brown fox jumps over the lazy dog.</p>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<p class="uppercase">The quick brown fox jumps over the lazy dog.</p>`}
                                     language="htmlbars"
                                 />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <p className="title mb-0">Lowercase</p>
                                 <p className="lowercase">The quick brown fox jumps over the lazy dog.</p>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<p class="lowercase">The quick brown fox jumps over the lazy dog.</p>`}
                                     language="htmlbars"
                                 />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <p className="title mb-0">Capitalize</p>
                                 <p className="capitalize">The quick brown fox jumps over the lazy dog.</p>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<p class="capitalize">The quick brown fox jumps over the lazy dog.</p>`}
                                     language="htmlbars"
                                 />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <p className="title mb-0">Normal Case</p>
                                 <p className="normal-case">The quick brown fox jumps over the lazy dog.</p>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<p class="normal-case">The quick brown fox jumps over the lazy do.</p>`}
                                     language="htmlbars"
                                 />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <p className="title mb-0">White</p>
                                 <p className="text-white bg-gray-900">The quick brown fox jumps over the lazy dog.</p>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<p class="text-white bg-gray-900">The quick brown fox jumps over the lazy dog.</p>`}
                                     language="htmlbars"
                                 />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <p className="title mb-0">Caret</p>
                                 <p className="caret"></p>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock code={`<p class="caret"></p>`} language="htmlbars" />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <p className="title mb-0">Right to left</p>
                                 <p className="rtl">right to left</p>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock code={`<p class="rtl"></p>`} language="htmlbars" />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <p className="title mb-0">Font Alt (Use Nunito Sans with titles)</p>
                                 <h6 className="font-alt">This title uses Nunito Sans.</h6>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<h6 class="font-alt">This title uses Nunito Sans.</h6>`}
                                     language="htmlbars"
@@ -298,25 +298,25 @@ export const TextElementsPage: React.FC<any> = (props) => {
                         <Headline title="Other Text Elements" link="others" size="4" />
                         <div className="divider"></div>
                         <div className="row">
-                            <div className="col-3">
+                            <div className="md:col-3">
                                 <abbr title="You Only Live Once">YOLO</abbr>&nbsp;&nbsp;
                                 <span>
                                     <code>&lt;abbr&gt;</code>
                                 </span>
                             </div>
-                            <div className="col-3">
+                            <div className="md:col-3">
                                 <code>Foo bar</code>&nbsp;&nbsp;
                                 <span>
                                     <code>&lt;code&gt;</code>
                                 </span>
                             </div>
-                            <div className="col-3">
+                            <div className="md:col-3">
                                 <del>Deleted</del>&nbsp;&nbsp;
                                 <span>
                                     <code>&lt;del&gt;</code>
                                 </span>
                             </div>
-                            <div className="col-3">
+                            <div className="md:col-3">
                                 <em>Emphasis</em>&nbsp;&nbsp;
                                 <span>
                                     <code>&lt;em&gt;</code>
@@ -324,25 +324,25 @@ export const TextElementsPage: React.FC<any> = (props) => {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-3">
+                            <div className="md:col-3">
                                 <i>Italis</i>
                                 <span>
                                     &nbsp;&nbsp;<code>&lt;i&gt;</code>
                                 </span>
                             </div>
-                            <div className="col-3">
+                            <div className="md:col-3">
                                 <ins>Inserted</ins>&nbsp;&nbsp;
                                 <span>
                                     <code>&lt;ins&gt;</code>
                                 </span>
                             </div>
-                            <div className="col-3">
+                            <div className="md:col-3">
                                 <kbd>Alt + F4</kbd>&nbsp;&nbsp;
                                 <span>
                                     <code>&lt;kbd&gt;</code>
                                 </span>
                             </div>
-                            <div className="col-3">
+                            <div className="md:col-3">
                                 <mark>Highlight</mark>&nbsp;&nbsp;
                                 <span>
                                     <code>&lt;mark&gt;</code>
@@ -350,7 +350,7 @@ export const TextElementsPage: React.FC<any> = (props) => {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-3">
+                            <div className="md:col-3">
                                 <ruby>
                                     漢 <rt>kan</rt>字 <rt>ji</rt>
                                 </ruby>
@@ -358,19 +358,19 @@ export const TextElementsPage: React.FC<any> = (props) => {
                                     <code>&lt;ruby&gt;</code>
                                 </span>
                             </div>
-                            <div className="col-3">
+                            <div className="md:col-3">
                                 <s>Strikethrough</s>&nbsp;&nbsp;
                                 <span>
                                     <code>&lt;s&gt;</code>
                                 </span>
                             </div>
-                            <div className="col-3">
+                            <div className="md:col-3">
                                 <samp>Sample</samp>&nbsp;&nbsp;
                                 <span>
                                     <code>&lt;samp&gt;</code>
                                 </span>
                             </div>
-                            <div className="col-3">
+                            <div className="md:col-3">
                                 Text<sub>Subscript</sub>&nbsp;&nbsp;
                                 <span>
                                     <code>&lt;sub&gt;</code>
@@ -378,19 +378,19 @@ export const TextElementsPage: React.FC<any> = (props) => {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-3">
+                            <div className="md:col-3">
                                 Text<sup>Superscript</sup>&nbsp;&nbsp;
                                 <span>
                                     <code>&lt;sup&gt;</code>
                                 </span>
                             </div>
-                            <div className="col-3">
+                            <div className="md:col-3">
                                 <time>05:00</time>&nbsp;&nbsp;
                                 <span>
                                     <code>&lt;time&gt;</code>
                                 </span>
                             </div>
-                            <div className="col-3">
+                            <div className="md:col-3">
                                 <var>x</var> = <var>y</var> + 2&nbsp;&nbsp;
                                 <span>
                                     <code>&lt;var&gt;</code>

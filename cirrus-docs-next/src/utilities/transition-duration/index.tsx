@@ -76,7 +76,7 @@ export const BorderWidthUtilsPage: React.FC<any> = (props) => {
                         <div className="bg-blue-100 p-2 p-4-md u-round-sm row">
                             {Object.entries(DEFAULT_TRANSITION_DURATION_CLASSES).map((entry, i) => {
                                 return (
-                                    <div className="col-4 u-flex u-flex-column u-text-center mb-2" key={i}>
+                                    <div className="md:col-4 u-flex u-flex-column u-text-center mb-2" key={i}>
                                         <button className={`btn-info hover-grow u-duration-${entry[0]}`}>
                                             {entry[0]}
                                         </button>

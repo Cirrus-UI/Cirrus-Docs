@@ -77,13 +77,13 @@ line-height: 2.25rem !important;`,
                             {Object.entries(DEFAULT_FONT_WEIGHT_CLASSES).map((entry) => {
                                 return (
                                     <>
-                                        <div className="col-lg-6">
+                                        <div className="lg:col-6">
                                             <p className="title">{Capitalize(entry[0])}</p>
                                             <p className={`subtitle ${entry[0]}`}>
                                                 The quick brown fox jumps over the lazy dog.
                                             </p>
                                         </div>
-                                        <div className="col-lg-6">
+                                        <div className="lg:col-6">
                                             <CodeBlock
                                                 code={`<p class="${entry[0]}">The quick brown fox jumps over the lazy dog.</p>`}
                                                 language="htmlbars"

@@ -55,7 +55,7 @@ export const HeeadingsPage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <h6 className="uppercase">Standard headings:</h6>
                                 <h1 className="uppercase">
                                     this is h1
@@ -98,7 +98,7 @@ export const HeeadingsPage: React.FC<any> = (props) => {
                                     </span>
                                 </h6>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <h6 className="uppercase">Light headings:</h6>
                                 <h1 className="font-alt font-light uppercase">
                                     this is h1
@@ -144,7 +144,7 @@ export const HeeadingsPage: React.FC<any> = (props) => {
                         </div>
                         <div className="space"></div>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<h1 class="uppercase">this is h1<span class="desc"><code>h1</code> 3rem (48px)</span></h1>
 <h2 class="uppercase">this is h2<span class="desc"><code>h2</code> 2.5rem (40px)</span></h2>
@@ -155,7 +155,7 @@ export const HeeadingsPage: React.FC<any> = (props) => {
                                     language="htmlbars"
                                 />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<h1 class="font-alt font-light uppercase">this is h1<span class="desc"><code>h1</code> 3rem (48px)</span></h1>
 <h2 class="font-alt font-light uppercase">this is h2<span class="desc"><code>h2</code> 2.5rem (40px)</span></h2>

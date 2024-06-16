@@ -44,7 +44,7 @@ export const CardsPage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-lg-5">
+                            <div className="lg:col-5">
                                 <div className="card">
                                     <div className="card__container">
                                         <div
@@ -84,7 +84,7 @@ export const CardsPage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-7">
+                            <div className="lg:col-7">
                                 <h6>Structure</h6>
                                 <ul>
                                     <li>
@@ -231,7 +231,7 @@ export const CardsPage: React.FC<any> = (props) => {
                         <p>Following the steps above should yield a card similar to the one below.</p>
 
                         <div className="row">
-                            <div className="col-lg-5">
+                            <div className="lg:col-5">
                                 <div className="card card--slide-up">
                                     <div className="card__container">
                                         <div
@@ -260,7 +260,7 @@ export const CardsPage: React.FC<any> = (props) => {
                                     <div className="card__footer content">2 min. read 22 comments</div>
                                 </div>
                             </div>
-                            <div className="col-lg-7">
+                            <div className="lg:col-7">
                                 <CodeBlock
                                     code={`<div class="card card--slide-up">
     <div class="card__container">
@@ -302,7 +302,7 @@ export const CardsPage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-4">
+                            <div className="md:col-4">
                                 <div className="card">
                                     <div className="card__container">
                                         <div
@@ -330,7 +330,7 @@ export const CardsPage: React.FC<any> = (props) => {
                                 </div>
                             </div>
 
-                            <div className="col-4">
+                            <div className="md:col-4">
                                 <div className="card">
                                     <div className="card__container">
                                         <div
@@ -359,7 +359,7 @@ export const CardsPage: React.FC<any> = (props) => {
                                 </div>
                             </div>
 
-                            <div className="col-4">
+                            <div className="md:col-4">
                                 <div className="card">
                                     <div className="card__container">
                                         <div
@@ -391,7 +391,7 @@ export const CardsPage: React.FC<any> = (props) => {
                         <p>Grouping with animated cards.</p>
 
                         <div className="row">
-                            <div className="col-4">
+                            <div className="md:col-4">
                                 <div className="card card--slide-up">
                                     <div className="card__container">
                                         <div
@@ -421,7 +421,7 @@ export const CardsPage: React.FC<any> = (props) => {
                                 </div>
                             </div>
 
-                            <div className="col-4">
+                            <div className="md:col-4">
                                 <div className="card card--slide-up">
                                     <div className="card__container">
                                         <div
@@ -460,7 +460,7 @@ export const CardsPage: React.FC<any> = (props) => {
                                 </div>
                             </div>
 
-                            <div className="col-4">
+                            <div className="md:col-4">
                                 <div className="card card--slide-up">
                                     <div className="card__container">
                                         <div
@@ -509,7 +509,7 @@ export const CardsPage: React.FC<any> = (props) => {
 
                         <h6>Before</h6>
                         <div className="row">
-                            <div className="col-4">
+                            <div className="md:col-4">
                                 <div className="card">
                                     <div className="card__container">
                                         <div
@@ -550,7 +550,7 @@ export const CardsPage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-4">
+                            <div className="md:col-4">
                                 <div className="card">
                                     <div className="card__container">
                                         <div
@@ -580,7 +580,7 @@ export const CardsPage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-4">
+                            <div className="md:col-4">
                                 <div className="card">
                                     <div className="card__container">
                                         <div
@@ -608,7 +608,7 @@ export const CardsPage: React.FC<any> = (props) => {
 
                         <h6>After</h6>
                         <div className="row">
-                            <div className="col-4">
+                            <div className="md:col-4">
                                 <div className="card h-100p u-flex u-flex-column">
                                     <div className="card__container">
                                         <div
@@ -649,7 +649,7 @@ export const CardsPage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-4">
+                            <div className="md:col-4">
                                 <div className="card h-100p u-flex u-flex-column">
                                     <div className="card__container">
                                         <div
@@ -679,7 +679,7 @@ export const CardsPage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-4">
+                            <div className="md:col-4">
                                 <div className="card h-100p u-flex u-flex-column">
                                     <div className="card__container">
                                         <div
@@ -720,7 +720,7 @@ export const CardsPage: React.FC<any> = (props) => {
                         <h6>Twitter Card</h6>
 
                         <div className="row">
-                            <div className="col-lg-5">
+                            <div className="lg:col-5">
                                 <div className="card">
                                     <div className="card__container">
                                         <div
@@ -787,7 +787,7 @@ export const CardsPage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-7">
+                            <div className="lg:col-7">
                                 <CodeBlock
                                     code={`<div class="card">
     <div class="card__container">
@@ -834,7 +834,7 @@ export const CardsPage: React.FC<any> = (props) => {
 
                         <h6>Simple Tweet Card</h6>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="card">
                                     <div className="card__header">
                                         <p className="font-bold px-3">This is the title</p>
@@ -855,7 +855,7 @@ export const CardsPage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="card">
     <div class="card__header">

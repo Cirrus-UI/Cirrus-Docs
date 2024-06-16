@@ -117,7 +117,7 @@ export const AvatarPage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row mb-3">
-                            <div className="col-6">
+                            <div className="md:col-6">
                                 <div className="tile m-0 level">
                                     <div className="tile__icon">
                                         <figure className="avatar avatar--xs text-gray-000" data-text="Jz"></figure>
@@ -202,7 +202,7 @@ export const AvatarPage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-6">
+                            <div className="md:col-6">
                                 <div className="tile m-0 level">
                                     <div className="tile__icon">
                                         <figure className="avatar avatar--xs">
@@ -300,7 +300,7 @@ export const AvatarPage: React.FC<any> = (props) => {
 
                         <CodeBlock
                             code={`<div class="row">
-    <div class="col-6">
+    <div class="md:col-6">
         <div class="tile m-0 level">
             <div class="tile__icon">
                 <figure class="avatar avatar--xs" data-text="Jz"></figure>
@@ -351,7 +351,7 @@ export const AvatarPage: React.FC<any> = (props) => {
             </div>
         </div>
     </div>
-    <div class="col-6">
+    <div class="md:col-6">
         <div class="tile m-0 level">
             <div class="tile__icon">
                 <figure class="avatar avatar--xs"><img src="https://images.unsplash.com/profile-1495427732560-fe5248ad6638?dpr=1&amp;auto=format&amp;fit=crop&amp;w=64&amp;h=64&amp;q=60&amp;cs=tinysrgb&amp;crop=faces&amp;bg=fff"></figure>

@@ -36,7 +36,7 @@ export const FormsRadioPage: React.FC<any> = (props) => {
                         <p>By default, radio buttons in Cirrus come with very minimal styling.</p>
 
                         <div className="row">
-                            <div className="col-lg-6 u-center">
+                            <div className="lg:col-6 u-center">
                                 <label>
                                     <input type="radio" name="house" checked /> Starks
                                 </label>
@@ -44,7 +44,7 @@ export const FormsRadioPage: React.FC<any> = (props) => {
                                     <input type="radio" name="house" /> Lannisters
                                 </label>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock code={`<label><input type="radio" name="house" checked/> Starks</label>
 <label><input type="radio" name="house" /> Lannisters</label>`} language="htmlbars" />
                             </div>
@@ -78,7 +78,7 @@ export const FormsRadioPage: React.FC<any> = (props) => {
                         </ul>
 
                         <div className="row">
-                            <div className="col-lg-3">
+                            <div className="lg:col-3">
                                 <div className="form-ext-control form-ext-radio">
                                     <input id="radio-1a" name="customRadio1" className="form-ext-input" type="radio" />
                                     <label className="form-ext-label" htmlFor="radio-1a">
@@ -104,7 +104,7 @@ export const FormsRadioPage: React.FC<any> = (props) => {
                                     </label>
                                 </div>
                             </div>
-                            <div className="col-lg-9">
+                            <div className="lg:col-9">
                                 <CodeBlock
                                     code={`<div class="form-ext-control form-ext-radio">
     <input id="radio-1a" name="customRadio1" class="form-ext-input" type="radio">
@@ -128,7 +128,7 @@ export const FormsRadioPage: React.FC<any> = (props) => {
                             For disabled forms, just add the <code>disabled</code> property.
                         </p>
                         <div className="row">
-                            <div className="col-lg-3">
+                            <div className="lg:col-3">
                                 
                             <div className="form-ext-control form-ext-radio">
                                     <input id="radio-1b" name="customRadio2" className="form-ext-input" type="radio" disabled/>
@@ -156,7 +156,7 @@ export const FormsRadioPage: React.FC<any> = (props) => {
                                     </label>
                                 </div>
                             </div>
-                            <div className="col-lg-9">
+                            <div className="lg:col-9">
                                 <CodeBlock
                                     code={`<div class="form-ext-control form-ext-radio">
     <input id="radio-1b" name="customRadio2" class="form-ext-input" type="radio" disabled />
@@ -186,7 +186,7 @@ export const FormsRadioPage: React.FC<any> = (props) => {
                             .
                         </p>
                         <div className="row">
-                            <div className="col-lg-3">
+                            <div className="lg:col-3">
                                 {v1Colors.map((color) => {
                                     return (
                                         <div className="form-ext-control form-ext-radio">
@@ -203,7 +203,7 @@ export const FormsRadioPage: React.FC<any> = (props) => {
                                     );
                                 })}
                             </div>
-                            <div className="col-lg-9">
+                            <div className="lg:col-9">
                                 <CodeBlock
                                     code={`<div class="form-ext-control form-ext-radio">
     <input type="checkbox" id="check-dark" class="form-ext-input form-ext-input--dark" checked="">

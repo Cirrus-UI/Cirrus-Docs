@@ -53,7 +53,7 @@ export const TabsPage: React.FC<any> = (props) => {
                         <div className="space"></div>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <h6>Structure</h6>
                                 <ul>
                                     <li>
@@ -74,7 +74,7 @@ export const TabsPage: React.FC<any> = (props) => {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="tab-container">
     <ul>
@@ -124,7 +124,7 @@ export const TabsPage: React.FC<any> = (props) => {
                             <b>Extra Small</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="tab-container tabs--xs">
                                     <ul>
                                         <li>
@@ -142,7 +142,7 @@ export const TabsPage: React.FC<any> = (props) => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="tab-container tabs--xs">
     <ul>
@@ -158,7 +158,7 @@ export const TabsPage: React.FC<any> = (props) => {
                             <b>Small</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="tab-container tabs--sm">
                                     <ul>
                                         <li>
@@ -176,7 +176,7 @@ export const TabsPage: React.FC<any> = (props) => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="tab-container tabs--sm">
     <ul>
@@ -192,7 +192,7 @@ export const TabsPage: React.FC<any> = (props) => {
                             <b>Large</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="tab-container tabs--lg">
                                     <ul>
                                         <li>
@@ -210,7 +210,7 @@ export const TabsPage: React.FC<any> = (props) => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="tab-container tabs--lg">
     <ul>
@@ -226,7 +226,7 @@ export const TabsPage: React.FC<any> = (props) => {
                             <b>Extra Large</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="tab-container tabs--xl">
                                     <ul>
                                         <li>
@@ -244,7 +244,7 @@ export const TabsPage: React.FC<any> = (props) => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="tab-container tabs--xl">
     <ul>
@@ -283,7 +283,7 @@ export const TabsPage: React.FC<any> = (props) => {
                             }}
                         />
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="tab-container tabs--left">
                                     <ul>
                                         <li>
@@ -301,7 +301,7 @@ export const TabsPage: React.FC<any> = (props) => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="tab-container tabs--center">
     <ul>
@@ -317,7 +317,7 @@ export const TabsPage: React.FC<any> = (props) => {
                             <b>Centered</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="tab-container tabs--center">
                                     <ul>
                                         <li>
@@ -335,7 +335,7 @@ export const TabsPage: React.FC<any> = (props) => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="tab-container tabs--center">
     <ul>
@@ -351,7 +351,7 @@ export const TabsPage: React.FC<any> = (props) => {
                             <b>Right</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="tab-container tabs--right">
                                     <ul>
                                         <li>
@@ -369,7 +369,7 @@ export const TabsPage: React.FC<any> = (props) => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="tab-container tabs--right">
     <ul>
@@ -385,7 +385,7 @@ export const TabsPage: React.FC<any> = (props) => {
                             <b>Fill</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="tab-container tabs-fill">
                                     <ul>
                                         <li>
@@ -403,7 +403,7 @@ export const TabsPage: React.FC<any> = (props) => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="tab-container tabs-fill">
     <ul>
@@ -427,7 +427,7 @@ export const TabsPage: React.FC<any> = (props) => {
                             <b>Depth</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="tab-container tabs-depth tabs-fill">
                                     <ul>
                                         <li>
@@ -445,7 +445,7 @@ export const TabsPage: React.FC<any> = (props) => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="tab-container tabs-depth tabs-fill">
     <ul>
@@ -461,7 +461,7 @@ export const TabsPage: React.FC<any> = (props) => {
                             <b>Classic</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="tab-container tabs-classic tabs--center">
                                     <ul>
                                         <li>
@@ -479,7 +479,7 @@ export const TabsPage: React.FC<any> = (props) => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="tab-container tabs-classic tabs--center">
     <ul>
@@ -506,7 +506,7 @@ export const TabsPage: React.FC<any> = (props) => {
                             <b>Classic</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="tab-container tabs-classic tabs--center">
                                     <ul>
                                         <li>
@@ -542,7 +542,7 @@ export const TabsPage: React.FC<any> = (props) => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="tab-container tabs-classic tabs--center">
     <ul>

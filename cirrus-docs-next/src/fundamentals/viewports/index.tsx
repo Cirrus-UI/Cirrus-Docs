@@ -54,11 +54,11 @@ export const ViewportsPage: React.FC<any> = (props) => {
                             </li>
                             <li>
                                 Columns inside of a <code>row</code> start out as vertically stacked elements on mobile
-                                devices. This can be ignored using any of the <code>col-xs-[i]</code> classes.
+                                devices. This can be ignored using any of the <code>col-[i]</code> classes.
                             </li>
                             <li>
                                 Elements inside of <code>level</code> will also be stacked vertically on mobile devices.
-                                Again, the <code>col-xs-[i]</code> classes can be used to override this behavior.
+                                Again, the <code>col-[i]</code> classes can be used to override this behavior.
                             </li>
                         </ul>
                     </div>

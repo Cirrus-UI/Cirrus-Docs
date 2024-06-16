@@ -57,7 +57,7 @@ export const MediaPage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <figure className="fig">
                                     <img
                                         className="img-cover"
@@ -69,7 +69,7 @@ export const MediaPage: React.FC<any> = (props) => {
                                     </figcaption>
                                 </figure>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<figure class="fig"><img class="img-cover" src="https://images.unsplash.com/photo-1488441770602-aed21fc49bd5?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=f093285a418b6aadfc00bd4b8354ec02&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" style="background: rgb(238, 238, 238); height: 350px;">
     <figcaption class="fig-caption u-text-center">Image with <code>img-cover</code></figcaption>
@@ -80,7 +80,7 @@ export const MediaPage: React.FC<any> = (props) => {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <figure className="fig">
                                     <img
                                         className="img-contain"
@@ -92,7 +92,7 @@ export const MediaPage: React.FC<any> = (props) => {
                                     </figcaption>
                                 </figure>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<img class="img-contain" src="https://images.unsplash.com/photo-1488441770602-aed21fc49bd5?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=f093285a418b6aadfc00bd4b8354ec02&amp;auto=format&amp;fit=crop&amp;w=1050&amp;q=80" style="background: rgb(238, 238, 238); height: 350px;">`}
                                     language="htmlbars"
@@ -112,7 +112,7 @@ export const MediaPage: React.FC<any> = (props) => {
                             main flow of the page.
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <figure className="fig">
                                     <img
                                         className="img-stretch"
@@ -123,7 +123,7 @@ export const MediaPage: React.FC<any> = (props) => {
                                     </figcaption>
                                 </figure>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <figure className="fig">
                                     <img src="https://images.unsplash.com/photo-1502657877623-f66bf489d236?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c4a086173e78551f89a3e22d03a8053f&auto=format&fit=crop&w=1050&q=80" />
                                 </figure>
@@ -172,7 +172,7 @@ export const MediaPage: React.FC<any> = (props) => {
                             <code>rat-1-1</code> to change aspect ratios with the <code>media-stretch</code> class.
                         </p>
                         <div className="row">
-                            <div className="col-6">
+                            <div className="md:col-6">
                                 <div className="media-stretch rat-1-1">
                                     <iframe
                                         width={560}
@@ -185,7 +185,7 @@ export const MediaPage: React.FC<any> = (props) => {
                                 </div>
                                 <p className="u-text-center">1:1 ratio</p>
                             </div>
-                            <div className="col-6">
+                            <div className="md:col-6">
                                 <div className="media-stretch rat-4-3">
                                     <iframe
                                         width={560}

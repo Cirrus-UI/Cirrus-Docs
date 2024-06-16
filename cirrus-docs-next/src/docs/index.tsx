@@ -62,7 +62,7 @@ export const DocsPage: React.FC<any> = (props) => {
                         <div className="divider"></div>
 
                         <div
-                            className="grid grid-cols-1 u-gap-1 grid-cols-3-xl"
+                            className="grid grid-cols-1 u-gap-1 xl:grid-cols-3"
                             style={{
                                 backdropFilter: 'opacity(1)',
                             }}

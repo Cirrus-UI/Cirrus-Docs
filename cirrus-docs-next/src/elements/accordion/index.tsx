@@ -40,7 +40,7 @@ export const AvatarPage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-6">
+                            <div className="md:col-6">
                                 <CodeBlock
                                     language="htmlbars"
                                     code={`<details class="accordion">
@@ -49,7 +49,7 @@ export const AvatarPage: React.FC<any> = (props) => {
 </details>`}
                                 />
                             </div>
-                            <div className="col-6">
+                            <div className="md:col-6">
                                 <ul>
                                     <li>
                                         <code>accordion</code> - class applied on the <code>details</code> element.

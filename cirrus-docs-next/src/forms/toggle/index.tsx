@@ -79,7 +79,7 @@ export const FormsTogglePage: React.FC<any> = (props) => {
                         <div className="space"></div>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="form-ext-control">
                                     <label className="form-ext-toggle__label">
                                         <span>Toggle off</span>
@@ -108,7 +108,7 @@ export const FormsTogglePage: React.FC<any> = (props) => {
                                     </label>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="form-ext-control">
     <label class="form-ext-toggle__label"><span>Toggle off</span>
@@ -145,7 +145,7 @@ export const FormsTogglePage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="form-ext-control">
                                     <label className="form-ext-toggle__label">
                                         <span>Toggle off</span>
@@ -180,7 +180,7 @@ export const FormsTogglePage: React.FC<any> = (props) => {
                                     </label>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="form-ext-control">
     <label class="form-ext-toggle__label"><span>Toggle off</span>
@@ -212,7 +212,7 @@ export const FormsTogglePage: React.FC<any> = (props) => {
                             .
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 {v1Colors.map((color) => {
                                     return (
                                         <div className="form-ext-control">
@@ -234,7 +234,7 @@ export const FormsTogglePage: React.FC<any> = (props) => {
                                     );
                                 })}
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="form-ext-control">
     <label class="form-ext-toggle__label"><span>dark</span>
@@ -310,7 +310,7 @@ export const FormsTogglePage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="form-ext-control">
                                     <label className="form-ext-toggle__label">
                                         <span>Toggle success</span>
@@ -349,7 +349,7 @@ export const FormsTogglePage: React.FC<any> = (props) => {
                                     </label>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="form-ext-control">
     <label class="form-ext-toggle__label"><span>Toggle success</span>

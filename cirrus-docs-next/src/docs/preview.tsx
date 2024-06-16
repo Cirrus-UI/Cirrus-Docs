@@ -76,15 +76,15 @@ export const Preview: React.FC<any> = (props) => {
                                 <h4 className="subtitle font-normal">Montserrat</h4>
                                 <div className="space" />
                                 <div className="row">
-                                    <div className="col-4">
+                                    <div className="md:col-4">
                                         <h6 className="title font-normal">Normal</h6>
                                         <h2 className="subtitle font-normal">AaBbCcDd</h2>
                                     </div>
-                                    <div className="col-4">
+                                    <div className="md:col-4">
                                         <h6 className="title font-bold">Bold</h6>
                                         <h2 className="subtitle font-bold">AaBbCcDd</h2>
                                     </div>
-                                    <div className="col-4">
+                                    <div className="md:col-4">
                                         <h6 className="title font-light">Numbers (Light)</h6>
                                         <h2 className="subtitle font-light">0123456789</h2>
                                     </div>
@@ -110,21 +110,21 @@ export const Preview: React.FC<any> = (props) => {
                                 <h4 className="font-alt subtitle font-normal">Nunito Sans</h4>
                                 <div className="space" />
                                 <div className="row">
-                                    <div className="col-6">
+                                    <div className="md:col-6">
                                         <h6 className="font-alt title font-light">Light</h6>
                                         <h2 className="font-alt subtitle font-light">AaBbCcDd</h2>
                                     </div>
-                                    <div className="col-6">
+                                    <div className="md:col-6">
                                         <h6 className="font-alt title font-normal">Normal</h6>
                                         <h2 className="font-alt subtitle font-normal">AaBbCcDd</h2>
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <div className="col-6">
+                                    <div className="md:col-6">
                                         <h6 className="font-alt title font-bold">Bold</h6>
                                         <h2 className="font-alt subtitle font-bold">AaBbCcDd</h2>
                                     </div>
-                                    <div className="col-6">
+                                    <div className="md:col-6">
                                         <h6 className="font-alt title font-light">Numbers (Light)</h6>
                                         <h2 className="font-alt subtitle font-light">0123456789</h2>
                                     </div>
@@ -206,39 +206,39 @@ export const Preview: React.FC<any> = (props) => {
                     <p className="title">Flexbox</p>
                     <div id="grids">
                         <div className="row">
-                            <div className="col-12 uppercase">
+                            <div className="md:col-12 uppercase">
                                 <div className="uppercase">Col-12</div>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-6 uppercase">
+                            <div className="md:col-6 uppercase">
                                 <div className="uppercase">Col-6</div>
                             </div>
-                            <div className="col-6 uppercase">
+                            <div className="md:col-6 uppercase">
                                 <div className="uppercase">Col-6</div>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-3 uppercase">
+                            <div className="md:col-3 uppercase">
                                 <div className="uppercase">Col-3</div>
                             </div>
-                            <div className="col-9 uppercase">
+                            <div className="md:col-9 uppercase">
                                 <div className="uppercase">Col-9</div>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-2 uppercase">
+                            <div className="md:col-2 uppercase">
                                 <div className="uppercase">Col-2</div>
                             </div>
-                            <div className="col-10 uppercase">
+                            <div className="md:col-10 uppercase">
                                 <div className="uppercase">Col-10</div>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-1 uppercase">
+                            <div className="md:col-1 uppercase">
                                 <div className="uppercase">Col-1</div>
                             </div>
-                            <div className="col-11 uppercase">
+                            <div className="md:col-11 uppercase">
                                 <div className="uppercase">Col-11</div>
                             </div>
                         </div>
@@ -1064,7 +1064,7 @@ export const Preview: React.FC<any> = (props) => {
                         <p className="lead">Provide contextual cues to any component on the page.</p>
                     </div>
                     <div className="row">
-                        <div className="col-4">
+                        <div className="md:col-4">
                             <div className="m-1">
                                 <button
                                     className="demo-tooltip btn-link tooltip tooltip--top-left"
@@ -1074,7 +1074,7 @@ export const Preview: React.FC<any> = (props) => {
                                 </button>
                             </div>
                         </div>
-                        <div className="col-4">
+                        <div className="md:col-4">
                             <div className="m-1">
                                 <button
                                     className="demo-tooltip btn-link tooltip tooltip--top"
@@ -1084,7 +1084,7 @@ export const Preview: React.FC<any> = (props) => {
                                 </button>
                             </div>
                         </div>
-                        <div className="col-4">
+                        <div className="md:col-4">
                             <div className="m-1">
                                 <button
                                     className="demo-tooltip btn-link tooltip tooltip--top-right"
@@ -1096,7 +1096,7 @@ export const Preview: React.FC<any> = (props) => {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-4">
+                        <div className="md:col-4">
                             <div className="m-1">
                                 <button
                                     className="demo-tooltip btn-link tooltip tooltip--left"
@@ -1106,7 +1106,7 @@ export const Preview: React.FC<any> = (props) => {
                                 </button>
                             </div>
                         </div>
-                        <div className="col-4 offset-4">
+                        <div className="md:col-4 offset-4">
                             <div className="m-1">
                                 <button
                                     className="demo-tooltip btn-link tooltip tooltip--right"
@@ -1118,7 +1118,7 @@ export const Preview: React.FC<any> = (props) => {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-4">
+                        <div className="md:col-4">
                             <div className="m-1">
                                 <button
                                     className="demo-tooltip btn-link tooltip tooltip--bottom-left"
@@ -1128,7 +1128,7 @@ export const Preview: React.FC<any> = (props) => {
                                 </button>
                             </div>
                         </div>
-                        <div className="col-4">
+                        <div className="md:col-4">
                             <div className="m-1">
                                 <button
                                     className="demo-tooltip btn-link tooltip tooltip--bottom"
@@ -1138,7 +1138,7 @@ export const Preview: React.FC<any> = (props) => {
                                 </button>
                             </div>
                         </div>
-                        <div className="col-4">
+                        <div className="md:col-4">
                             <div className="m-1">
                                 <button
                                     className="demo-tooltip btn-link tooltip tooltip--bottom-right"
@@ -1164,7 +1164,7 @@ export const Preview: React.FC<any> = (props) => {
                     <div className="row">
                         <div className="row fluid-container">
                             {/* 3 cards per row */}
-                            <div className="col-4">
+                            <div className="md:col-4">
                                 <div className="card">
                                     <div className="card__container">
                                         <div
@@ -1188,7 +1188,7 @@ export const Preview: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-4">
+                            <div className="md:col-4">
                                 <div className="card">
                                     <div className="card__container">
                                         <div
@@ -1214,7 +1214,7 @@ export const Preview: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-4">
+                            <div className="md:col-4">
                                 <div className="card">
                                     <div className="card__container">
                                         <div
@@ -1247,7 +1247,7 @@ export const Preview: React.FC<any> = (props) => {
                         For a more compact verison, use <code>Tiles</code> instead.
                     </p>
                     <div className="row">
-                        <div className="col-8 offset-2">
+                        <div className="md:col-8 offset-2">
                             <div
                                 className="tile u-items-center"
                                 style={{
@@ -1504,7 +1504,7 @@ export const Preview: React.FC<any> = (props) => {
                     <div className="r">
                         <h6 className="font-alt">Menu Lists</h6>
                         <div className="row">
-                            <div className="frame col-6">
+                            <div className="frame md:col-6">
                                 <div className="frame__header">
                                     <div className="tile level">
                                         <div className="tile__icon">
@@ -1544,7 +1544,7 @@ export const Preview: React.FC<any> = (props) => {
                     <div className="r" style={{ overflowX: 'scroll' }}>
                         <h6 className="font-alt">Pagination</h6>
                         <div className="row">
-                            <div className="col-6 pagination">
+                            <div className="md:col-6 pagination">
                                 <div className="pagination-item short disabled">
                                     <a className="disabled" href="#">
                                         Prev
@@ -1572,7 +1572,7 @@ export const Preview: React.FC<any> = (props) => {
                                     <a href="#">Next</a>
                                 </div>
                             </div>
-                            <div className="col-6 pagination pagination-bordered">
+                            <div className="md:col-6 pagination pagination-bordered">
                                 <div className="pagination-item short">
                                     <a href="#">Prev</a>
                                 </div>

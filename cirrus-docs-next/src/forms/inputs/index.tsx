@@ -27,12 +27,12 @@ export const FormsInputsPage: React.FC<any> = (props) => {
 
                         <form>
                             <div className="row">
-                                <div className="col-6">
+                                <div className="md:col-6">
                                     <div className="input-control">
                                         <input type="text" placeholder="Your Name" />
                                     </div>
                                 </div>
-                                <div className="col-6">
+                                <div className="md:col-6">
                                     <div className="input-control">
                                         <select className="select" placeholder="Select One">
                                             <option value="I love this">I love Cirrus</option>
@@ -42,7 +42,7 @@ export const FormsInputsPage: React.FC<any> = (props) => {
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-12">
+                                <div className="md:col-12">
                                     <textarea placeholder="Your Message"></textarea>
                                 </div>
                             </div>
@@ -57,100 +57,100 @@ export const FormsInputsPage: React.FC<any> = (props) => {
                         <Headline title="Input Types" link="#types" size="4" />
                         <div className="divider"></div>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="row level">
-                                    <div className="col-xs-3 level-item">
+                                    <div className="col-3 level-item">
                                         <p className="m-0">Name:</p>
                                     </div>
-                                    <div className="col-xs-9 level-item">
+                                    <div className="col-9 level-item">
                                         <input type="name" value="John Doe" />
                                     </div>
                                 </div>
                                 <div className="row level">
-                                    <div className="col-xs-3 level-item">
+                                    <div className="col-3 level-item">
                                         <p className="m-0">Email:</p>
                                     </div>
-                                    <div className="col-xs-9 level-item">
+                                    <div className="col-9 level-item">
                                         <input type="email" value="john.doe@cirrus.io" />
                                     </div>
                                 </div>
                                 <div className="row level">
-                                    <div className="col-xs-3 level-item">
+                                    <div className="col-3 level-item">
                                         <p className="m-0">URL:</p>
                                     </div>
-                                    <div className="col-xs-9 level-item">
+                                    <div className="col-9 level-item">
                                         <input type="url" value="https://spiderpig86.github.io/Cirrus" />
                                     </div>
                                 </div>
                                 <div className="row level">
-                                    <div className="col-xs-3 level-item">
+                                    <div className="col-3 level-item">
                                         <p className="m-0">Search:</p>
                                     </div>
-                                    <div className="col-xs-9 level-item">
+                                    <div className="col-9 level-item">
                                         <input type="search" placeholder="Search" />
                                     </div>
                                 </div>
                                 <div className="row level">
-                                    <div className="col-xs-3 level-item">
+                                    <div className="col-3 level-item">
                                         <p className="m-0">Telephone:</p>
                                     </div>
-                                    <div className="col-xs-9 level-item">
+                                    <div className="col-9 level-item">
                                         <input type="tel" value="1-(800)-777-7777" />
                                     </div>
                                 </div>
                                 <div className="row level">
-                                    <div className="col-xs-3 level-item">
+                                    <div className="col-3 level-item">
                                         <p className="m-0">Password:</p>
                                     </div>
-                                    <div className="col-xs-9 level-item">
+                                    <div className="col-9 level-item">
                                         <input type="password" value="password" />
                                     </div>
                                 </div>
                                 <div className="row level">
-                                    <div className="col-xs-3 level-item">
+                                    <div className="col-3 level-item">
                                         <p className="m-0">Number:</p>
                                     </div>
-                                    <div className="col-xs-9 level-item">
+                                    <div className="col-9 level-item">
                                         <input type="number" value="420" />
                                     </div>
                                 </div>
                                 <div className="row level">
-                                    <div className="col-xs-3 level-item">
+                                    <div className="col-3 level-item">
                                         <p className="m-0">Date:</p>
                                     </div>
-                                    <div className="col-xs-9 level-item">
+                                    <div className="col-9 level-item">
                                         <input type="date" value="2017-3-21" />
                                     </div>
                                 </div>
                                 <div className="row level">
-                                    <div className="col-xs-3 level-item">
+                                    <div className="col-3 level-item">
                                         <p className="m-0">Time:</p>
                                     </div>
-                                    <div className="col-xs-9 level-item">
+                                    <div className="col-9 level-item">
                                         <input type="time" />
                                     </div>
                                 </div>
                                 <div className="row level">
-                                    <div className="col-xs-3 level-item">
+                                    <div className="col-3 level-item">
                                         <p className="m-0">Color:</p>
                                     </div>
-                                    <div className="col-xs-9 level-item">
+                                    <div className="col-9 level-item">
                                         <input type="color" value="#f03d4d" />
                                     </div>
                                 </div>
                                 <div className="row level">
-                                    <div className="col-xs-3 level-item">
+                                    <div className="col-3 level-item">
                                         <p className="m-0">File:</p>
                                     </div>
-                                    <div className="col-xs-9 level-item">
+                                    <div className="col-9 level-item">
                                         <input type="file" />
                                     </div>
                                 </div>
                                 <div className="row level">
-                                    <div className="col-xs-3 level-item">
+                                    <div className="col-3 level-item">
                                         <p className="m-0">Select:</p>
                                     </div>
-                                    <div className="col-xs-9 level-item input-control">
+                                    <div className="col-9 level-item input-control">
                                         <select className="select" placeholder="Choose one">
                                             <option>Shibe</option>
                                             <option>Doggo</option>
@@ -159,10 +159,10 @@ export const FormsInputsPage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                                 <div className="row level">
-                                    <div className="col-xs-3 level-item">
+                                    <div className="col-3 level-item">
                                         <p className="m-0">Select (Multiple):</p>
                                     </div>
-                                    <div className="col-xs-9 level-item input-control">
+                                    <div className="col-9 level-item input-control">
                                         <select className="select" multiple>
                                             <option>Shibe</option>
                                             <option>Doggo</option>
@@ -171,16 +171,16 @@ export const FormsInputsPage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                                 <div className="row level">
-                                    <div className="col-xs-3 level-item">
+                                    <div className="col-3 level-item">
                                         <p className="m-0">Range:</p>
                                     </div>
-                                    <div className="col-xs-9 level-item input-control">
+                                    <div className="col-9 level-item input-control">
                                         <input type="range" id="volume" name="volume" min="0" max="11" />
                                         <label htmlFor="volume">Volume</label>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<!-- Name -->
 <input type="name" value="John Doe" />
@@ -214,10 +214,10 @@ export const FormsInputsPage: React.FC<any> = (props) => {
 
 <!-- File -->
 <div class="row level">
-    <div class="col-xs-3 level-item">
+    <div class="col-3 level-item">
         <p class="m-0">File:</p>
     </div>
-    <div class="col-xs-9 level-item"><input type="file"></div>
+    <div class="col-9 level-item"><input type="file"></div>
 </div>
 
 <!-- Select -->
@@ -252,7 +252,7 @@ export const FormsInputsPage: React.FC<any> = (props) => {
                         <div className="space"></div>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="input-control">
                                     <input type="text" className="input--xs" placeholder="Extra small (0.75rem)" />
                                 </div>
@@ -269,7 +269,7 @@ export const FormsInputsPage: React.FC<any> = (props) => {
                                     <input type="text" className="input--xl" placeholder="Extra large (1.5rem)" />
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="input-control">
     <input type="text" class="input--xs" placeholder="Extra small (0.75rem)">
@@ -375,7 +375,7 @@ export const FormsInputsPage: React.FC<any> = (props) => {
                             <b>Normal</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="input-control">
                                     <input type="text" placeholder="Normal state" />
                                 </div>
@@ -385,7 +385,7 @@ export const FormsInputsPage: React.FC<any> = (props) => {
                                     </select>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="input-control">
     <input type="text" placeholder="Normal state" />
@@ -404,7 +404,7 @@ export const FormsInputsPage: React.FC<any> = (props) => {
                             <b>Focused</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="input-control">
                                     <input type="text" className="input-focused" placeholder="Focused state" />
                                 </div>
@@ -414,7 +414,7 @@ export const FormsInputsPage: React.FC<any> = (props) => {
                                     </select>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="input-control">
 <input type="text" class="input-focused" placeholder="Focused state" />
@@ -433,7 +433,7 @@ export const FormsInputsPage: React.FC<any> = (props) => {
                             <b>Disabled</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="input-control">
                                     <input disabled type="text" placeholder="Disabled state" />
                                 </div>
@@ -443,7 +443,7 @@ export const FormsInputsPage: React.FC<any> = (props) => {
                                     </select>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="input-control">
 <input disabled type="text" placeholder="Disabled state" />
@@ -467,7 +467,7 @@ export const FormsInputsPage: React.FC<any> = (props) => {
                             <b>Success</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="input-control">
                                     <input
                                         type="text"
@@ -481,7 +481,7 @@ export const FormsInputsPage: React.FC<any> = (props) => {
                                     </select>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="input-control">
     <input type="text" class="text-success input-success" placeholder="Success state" />
@@ -500,7 +500,7 @@ export const FormsInputsPage: React.FC<any> = (props) => {
                             <b>Error</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="input-control">
                                     <input
                                         type="text"
@@ -514,7 +514,7 @@ export const FormsInputsPage: React.FC<any> = (props) => {
                                     </select>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="input-control">
     <input type="text" class="text-danger input-error" placeholder="Success state" />
@@ -541,16 +541,16 @@ export const FormsInputsPage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <label>Regular Label</label>
                                 <input type="text" placeholder="The label above is a regular label." />
                                 <span className="info u-text-center">
                                     I am using the <code>info</code> class.
                                 </span>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
-                                    code={`<div class="col-lg-6">
+                                    code={`<div class="lg:col-6">
     <label>Regular Label</label>
     <input type="text" placeholder="The label above is a regular label." />
     <span class="info u-text-center">I am using the <code>info</code> class.</span>
@@ -561,12 +561,12 @@ export const FormsInputsPage: React.FC<any> = (props) => {
                         </div>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <label>Email</label>
                                 <input type="text" placeholder="john.doe@cirrus.io" />
                                 <span className="info u-text-center">We promise we won't spam!</span>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<label>Email</label>
 <input type="text" placeholder="john.doe@cirrus.io" />
@@ -592,7 +592,7 @@ export const FormsInputsPage: React.FC<any> = (props) => {
                             <b>Normal</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <textarea
                                     defaultValue={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 Ipsum has been the industry's standard dummy text ever since the 1500s, when an
@@ -602,7 +602,7 @@ typesetting, remaining essentially unchanged.`}
                                 ></textarea>
                                 <input type="submit" className="btn-primary pull-right" />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<textarea>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</textarea>
 <input type="submit" class="btn-primary pull-right"/>`}
@@ -615,7 +615,7 @@ typesetting, remaining essentially unchanged.`}
                             <b>Focused</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <textarea
                                     className="input-focused"
                                     defaultValue={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -626,7 +626,7 @@ typesetting, remaining essentially unchanged.`}
                                 ></textarea>
                                 <input disabled type="submit" className="btn-primary pull-right" />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<textarea class="input-focused">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</textarea>
 <input type="submit" class="btn-primary pull-right"/>`}
@@ -639,7 +639,7 @@ typesetting, remaining essentially unchanged.`}
                             <b>Disabled</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <textarea
                                     disabled
                                     defaultValue={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -650,7 +650,7 @@ typesetting, remaining essentially unchanged.`}
                                 ></textarea>
                                 <input disabled type="submit" className="btn-primary pull-right" />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<textarea disabled>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</textarea>
 <input disabled type="submit" class="btn-primary pull-right"/>`}

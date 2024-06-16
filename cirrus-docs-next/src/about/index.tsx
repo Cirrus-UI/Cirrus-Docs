@@ -37,7 +37,7 @@ export const AboutPage: React.FC<any> = (props) => {
                         <h3 className="uppercase u-text-center">Support the Project :)</h3>
                         <p className="lead u-text-center">Feeling generous? Support the project.</p>
                         <div className="row u-text-center">
-                            <div className="col-6">
+                            <div className="md:col-6">
                                 <h4 className="font-alt font-light">
                                     Donate <b>once</b>.
                                 </h4>
@@ -49,7 +49,7 @@ export const AboutPage: React.FC<any> = (props) => {
                                     <img src="/img/paypal.jpg" className="_shadow" />
                                 </a>
                             </div>
-                            <div className="col-6">
+                            <div className="md:col-6">
                                 <h4 className="font-alt font-light">
                                     Donate <b>monthly</b>.
                                 </h4>

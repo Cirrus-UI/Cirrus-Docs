@@ -34,7 +34,7 @@ export const FontGlyphsPage: React.FC<any> = (props) => {
                         <div className="space"></div>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <p className="title">X-Small (7px)</p>
                                 <span
                                     className="icon subtitle"
@@ -45,7 +45,7 @@ export const FontGlyphsPage: React.FC<any> = (props) => {
                                     <FontAwesomeIcon className="fa-wrapper" icon={['fab', 'github']} />
                                 </span>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<span class="icon subtitle" style="font-size: 7px">
     <i class="fab fa-wrapper fa-github"></i>
@@ -53,7 +53,7 @@ export const FontGlyphsPage: React.FC<any> = (props) => {
                                     language="htmlbars"
                                 />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <p className="title">Small/Default (14px)</p>
                                 <span
                                     className="icon subtitle"
@@ -64,7 +64,7 @@ export const FontGlyphsPage: React.FC<any> = (props) => {
                                     <FontAwesomeIcon className="fa-wrapper" icon={['fab', 'github']} />
                                 </span>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<span class="icon subtitle" style="font-size: 14px">
     <i class="fab fa-wrapper fa-github"></i>
@@ -72,7 +72,7 @@ export const FontGlyphsPage: React.FC<any> = (props) => {
                                     language="htmlbars"
                                 />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <p className="title">Large (21px)</p>
                                 <span
                                     className="icon subtitle"
@@ -83,7 +83,7 @@ export const FontGlyphsPage: React.FC<any> = (props) => {
                                     <FontAwesomeIcon className="fa-wrapper" icon={['fab', 'github']} />
                                 </span>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<span class="icon subtitle" style="font-size: 21px">
     <i class="fab fa-wrapper fa-github"></i>
@@ -91,7 +91,7 @@ export const FontGlyphsPage: React.FC<any> = (props) => {
                                     language="htmlbars"
                                 />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <p className="title">X-Large (28px)</p>
                                 <span
                                     className="icon subtitle"
@@ -102,7 +102,7 @@ export const FontGlyphsPage: React.FC<any> = (props) => {
                                     <FontAwesomeIcon className="fa-wrapper" icon={['fab', 'github']} />
                                 </span>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<span class="icon subtitle" style="font-size: 28px">
     <i class="fab fa-wrapper fa-github"></i>

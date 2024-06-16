@@ -69,7 +69,7 @@ export const FramesPage: React.FC<any> = (props) => {
                             </li>
                         </ul>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="frame">
                                     <div
                                         className="frame__header"
@@ -105,7 +105,7 @@ export const FramesPage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="frame">
     <div class="frame__header" style="background: #eee; padding: 1rem; margin: 1rem">
@@ -143,7 +143,7 @@ export const FramesPage: React.FC<any> = (props) => {
                         <p>Below are some examples for inspiration.</p>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="frame">
                                     <div className="frame__header u-text-center">
                                         <div>
@@ -205,7 +205,7 @@ export const FramesPage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="frame">
     <div class="frame__header u-text-center">
@@ -263,7 +263,7 @@ export const FramesPage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="frame" style={{ height: '30rem' }}>
                                     <div
                                         className="frame__header"
@@ -368,7 +368,7 @@ export const FramesPage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="frame" style="height: 30rem;">
     <div class="frame__header" style="box-shadow: rgba(85, 85, 85, 0.1) 0px 2px 3px;">
@@ -446,7 +446,7 @@ export const FramesPage: React.FC<any> = (props) => {
 
                         <p>This one uses different components (tabcontrol, card tiles, etc...) inside the frame.</p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="frame" style={{ height: '30rem' }}>
                                     <div className="frame__header">
                                         <div className="avatar">
@@ -540,7 +540,7 @@ export const FramesPage: React.FC<any> = (props) => {
                                     <div className="frame__footer"></div>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="frame" style="height: 30rem;">
     <div class="frame__header">

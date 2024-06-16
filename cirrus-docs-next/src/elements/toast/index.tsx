@@ -83,7 +83,7 @@ export const ToastPage: React.FC<any> = (props) => {
 
                         <p>Toasts can be customized using the v1 pre-built color classes.</p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="toast toast--success">
                                     <button className="btn-close"></button>
                                     <p>Success</p>
@@ -117,9 +117,9 @@ export const ToastPage: React.FC<any> = (props) => {
                                     <p>Dark</p>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
-                                    code={`<div class="col-lg-6">
+                                    code={`<div class="lg:col-6">
     <div class="toast toast--success">
         <button class="btn-close"></button>
         <p>Success</p>

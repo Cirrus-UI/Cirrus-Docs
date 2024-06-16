@@ -69,10 +69,10 @@ export const ColorsPage: React.FC<any> = (props) => {
                             Button using <b>indigo-500</b> for text and <b>indigo-100</b> for the background.
                         </p>
                         <div className="row">
-                            <div className="col-lg-6 u-text-center">
+                            <div className="lg:col-6 u-text-center">
                                 <button className="text-indigo-500 bg-indigo-100">Custom Button</button>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<button class="text-indigo-500 bg-indigo-100">
     Custom Button
@@ -86,7 +86,7 @@ export const ColorsPage: React.FC<any> = (props) => {
                             Square using a <b>info</b> background.
                         </p>
                         <div className="row">
-                            <div className="col-lg-6 mb-1">
+                            <div className="lg:col-6 mb-1">
                                 <div
                                     style={{
                                         height: '50px',
@@ -95,7 +95,7 @@ export const ColorsPage: React.FC<any> = (props) => {
                                     className="u-round-xs bg-info mx-auto"
                                 ></div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="bg-info u-round-xs mx-auto" style="height: 50px; width: 50px;"></div>`}
                                     language="htmlbars"
@@ -107,12 +107,12 @@ export const ColorsPage: React.FC<any> = (props) => {
                             Circle with a <b>purple-500</b> border.
                         </p>
                         <div className="row">
-                            <div className="col-lg-6 mb-1 u-flex u-justify-center">
+                            <div className="lg:col-6 mb-1 u-flex u-justify-center">
                                 <div
                                     className="u-round-full w-8 h-8 border-purple-500 u-border-2"
                                 ></div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="u-round-full w-8 h-8 border-purple-500 u-border-2"></div>`}
                                     language="htmlbars"

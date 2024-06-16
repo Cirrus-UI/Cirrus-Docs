@@ -37,7 +37,7 @@ export const TooltipsPage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="u-center">
                                     <div className="m-1">
                                         <button className="btn-primary tooltip" data-tooltip="Tooltip 1">
@@ -68,7 +68,7 @@ export const TooltipsPage: React.FC<any> = (props) => {
                                     </label>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="u-center">
     <div class="m-1">
@@ -106,7 +106,7 @@ export const TooltipsPage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-lg-4">
+                            <div className="lg:col-4">
                                 <div className="button-container">
                                     <button className="tooltip" data-tooltip="Tooltip Top (Default)">
                                         Tooltip Top
@@ -151,7 +151,7 @@ export const TooltipsPage: React.FC<any> = (props) => {
                                     </button>
                                 </div>
                             </div>
-                            <div className="col-lg-8">
+                            <div className="lg:col-8">
                                 <CodeBlock
                                     code={`<div class="button-container">
     <button class="tooltip" data-tooltip="Tooltip Top (Default)">Tooltip Top</button>

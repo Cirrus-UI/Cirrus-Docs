@@ -50,14 +50,14 @@ export const AnimationsPage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="card u-flex u-items-center u-justify-center">
                                     <div className="animated loading hide-text">
                                         <p>Hidden</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="card u-flex u-items-center u-justify-center">
     <div class="animated loading hide-text">
@@ -75,7 +75,7 @@ export const AnimationsPage: React.FC<any> = (props) => {
                             class.
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div
                                     className="card u-flex u-items-center u-justify-center"
                                     style={{
@@ -87,7 +87,7 @@ export const AnimationsPage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="card u-flex u-items-center u-justify-center" style="background: linear-gradient(to right, rgb(142, 45, 226), rgb(74, 0, 224));">
     <div class="animated loading hide-text loading-white">
@@ -104,7 +104,7 @@ export const AnimationsPage: React.FC<any> = (props) => {
                             To show the spinner to the left, use the <code>loading-left</code> class.
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div
                                     className="card"
                                     style={{
@@ -116,7 +116,7 @@ export const AnimationsPage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="card u-flex u-items-center u-justify-center" style="background: linear-gradient(to right, rgb(142, 45, 226), rgb(74, 0, 224));">
     <div class="animated loading hide-text loading-white">
@@ -133,7 +133,7 @@ export const AnimationsPage: React.FC<any> = (props) => {
                             For the right, use the <code>loading-right</code> class.
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div
                                     className="card"
                                     style={{
@@ -145,7 +145,7 @@ export const AnimationsPage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="card" style="background: linear-gradient(to right, rgb(255, 88, 88), rgb(248, 87, 166));">
     <div class="animated loading loading-right loading-white text-white u-text-right">
@@ -177,13 +177,13 @@ export const AnimationsPage: React.FC<any> = (props) => {
                             </p>
 
                             <div className="row">
-                                <div className="col-lg-4">
+                                <div className="lg:col-4">
                                     <div className="hover-grow">
                                         <img src="/img/credit-card.svg" />
                                     </div>
                                     <div className="u-text-center">Hover me.</div>
                                 </div>
-                                <div className="col-lg-8">
+                                <div className="lg:col-8">
                                     <CodeBlock
                                         code={`<div class="hover-grow">
     <img src="../../card.svg" />
@@ -207,12 +207,12 @@ export const AnimationsPage: React.FC<any> = (props) => {
                             <Headline title="Bounce" link="#bounce" size="6" />
                             <p>Bouncing animation with a glyph.</p>
                             <div className="row">
-                                <div className="col-lg-6 u-text-center">
+                                <div className="lg:col-6 u-text-center">
                                     <span className="icon animated" id="bounce-heart">
                                         <FontAwesomeIcon className="fa-wrapper" icon={['fas', 'heart']} />
                                     </span>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="lg:col-6">
                                     <CodeBlock
                                         code={`<span class="icon"><i class="fa fa-wrapper fa-heart animated bounce" aria-hidden="true"></i></span>`}
                                         language="htmlbars"
@@ -229,12 +229,12 @@ export const AnimationsPage: React.FC<any> = (props) => {
                             <div className="space"></div>
                             <p>Bouncing animation with a div.</p>
                             <div className="row">
-                                <div className="col-lg-6 u-text-center">
+                                <div className="lg:col-6 u-text-center">
                                     <div className="bg-orange-400 text-white u-text-center animated" id="bounce-div">
                                         <p>This is a div!</p>
                                     </div>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="lg:col-6">
                                     <CodeBlock
                                         code={`<div class="bg-orange-400 text-white u-text-center animated bounce">
     <p>This is a div!</p>
@@ -252,12 +252,12 @@ export const AnimationsPage: React.FC<any> = (props) => {
                             <div className="space"></div>
                             <p>Bouncing animation with a button.</p>
                             <div className="row">
-                                <div className="col-lg-6 u-text-center">
+                                <div className="lg:col-6 u-text-center">
                                     <button className="btn-info animated" id="bounce-btn">
                                         Button
                                     </button>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="lg:col-6">
                                     <CodeBlock
                                         code={`<button class="btn-info animated bounce">Button</button>`}
                                         language="htmlbars"
@@ -276,12 +276,12 @@ export const AnimationsPage: React.FC<any> = (props) => {
                             <Headline title="Bounce In" link="#bounce-in" size="6" />
                             <p>Bounce in animation with a glyph.</p>
                             <div className="row">
-                                <div className="col-lg-6 u-text-center">
+                                <div className="lg:col-6 u-text-center">
                                     <span className="icon animated" id="bounce-in-heart">
                                         <FontAwesomeIcon className="fa-wrapper" icon={['fas', 'heart']} />
                                     </span>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="lg:col-6">
                                     <CodeBlock
                                         code={`<span class="icon"><i class="fa fa-wrapper fa-heart animated bounceIn" aria-hidden="true"></i></span>`}
                                         language="htmlbars"
@@ -297,12 +297,12 @@ export const AnimationsPage: React.FC<any> = (props) => {
                             <div className="space"></div>
                             <p>Bounce in animation with a div.</p>
                             <div className="row">
-                                <div className="col-lg-6 u-text-center">
+                                <div className="lg:col-6 u-text-center">
                                     <div className="bg-orange-400 text-white u-text-center animated" id="bounce-in-div">
                                         <p>This is a div!</p>
                                     </div>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="lg:col-6">
                                     <CodeBlock
                                         code={`<div class="bg-orange-400 text-white u-text-center animated bounceIn">
     <p>This is a div!</p>
@@ -320,12 +320,12 @@ export const AnimationsPage: React.FC<any> = (props) => {
                             <div className="space"></div>
                             <p>Bounce in animation with a button.</p>
                             <div className="row">
-                                <div className="col-lg-6 u-text-center">
+                                <div className="lg:col-6 u-text-center">
                                     <button className="btn-info animated" id="bounce-in-btn">
                                         Button
                                     </button>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="lg:col-6">
                                     <CodeBlock
                                         code={`<button class="btn-info animated bounceIn">Button</button>`}
                                         language="htmlbars"
@@ -344,12 +344,12 @@ export const AnimationsPage: React.FC<any> = (props) => {
                             <Headline title="Fade In" link="#fade-in" size="6" />
                             <p>Fade in animation with a glyph.</p>
                             <div className="row">
-                                <div className="col-lg-6 u-text-center">
+                                <div className="lg:col-6 u-text-center">
                                     <span className="icon animated" id="fade-in-heart">
                                         <FontAwesomeIcon className="fa-wrapper" icon={['fas', 'heart']} />
                                     </span>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="lg:col-6">
                                     <CodeBlock
                                         code={`<span class="icon"><i class="fa fa-wrapper fa-heart animated fadeIn" aria-hidden="true"></i></span>`}
                                         language="htmlbars"
@@ -365,12 +365,12 @@ export const AnimationsPage: React.FC<any> = (props) => {
                             <div className="space"></div>
                             <p>Fade in animation with a div.</p>
                             <div className="row">
-                                <div className="col-lg-6 u-text-center">
+                                <div className="lg:col-6 u-text-center">
                                     <div className="bg-orange-400 text-white u-text-center animated" id="fade-in-div">
                                         <p>This is a div!</p>
                                     </div>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="lg:col-6">
                                     <CodeBlock
                                         code={`<div class="bg-orange-400 text-white u-text-center animated fadeIn">
     <p>This is a div!</p>
@@ -388,12 +388,12 @@ export const AnimationsPage: React.FC<any> = (props) => {
                             <div className="space"></div>
                             <p>Fade in animation with a button.</p>
                             <div className="row">
-                                <div className="col-lg-6 u-text-center">
+                                <div className="lg:col-6 u-text-center">
                                     <button className="btn-info animated" id="fade-in-btn">
                                         Button
                                     </button>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="lg:col-6">
                                     <CodeBlock
                                         code={`<button class="btn-info animated fadeIn">Button</button>`}
                                         language="htmlbars"
@@ -431,12 +431,12 @@ export const AnimationsPage: React.FC<any> = (props) => {
                             <Headline title="Pound" link="#pound" size="6" />
                             <p>Pound animation with a glyph.</p>
                             <div className="row">
-                                <div className="col-lg-6 u-text-center">
+                                <div className="lg:col-6 u-text-center">
                                     <span className="icon animated paused pound" id="pound-heart">
                                         <FontAwesomeIcon className="fa-wrapper" icon={['fas', 'heart']} />
                                     </span>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="lg:col-6">
                                     <CodeBlock
                                         code={`<span class="icon"><i class="fa fa-wrapper fa-heart animated pound" aria-hidden="true"></i></span>`}
                                         language="htmlbars"
@@ -451,7 +451,7 @@ export const AnimationsPage: React.FC<any> = (props) => {
                             </button>
                             <p>Pound animation with a div.</p>
                             <div className="row">
-                                <div className="col-lg-6 u-text-center">
+                                <div className="lg:col-6 u-text-center">
                                     <div
                                         className="bg-orange-400 text-white u-text-center animated paused pound"
                                         id="pound-div"
@@ -459,7 +459,7 @@ export const AnimationsPage: React.FC<any> = (props) => {
                                         <p>This is a div!</p>
                                     </div>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="lg:col-6">
                                     <CodeBlock
                                         code={`<div class="bg-orange-400 text-white u-text-center animated pound">
     <p>This is a div!</p>
@@ -477,12 +477,12 @@ export const AnimationsPage: React.FC<any> = (props) => {
                             <div className="space"></div>
                             <p>Pound animation with a button.</p>
                             <div className="row">
-                                <div className="col-lg-6 u-text-center">
+                                <div className="lg:col-6 u-text-center">
                                     <button className="btn-info animated paused pound" id="pound-btn">
                                         Button
                                     </button>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="lg:col-6">
                                     <CodeBlock
                                         code={`<button class="btn-info animated pound">Button</button>`}
                                         language="htmlbars"
@@ -613,10 +613,10 @@ export const AnimationsPage: React.FC<any> = (props) => {
                         </p>
                         <p>Below is an example using the fade in animation.</p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <button className="btn-primary animated fadeIn infinite">Infinitely Fading</button>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<button class="btn-primary animated fadeIn infinite">Infinitely Fading</button>`}
                                     language="htmlbars"
@@ -628,12 +628,12 @@ export const AnimationsPage: React.FC<any> = (props) => {
                             the <code>alternate</code> class to make the animation more fluid.
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <button className="btn-primary animated fadeIn infinite alternate">
                                     Alternating Fading
                                 </button>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<button class="btn-primary animated fadeIn infinite alternate">Alternating Fading</button>`}
                                     language="htmlbars"
@@ -648,12 +648,12 @@ export const AnimationsPage: React.FC<any> = (props) => {
                             you need to do is add a class to the animated component called <code>paused</code>.
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <button className="btn-primary animated bounce infinite alternate paused">
                                     Paused
                                 </button>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<button class="btn-primary animated bounce infinite alternate paused">Paused</button>`}
                                     language="htmlbars"

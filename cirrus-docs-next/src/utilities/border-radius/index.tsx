@@ -74,7 +74,7 @@ export const BorderRadiusUtilsPage: React.FC<any> = (props) => {
                                 .filter((entry) => entry[0] !== 'none')
                                 .map((entry, i) => {
                                     return (
-                                        <div className="col-4 u-text-center" key={i}>
+                                        <div className="md:col-4 u-text-center" key={i}>
                                             <div className={`p-4 bg-purple-500 u-shadow-lg u-round-${entry[0]}`}></div>
                                             <p>
                                                 <b>u-round-{entry[0]}</b>
@@ -86,27 +86,27 @@ export const BorderRadiusUtilsPage: React.FC<any> = (props) => {
 
                         <div className="space space--lg"></div>
                         <CodeBlock
-                            code={`<div class="col-4 u-text-center">
+                            code={`<div class="md:col-4 u-text-center">
     <div class="p-4 bg-purple-500 u-shadow-lg u-round-xs"></div>
     <p><b>u-round-xs</b></p>
 </div>
-<div class="col-4 u-text-center">
+<div class="md:col-4 u-text-center">
     <div class="p-4 bg-purple-500 u-shadow-lg u-round-sm"></div>
     <p><b>u-round-sm</b></p>
 </div>
-<div class="col-4 u-text-center">
+<div class="md:col-4 u-text-center">
     <div class="p-4 bg-purple-500 u-shadow-lg u-round-md"></div>
     <p><b>u-round-md</b></p>
 </div>
-<div class="col-4 u-text-center">
+<div class="md:col-4 u-text-center">
     <div class="p-4 bg-purple-500 u-shadow-lg u-round-lg"></div>
     <p><b>u-round-lg</b></p>
 </div>
-<div class="col-4 u-text-center">
+<div class="md:col-4 u-text-center">
     <div class="p-4 bg-purple-500 u-shadow-lg u-round-xl"></div>
     <p><b>u-round-xl</b></p>
 </div>
-<div class="col-4 u-text-center">
+<div class="md:col-4 u-text-center">
     <div class="p-4 bg-purple-500 u-shadow-lg u-round-full"></div>
     <p><b>u-round-full</b></p>
 </div>

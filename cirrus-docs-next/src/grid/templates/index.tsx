@@ -169,7 +169,7 @@ export const GridTemplatesPage: React.FC<any> = (props) => {
                         </p>
                         <div className="space"></div>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="grid grid-cols-3 u-gap-2">
                                     <div className=" _grid-ex">
                                         <p>1</p>
@@ -200,7 +200,7 @@ export const GridTemplatesPage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="grid grid-cols-3 u-gap-2">
     <div>

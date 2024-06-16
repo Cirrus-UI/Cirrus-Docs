@@ -410,7 +410,7 @@ import 'cirrus-ui';`}
                                         <div className="frame bg-gray-000 u-shadow-lg">
                                             <div className="frame__body">
                                                 <div className="row u-items-center">
-                                                    <div className="col-6">
+                                                    <div className="md:col-6">
                                                         {['blue', 'indigo', 'pink', 'orange'].map((color) => {
                                                             return (
                                                                 <div className="p-2 my-2 bg-white u-round-sm u-shadow-sm">
@@ -432,7 +432,7 @@ import 'cirrus-ui';`}
                                                             );
                                                         })}
                                                     </div>
-                                                    <div className="col-6 pt-2">
+                                                    <div className="md:col-6 pt-2">
                                                         <CodeBlock
                                                             code={`<div class="p-2 my-2 bg-white u-round-sm u-shadow-sm">
     <div class="u-flex u-gap-1 u-flex-wrap">
@@ -491,7 +491,7 @@ import 'cirrus-ui';`}
                                         <div className="frame bg-indigo-100">
                                             <div className="frame__body">
                                                 <div className="row u-items-center">
-                                                    <div className="col-4">
+                                                    <div className="md:col-4">
                                                         {[32, 24, 20, 16, 12, 10, 8].map((size) => {
                                                             return (
                                                                 <div className="w-100p">
@@ -504,7 +504,7 @@ import 'cirrus-ui';`}
                                                             );
                                                         })}
                                                     </div>
-                                                    <div className="col-8 pt-2">
+                                                    <div className="md:col-8 pt-2">
                                                         <CodeBlock
                                                             code={`<div class="w-100p">
     <div class="bg-indigo-500 text-white my-2 pl-2 pr-32 py-1 u-round-sm u-inline-block u-shadow-lg"><span class="font-bold">px-32</span></div>
@@ -543,7 +543,7 @@ import 'cirrus-ui';`}
                                         <div className="frame bg-green-100">
                                             <div className="frame__body">
                                                 <div className="row u-items-center py-2">
-                                                    <div className="col-4">
+                                                    <div className="md:col-4">
                                                         {[100, 90, 80, 70, 60, 50, 40, 30, 20, 10].map((opacity) => {
                                                             return (
                                                                 <div
@@ -554,7 +554,7 @@ import 'cirrus-ui';`}
                                                             );
                                                         })}
                                                     </div>
-                                                    <div className="col-8">
+                                                    <div className="md:col-8">
                                                         <CodeBlock
                                                             code={`<div class="u-opacity-100 bg-green-500 text-white w-100p mb-1 pl-2 py-1 u-round-sm u-shadow-lg">
     <div class="font-bold">u-opacity-100</div>
@@ -592,7 +592,7 @@ import 'cirrus-ui';`}
                                         <div className="frame">
                                             <div className="frame__body">
                                                 <div className="row u-items-center py-2">
-                                                    <div className="col-6">
+                                                    <div className="md:col-6">
                                                         <div className="grid-md grid-cols-2">
                                                             {['none', 'xs', 'sm', 'md', 'lg', 'xl'].map((level) => {
                                                                 return (
@@ -607,7 +607,7 @@ import 'cirrus-ui';`}
                                                             })}
                                                         </div>
                                                     </div>
-                                                    <div className="col-6">
+                                                    <div className="md:col-6">
                                                         <CodeBlock
                                                             code={`<div class="bg-gray-000 u-round-xs u-shadow-none px-4 py-3 m-2">
     <div class="font-bold">u-shadow-none</div>
@@ -711,7 +711,7 @@ import 'cirrus-ui';`}
                     <div className="space space--lg"></div>
 
                     <div className="u-relative">
-                        <div className="content mx-auto grid u-text-left u-gap-3 grid-cols-1 grid-cols-3-lg">
+                        <div className="content mx-auto grid u-text-left u-gap-3 grid-cols-1 lg:grid-cols-3">
                             <div className="grid-c-1 grid-r-6 u-flex u-gap-3 u-flex-column">
                                 <MenuList />
                                 <Card />
@@ -740,16 +740,16 @@ import 'cirrus-ui';`}
                     </div>
 
                     <div className="row">
-                        <div className="p-1 u-flex u-items-center u-justify-center col-6 col-lg-4 col-xl-2">
+                        <div className="p-1 u-flex u-items-center u-justify-center md:col-6 lg:col-4 xl:col-2">
                             <FancyBuyCard />
                         </div>
-                        <div className="p-1 u-flex u-items-center u-justify-center col-6 col-lg-4 col-xl-3">
+                        <div className="p-1 u-flex u-items-center u-justify-center md:col-6 lg:col-4 xl:col-3">
                             <LoginCard />
                         </div>
-                        <div className="p-1 u-flex u-items-center u-justify-center col-6 col-lg-4 col-xl-2">
+                        <div className="p-1 u-flex u-items-center u-justify-center md:col-6 lg:col-4 xl:col-2">
                             <PersonCard />
                         </div>
-                        <div className="p-1 u-flex u-items-center u-justify-center col-6 col-lg-6 col-xl-5">
+                        <div className="p-1 u-flex u-items-center u-justify-center md:col-6 lg:col-6 xl:col-5">
                             <ECommerceCard />
                         </div>
                     </div>
@@ -782,7 +782,7 @@ import 'cirrus-ui';`}
                     </InternalLink>
                     <div className="u-text-left my-4">
                         <div className="row">
-                            <div className="col-6">
+                            <div className="md:col-6">
                                 <CodeBlock
                                     code={`/* main.scss */
 @use "cirrus-ui/src/cirrus-ext" as * with (
@@ -799,7 +799,7 @@ import 'cirrus-ui';`}
                                     language={'scss'}
                                 />
                             </div>
-                            <div className="col-6">
+                            <div className="md:col-6">
                                 <CodeBlock
                                     code={`/* out.css */
 ...
@@ -848,7 +848,7 @@ import 'cirrus-ui';`}
                     </InternalLink>
 
                     <div className="row" ref={ref}>
-                        <div className="col-8">
+                        <div className="md:col-8">
                             <div className="my-4">
                                 <CodeBlock
                                     code={`/* main.scss */
@@ -875,7 +875,7 @@ import 'cirrus-ui';`}
                                 />
                             </div>
                         </div>
-                        <div className="col-4 u-center">
+                        <div className="md:col-4 u-center">
                             <motion.div
                                 className="u-round-sm my-4 p-8"
                                 animate={inView ? { backgroundColor: '#cbf9e8' } : undefined}

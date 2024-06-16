@@ -44,7 +44,7 @@ export const TreePage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-lg-4">
+                            <div className="lg:col-4">
                                 <div className="tree">
                                     <div className="tree-item">
                                         <input type="checkbox" id="color1" className="u-none" />
@@ -79,7 +79,7 @@ export const TreePage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-8">
+                            <div className="lg:col-8">
                                 <h6>Structure</h6>
                                 <ul>
                                     <li>
@@ -129,7 +129,7 @@ export const TreePage: React.FC<any> = (props) => {
 
                         <p className="title m-0">Regular Tree (Checkboxes)</p>
                         <div className="row">
-                            <div className="col-lg-4">
+                            <div className="lg:col-4">
                                 <div className="tree">
                                     <div className="tree-item">
                                         <input type="checkbox" id="tree1" className="u-none" />
@@ -238,7 +238,7 @@ export const TreePage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-8">
+                            <div className="lg:col-8">
                                 <CodeBlock
                                     code={`<div class="tree">
     <div class="tree-item">
@@ -317,7 +317,7 @@ export const TreePage: React.FC<any> = (props) => {
 
                         <p className="title m-0">Exclusive Tree (Radio)</p>
                         <div className="row">
-                            <div className="col-lg-4">
+                            <div className="lg:col-4">
                                 <div className="tree">
                                     <div className="tree-item">
                                         <input type="radio" id="tree5" className="u-none" name="radioTree" />
@@ -399,7 +399,7 @@ export const TreePage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-8">
+                            <div className="lg:col-8">
                                 <CodeBlock
                                     code={`<div class="tree">
     <div class="tree-item">
@@ -447,7 +447,7 @@ export const TreePage: React.FC<any> = (props) => {
 
                         <p className="title m-0">Mixed Tree</p>
                         <div className="row">
-                            <div className="col-lg-4">
+                            <div className="lg:col-4">
                                 <div className="tree">
                                     <div className="tree-item">
                                         <input type="radio" id="mixTree1" className="u-none" />
@@ -502,7 +502,7 @@ export const TreePage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-8">
+                            <div className="lg:col-8">
                                 <CodeBlock
                                     code={`<div class="tree">
     <div class="tree-item">

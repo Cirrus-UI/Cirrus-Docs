@@ -53,15 +53,15 @@ export const TypographyPage: React.FC<any> = (props) => {
                                 <div className="space"></div>
 
                                 <div className="row">
-                                    <div className="col-lg-6">
+                                    <div className="lg:col-6">
                                         <h6 className="title font-normal">Normal</h6>
                                         <h2 className="subtitle font-normal">AaBbCcDd</h2>
                                     </div>
-                                    <div className="col-lg-6">
+                                    <div className="lg:col-6">
                                         <h6 className="title font-bold">Bold</h6>
                                         <h2 className="subtitle font-bold">AaBbCcDd</h2>
                                     </div>
-                                    <div className="col-lg-6">
+                                    <div className="lg:col-6">
                                         <h6 className="title font-light">Numbers (Light)</h6>
                                         <h2 className="subtitle font-light">0123456789</h2>
                                     </div>
@@ -89,21 +89,21 @@ export const TypographyPage: React.FC<any> = (props) => {
                                 <div className="space"></div>
 
                                 <div className="row">
-                                    <div className="col-lg-6">
+                                    <div className="lg:col-6">
                                         <h6 className="font-alt title font-light">Light</h6>
                                         <h2 className="font-alt subtitle font-light">AaBbCcDd</h2>
                                     </div>
-                                    <div className="col-lg-6">
+                                    <div className="lg:col-6">
                                         <h6 className="font-alt title font-normal">Normal</h6>
                                         <h2 className="font-alt subtitle font-normal">AaBbCcDd</h2>
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <div className="col-lg-6">
+                                    <div className="lg:col-6">
                                         <h6 className="font-alt title font-bold">Bold</h6>
                                         <h2 className="font-alt subtitle font-bold">AaBbCcDd</h2>
                                     </div>
-                                    <div className="col-lg-6">
+                                    <div className="lg:col-6">
                                         <h6 className="font-alt title font-light">Numbers (Light)</h6>
                                         <h2 className="font-alt subtitle font-light">0123456789</h2>
                                     </div>

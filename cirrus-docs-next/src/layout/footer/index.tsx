@@ -77,7 +77,7 @@ export const FootersPage: React.FC<any> = (props) => {
         <div class="divider"></div>
 
         <div class="row">
-            <div class="col-4">
+            <div class="md:col-4">
                 <ul class="no-bullets">
                     <a href="!#">
                         <li class="footer__list-item">Home</li>
@@ -92,7 +92,7 @@ export const FootersPage: React.FC<any> = (props) => {
                     </ul>
                 </ul>
             </div>
-            <div class="col-4">
+            <div class="md:col-4">
                 <ul class="no-bullets">
                     <a href="!#">
                         <li class="footer__list-item">Company Information</li>
@@ -107,7 +107,7 @@ export const FootersPage: React.FC<any> = (props) => {
                     </ul>
                 </ul>
             </div>
-            <div class="col-4">
+            <div class="md:col-4">
                 <ul class="no-bullets">
                     <a href="!#">
                         <li class="footer__list-item">FAQ</li>
@@ -154,13 +154,13 @@ export const FootersPage: React.FC<any> = (props) => {
     <div class="content u-text-center">
         <p class="m-0">Sign up to hear about the latest updates via email</p>
         <div class="row">
-            <div class="col-5">
+            <div class="md:col-5">
                 <input class="input--sm" type="text" placeholder="Name">
             </div>
-            <div class="col-5">
+            <div class="md:col-5">
                 <input class="input--sm" type="text" placeholder="Email">
             </div>
-            <div class="col-2">
+            <div class="md:col-2">
                 <button class="btn btn--sm">Sign Up</button>
             </div>
         </div>

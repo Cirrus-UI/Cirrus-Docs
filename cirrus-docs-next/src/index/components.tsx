@@ -108,7 +108,7 @@ export const Panel: React.FC<any> = (props) => {
 
 export const Pagination: React.FC<any> = (props) => {
     return (
-        <div className="col-6 pagination">
+        <div className="md:col-6 pagination">
             <div className="pagination-item short disabled">
                 <a className="disabled" href="#">
                     Prev

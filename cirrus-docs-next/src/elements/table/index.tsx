@@ -41,7 +41,7 @@ export const TablePage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <table className="table">
                                     <thead>
                                         <tr>
@@ -94,7 +94,7 @@ export const TablePage: React.FC<any> = (props) => {
                                     </tbody>
                                 </table>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <h6>Structure</h6>
                                 <ul>
                                     <li>

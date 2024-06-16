@@ -43,7 +43,7 @@ export const ListsPage: React.FC<any> = (props) => {
                         <p className="title">Bulleted (Default)</p>
                         <p className="subtitle">A standard list with bullets preceding the list item.</p>
                         <div className="row u-items-center">
-                            <div className="col-6">
+                            <div className="md:col-6">
                                 <ul>
                                     <li>Apple</li>
                                     <li>Google</li>
@@ -51,7 +51,7 @@ export const ListsPage: React.FC<any> = (props) => {
                                     <li>Microsoft</li>
                                 </ul>
                             </div>
-                            <div className="col-6">
+                            <div className="md:col-6">
                                 <CodeBlock
                                     code={`<ul>
     <li>Apple</li>
@@ -67,7 +67,7 @@ export const ListsPage: React.FC<any> = (props) => {
                         <p className="title">Numbered</p>
                         <p className="subtitle">An ordered list with numbers for each item.</p>
                         <div className="row u-items-center">
-                            <div className="col-6">
+                            <div className="md:col-6">
                                 <ol>
                                     <li>Apple</li>
                                     <li>Google</li>
@@ -75,7 +75,7 @@ export const ListsPage: React.FC<any> = (props) => {
                                     <li>Microsoft</li>
                                 </ol>
                             </div>
-                            <div className="col-6">
+                            <div className="md:col-6">
                                 <CodeBlock
                                     code={`<ol>
     <li>Apple</li>
@@ -93,7 +93,7 @@ export const ListsPage: React.FC<any> = (props) => {
                             A list with no item decorations using the <code>no-bullets</code> class.
                         </p>
                         <div className="row u-items-center">
-                            <div className="col-6">
+                            <div className="md:col-6">
                                 <ul className="no-bullets">
                                     <li>Apple</li>
                                     <li>Google</li>
@@ -101,7 +101,7 @@ export const ListsPage: React.FC<any> = (props) => {
                                     <li>Microsoft</li>
                                 </ul>
                             </div>
-                            <div className="col-6">
+                            <div className="md:col-6">
                                 <CodeBlock
                                     code={`<ul class="no-bullets">
     <li>Apple</li>
@@ -117,7 +117,7 @@ export const ListsPage: React.FC<any> = (props) => {
                         <p className="title">Details</p>
                         <p className="subtitle">A list designed for detailed descriptions.</p>
                         <div className="row u-items-center">
-                            <div className="col-6">
+                            <div className="md:col-6">
                                 <dl>
                                     <dt>Apple</dt>
                                     <dd>
@@ -127,7 +127,7 @@ export const ListsPage: React.FC<any> = (props) => {
                                     </dd>
                                 </dl>
                             </div>
-                            <div className="col-6">
+                            <div className="md:col-6">
                                 <CodeBlock
                                     code={`<dl>
     <dt>Apple</dt>
@@ -148,7 +148,7 @@ export const ListsPage: React.FC<any> = (props) => {
                             <code>nested-list</code> class to the div containing the list.
                         </p>
                         <div className="row">
-                            <div className="col-4">
+                            <div className="md:col-4">
                                 <ul>
                                     <li>List Item 1</li>
                                     <li>List Item 2</li>
@@ -169,7 +169,7 @@ export const ListsPage: React.FC<any> = (props) => {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="col-4">
+                            <div className="md:col-4">
                                 <ol>
                                     <li>List Item 1</li>
                                     <li>List Item 2</li>
@@ -190,7 +190,7 @@ export const ListsPage: React.FC<any> = (props) => {
                                     </li>
                                 </ol>
                             </div>
-                            <div className="col-4">
+                            <div className="md:col-4">
                                 <ol>
                                     <li>List Item 1</li>
                                     <li>List Item 2</li>
@@ -256,7 +256,7 @@ export const ListsPage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-lg-5">
+                            <div className="lg:col-5">
                                 <ul className="menu">
                                     <li className="menu-item selected">
                                         <a>One</a>
@@ -269,7 +269,7 @@ export const ListsPage: React.FC<any> = (props) => {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="col-lg-7">
+                            <div className="lg:col-7">
                                 <h6>Structure</h6>
                                 <ul>
                                     <li>
@@ -322,7 +322,7 @@ export const ListsPage: React.FC<any> = (props) => {
 
                         <p className="font-bold">Dropdown with Separate Button</p>
                         <div className="row">
-                            <div className="col-lg-5">
+                            <div className="lg:col-5">
                                 <div className="list-dropdown">
                                     <div className="btn-group">
                                         <button className="btn-primary">Dropdown</button>
@@ -343,7 +343,7 @@ export const ListsPage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-7 mt-1">
+                            <div className="lg:col-7 mt-1">
                                 <CodeBlock
                                     code={`<div class="list-dropdown">
     <div class="btn-group">
@@ -365,7 +365,7 @@ export const ListsPage: React.FC<any> = (props) => {
 
                         <p className="font-bold">Dropdown Right Aligned</p>
                         <div className="row">
-                            <div className="col-lg-5">
+                            <div className="lg:col-5">
                                 <div className="list-dropdown dropdown-right">
                                     <button className="btn-primary btn-dropdown m-0">
                                         Dropdown <FontAwesomeIcon className="ml-1" icon={['fas', 'caret-down']} />
@@ -383,7 +383,7 @@ export const ListsPage: React.FC<any> = (props) => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-7 mt-1">
+                            <div className="lg:col-7 mt-1">
                                 <CodeBlock
                                     code={`<div class="list-dropdown dropdown-right">
     <button class="btn-primary btn-dropdown m-0">Dropdown
@@ -403,7 +403,7 @@ export const ListsPage: React.FC<any> = (props) => {
 
                         <p className="font-bold">Dropdown Transparent Button</p>
                         <div className="row">
-                            <div className="col-lg-5">
+                            <div className="lg:col-5">
                                 <div className="list-dropdown">
                                     <button className="btn-transparent btn-dropdown m-0">
                                         Dropdown <FontAwesomeIcon className="ml-1" icon={['fas', 'caret-down']} />
@@ -421,7 +421,7 @@ export const ListsPage: React.FC<any> = (props) => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-7 mt-1">
+                            <div className="lg:col-7 mt-1">
                                 <CodeBlock
                                     code={`<div class="list-dropdown">
     <button class="btn-transparent btn-dropdown m-0">
@@ -455,7 +455,7 @@ export const ListsPage: React.FC<any> = (props) => {
                             <b>Menu in Frame</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-5">
+                            <div className="lg:col-5">
                                 <div className="frame">
                                     <div className="frame__body">
                                         <div className="frame__header">
@@ -495,7 +495,7 @@ export const ListsPage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-7">
+                            <div className="lg:col-7">
                                 <CodeBlock
                                     code={`<div class="frame">
     <div class="frame__body">
@@ -530,7 +530,7 @@ export const ListsPage: React.FC<any> = (props) => {
                             <b>Menu in Card</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-5">
+                            <div className="lg:col-5">
                                 <div className="card">
                                     <div className="card__container">
                                         <div
@@ -574,7 +574,7 @@ export const ListsPage: React.FC<any> = (props) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-7">
+                            <div className="lg:col-7">
                                 <CodeBlock
                                     code={`<div class="card">
     <div class="card__container">
@@ -600,7 +600,7 @@ export const ListsPage: React.FC<any> = (props) => {
                             <b>Navigation Menus</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-5">
+                            <div className="lg:col-5">
                                 <div className="frame">
                                     <div className="frame__header">
                                         <p className="title m-0">Bookmarks</p>
@@ -647,7 +647,7 @@ export const ListsPage: React.FC<any> = (props) => {
                                     <div className="frame-footer"></div>
                                 </div>
                             </div>
-                            <div className="col-lg-7">
+                            <div className="lg:col-7">
                                 <CodeBlock
                                     code={`<div class="frame">
     <div class="frame__header">
@@ -679,7 +679,7 @@ export const ListsPage: React.FC<any> = (props) => {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-lg-5">
+                            <div className="lg:col-5">
                                 <ul className="menu">
                                     <li className="menu-item">
                                         <a href="!#">
@@ -725,7 +725,7 @@ export const ListsPage: React.FC<any> = (props) => {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="col-lg-7">
+                            <div className="lg:col-7">
                                 <CodeBlock
                                     code={`<ul class="menu">
     <li class="menu-item">

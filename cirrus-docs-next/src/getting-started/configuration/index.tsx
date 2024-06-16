@@ -54,7 +54,7 @@ export const ConfigurationPage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-6">
+                            <div className="md:col-6">
                                 <CodeBlock
                                     code={`$default-config: (
     // Turn on/off generating viewport classes to save on size.
@@ -78,7 +78,7 @@ export const ConfigurationPage: React.FC<any> = (props) => {
                                     language="scss"
                                 />
                             </div>
-                            <div className="col-6">
+                            <div className="md:col-6">
                                 <ul className="no-bullets">
                                     <li>
                                         <details open>

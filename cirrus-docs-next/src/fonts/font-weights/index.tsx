@@ -76,7 +76,7 @@ export const FontWeightsPage: React.FC<any> = (props) => {
                             {Object.entries(DEFAULT_FONT_WEIGHT_CLASSES).map((entry) => {
                                 return (
                                     <>
-                                        <div className="col-lg-6">
+                                        <div className="lg:col-6">
                                             <p className="title">
                                                 {Capitalize(entry[0])} ({entry[1]})
                                             </p>
@@ -84,7 +84,7 @@ export const FontWeightsPage: React.FC<any> = (props) => {
                                                 The quick brown fox jumps over the lazy dog.
                                             </p>
                                         </div>
-                                        <div className="col-lg-6">
+                                        <div className="lg:col-6">
                                             <CodeBlock
                                                 code={`<p class="font-${entry[0]}">The quick brown fox jumps over the lazy dog.</p>`}
                                                 language="htmlbars"

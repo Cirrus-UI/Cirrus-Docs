@@ -36,7 +36,7 @@ export const FormsCheckboxPage: React.FC<any> = (props) => {
                         <p>By default, checkboxes in Cirrus come with very minimal styling.</p>
 
                         <div className="row">
-                            <div className="col-lg-6 u-center">
+                            <div className="lg:col-6 u-center">
                                 <label>
                                     <input type="checkbox" /> Remember me
                                 </label>
@@ -47,7 +47,7 @@ export const FormsCheckboxPage: React.FC<any> = (props) => {
                                     </a>
                                 </label>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="form-ext-control form-ext-checkbox">
     <input id="check1" class="form-ext-input" type="checkbox">
@@ -90,7 +90,7 @@ export const FormsCheckboxPage: React.FC<any> = (props) => {
                         </ul>
 
                         <div className="row">
-                            <div className="col-lg-3">
+                            <div className="lg:col-3">
                                 <div className="form-ext-control form-ext-checkbox">
                                     <input id="check1" className="form-ext-input" type="checkbox" />
                                     <label className="form-ext-label" htmlFor="check1">
@@ -104,7 +104,7 @@ export const FormsCheckboxPage: React.FC<any> = (props) => {
                                     </label>
                                 </div>
                             </div>
-                            <div className="col-lg-9">
+                            <div className="lg:col-9">
                                 <CodeBlock
                                     code={`<div class="form-ext-control form-ext-checkbox">
     <input id="check1" class="form-ext-input" type="checkbox" disabled="">
@@ -124,7 +124,7 @@ export const FormsCheckboxPage: React.FC<any> = (props) => {
                             For disabled forms, just add the <code>disabled</code> property.
                         </p>
                         <div className="row">
-                            <div className="col-lg-3">
+                            <div className="lg:col-3">
                                 <div className="form-ext-control form-ext-checkbox">
                                     <input id="check1" className="form-ext-input" type="checkbox" disabled />
                                     <label className="form-ext-label" htmlFor="check1">
@@ -138,7 +138,7 @@ export const FormsCheckboxPage: React.FC<any> = (props) => {
                                     </label>
                                 </div>
                             </div>
-                            <div className="col-lg-9">
+                            <div className="lg:col-9">
                                 <CodeBlock
                                     code={`<div class="form-ext-control form-ext-checkbox">
     <input id="check1" class="form-ext-input" type="checkbox" disabled />
@@ -162,7 +162,7 @@ export const FormsCheckboxPage: React.FC<any> = (props) => {
                             .
                         </p>
                         <div className="row">
-                            <div className="col-lg-3">
+                            <div className="lg:col-3">
                                 {v1Colors.map((color) => {
                                     return (
                                         <div className="form-ext-control form-ext-checkbox">
@@ -179,9 +179,9 @@ export const FormsCheckboxPage: React.FC<any> = (props) => {
                                     );
                                 })}
                             </div>
-                            <div className="col-lg-9">
+                            <div className="lg:col-9">
                                 <CodeBlock
-                                    code={`<div class="col-lg-6">
+                                    code={`<div class="lg:col-6">
     <div class="form-ext-control form-ext-checkbox">
         <input id="check-dark" class="form-ext-input form-ext-input--dark" type="checkbox" checked />
         <label class="form-ext-label" for="check-dark">dark</label>

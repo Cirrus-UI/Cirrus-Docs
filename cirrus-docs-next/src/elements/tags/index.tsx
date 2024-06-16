@@ -33,14 +33,14 @@ export const TagsPage: React.FC<any> = (props) => {
                         <p>Tags come with basic minimal styling by default.</p>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="tag-container u-center">
                                     <div className="tag">Look</div>
                                     <div className="tag">At</div>
                                     <div className="tag">Me!</div>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="tag-container u-center">
     <div class="tag">Look</div>
@@ -63,7 +63,7 @@ export const TagsPage: React.FC<any> = (props) => {
                             use the new modifier classes such as <code>bg-indigo-200</code> instead.
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="tag tag--white">White</div>
                                 <div className="tag tag--black">Dark</div>
                                 <div className="tag tag--primary">Primary</div>
@@ -73,7 +73,7 @@ export const TagsPage: React.FC<any> = (props) => {
                                 <div className="tag tag--warning">Warning</div>
                                 <div className="tag tag--danger">Danger</div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="tag tag--white">White</div>
 <div class="tag tag--black">Dark</div>
@@ -145,10 +145,10 @@ export const TagsPage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="tag tag__close-btn"></div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock code={`<div class="tag tag__close-btn"></div>`} language="htmlbars" />
                             </div>
                         </div>
@@ -206,7 +206,7 @@ export const TagsPage: React.FC<any> = (props) => {
                             The <code>tag-container</code> is a container for different tags.
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="tag-container">
                                     <div className="tag tag--link">One</div>
                                     <div className="tag tag--link">Two</div>
@@ -215,7 +215,7 @@ export const TagsPage: React.FC<any> = (props) => {
                                     <div className="tag tag--link">Five</div>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="tag-container">
     <div class="tag tag--link">One</div>
@@ -242,7 +242,7 @@ export const TagsPage: React.FC<any> = (props) => {
                         </p>
                         <p>Group tags with extra buttons like the delete button.</p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="tag-container group-tags">
                                     <div className="tag tag--xs tag--dark">xs</div>
                                     <div className="tag tag--xs tag--info">0.6.0</div>
@@ -269,7 +269,7 @@ export const TagsPage: React.FC<any> = (props) => {
                                     <div className="tag tag--xl tag--warning tag__close-btn"></div>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="tag-container group-tags">
     <div class="tag tag--xs tag--dark">xs</div>
@@ -306,14 +306,14 @@ export const TagsPage: React.FC<any> = (props) => {
                         </p>
                         <p>Group the tags with rounded borders.</p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="tag-container group-tags group-tags--rounded">
                                     <div className="tag tag--dark">Version</div>
                                     <div className="tag tag--info">0.6.0</div>
                                     <div className="tag tag--warning tag__close-btn"></div>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="tag-container group-tags group-tags--rounded">
     <div class="tag tag--dark">Version</div>

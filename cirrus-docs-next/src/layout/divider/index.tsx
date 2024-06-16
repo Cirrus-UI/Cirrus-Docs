@@ -42,10 +42,10 @@ export const DividerPage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="divider"></div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock code={`<div class="divider"></div>`} language="htmlbars" />
                             </div>
                         </div>
@@ -55,12 +55,12 @@ export const DividerPage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div style={{ position: 'relative', height: '300px' }}>
                                     <div className="divider--v" />
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock code={`<div class="divider--v" />`} language="htmlbars" />
                             </div>
                         </div>
@@ -75,10 +75,10 @@ export const DividerPage: React.FC<any> = (props) => {
                             <b>Horizontal</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="divider" data-content="Label"></div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="divider" data-content="Label"></div>`}
                                     language="htmlbars"
@@ -90,12 +90,12 @@ export const DividerPage: React.FC<any> = (props) => {
                             <b>Vertical</b>
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div style={{ position: 'relative', height: '300px' }}>
                                     <div className="divider--v h-100p" data-content="Label" />
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="divider--v h-100p" data-content="Label" />`}
                                     language="htmlbars"

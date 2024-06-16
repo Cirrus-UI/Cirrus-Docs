@@ -41,7 +41,7 @@ export const FormsGlyphsPage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="input-control">
                                     <input type="email" className="input-contains-icon" placeholder="Email" />
                                     <span className="icon">
@@ -56,7 +56,7 @@ export const FormsGlyphsPage: React.FC<any> = (props) => {
                                 </div>
                                 <button className="animated btn-success u-pull-right">Log In</button>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="input-control">
     <input type="email" class="input-contains-icon" placeholder="Email" /><span class="icon"><i class="fa fa-wrapper fa-envelope"></i></span>
@@ -77,7 +77,7 @@ export const FormsGlyphsPage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="input-control">
                                     <input
                                         type="password"
@@ -89,7 +89,7 @@ export const FormsGlyphsPage: React.FC<any> = (props) => {
                                     </span>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="input-control">
     <input type="password" class="input-contains-icon-right" placeholder="Password" />

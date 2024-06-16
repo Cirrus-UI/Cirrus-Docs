@@ -62,95 +62,95 @@ export const ColumnsPage: React.FC<any> = (props) => {
                         </p>
                         <div id="grids">
                             <div className="row">
-                                <div className="col-12 uppercase">
+                                <div className="md:col-12 uppercase">
                                     <div className="uppercase">Col-12</div>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-11 uppercase">
+                                <div className="md:col-11 uppercase">
                                     <div className="uppercase">Col-11</div>
                                 </div>
-                                <div className="col-1 uppercase">
+                                <div className="md:col-1 uppercase">
                                     <div className="uppercase">Col-1</div>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-10 uppercase">
+                                <div className="md:col-10 uppercase">
                                     <div className="uppercase">Col-10</div>
                                 </div>
-                                <div className="col-2 uppercase">
+                                <div className="md:col-2 uppercase">
                                     <div className="uppercase">Col-2</div>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-9 uppercase">
+                                <div className="md:col-9 uppercase">
                                     <div className="uppercase">Col-9</div>
                                 </div>
-                                <div className="col-3 uppercase">
+                                <div className="md:col-3 uppercase">
                                     <div className="uppercase">Col-3</div>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-8 uppercase">
+                                <div className="md:col-8 uppercase">
                                     <div className="uppercase">Col-8</div>
                                 </div>
-                                <div className="col-4 uppercase">
+                                <div className="md:col-4 uppercase">
                                     <div className="uppercase">Col-4</div>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-7 uppercase">
+                                <div className="md:col-7 uppercase">
                                     <div className="uppercase">Col-7</div>
                                 </div>
-                                <div className="col-5 uppercase">
+                                <div className="md:col-5 uppercase">
                                     <div className="uppercase">Col-5</div>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-6 uppercase">
+                                <div className="md:col-6 uppercase">
                                     <div className="uppercase">Col-6</div>
                                 </div>
-                                <div className="col-6 uppercase">
+                                <div className="md:col-6 uppercase">
                                     <div className="uppercase">Col-6</div>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-5 uppercase">
+                                <div className="md:col-5 uppercase">
                                     <div className="uppercase">Col-5</div>
                                 </div>
-                                <div className="col-7 uppercase">
+                                <div className="md:col-7 uppercase">
                                     <div className="uppercase">Col-7</div>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-4 uppercase">
+                                <div className="md:col-4 uppercase">
                                     <div className="uppercase">Col-4</div>
                                 </div>
-                                <div className="col-8 uppercase">
+                                <div className="md:col-8 uppercase">
                                     <div className="uppercase">Col-8</div>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-3 uppercase">
+                                <div className="md:col-3 uppercase">
                                     <div className="uppercase">Col-3</div>
                                 </div>
-                                <div className="col-9 uppercase">
+                                <div className="md:col-9 uppercase">
                                     <div className="uppercase">Col-9</div>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-2 uppercase">
+                                <div className="md:col-2 uppercase">
                                     <div className="uppercase">Col-2</div>
                                 </div>
-                                <div className="col-10 uppercase">
+                                <div className="md:col-10 uppercase">
                                     <div className="uppercase">Col-10</div>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-1 uppercase">
+                                <div className="md:col-1 uppercase">
                                     <div className="uppercase">Col-1</div>
                                 </div>
-                                <div className="col-11 uppercase">
+                                <div className="md:col-11 uppercase">
                                     <div className="uppercase">Col-11</div>
                                 </div>
                             </div>
@@ -158,95 +158,95 @@ export const ColumnsPage: React.FC<any> = (props) => {
                         <div className="space"></div>
                         <CodeBlock
                             code={`<div class="row">
-    <div class="col-12 uppercase">
+    <div class="md:col-12 uppercase">
         <div class="uppercase">Col-12</div>
     </div>
 </div>
 <div class="row">
-    <div class="col-11 uppercase">
+    <div class="md:col-11 uppercase">
         <div class="uppercase">Col-11</div>
     </div>
-    <div class="col-1 uppercase">
+    <div class="md:col-1 uppercase">
         <div class="uppercase">Col-1</div>
     </div>
 </div>
 <div class="row">
-    <div class="col-10 uppercase">
+    <div class="md:col-10 uppercase">
         <div class="uppercase">Col-10</div>
     </div>
-    <div class="col-2 uppercase">
+    <div class="md:col-2 uppercase">
         <div class="uppercase">Col-2</div>
     </div>
 </div>
 <div class="row">
-    <div class="col-9 uppercase">
+    <div class="md:col-9 uppercase">
         <div class="uppercase">Col-9</div>
     </div>
-    <div class="col-3 uppercase">
+    <div class="md:col-3 uppercase">
         <div class="uppercase">Col-3</div>
     </div>
 </div>
 <div class="row">
-    <div class="col-8 uppercase">
+    <div class="md:col-8 uppercase">
         <div class="uppercase">Col-8</div>
     </div>
-    <div class="col-4 uppercase">
+    <div class="md:col-4 uppercase">
         <div class="uppercase">Col-4</div>
     </div>
 </div>
 <div class="row">
-    <div class="col-7 uppercase">
+    <div class="md:col-7 uppercase">
         <div class="uppercase">Col-7</div>
     </div>
-    <div class="col-5 uppercase">
+    <div class="md:col-5 uppercase">
         <div class="uppercase">Col-5</div>
     </div>
 </div>
 <div class="row">
-    <div class="col-6 uppercase">
+    <div class="md:col-6 uppercase">
         <div class="uppercase">Col-6</div>
     </div>
-    <div class="col-6 uppercase">
+    <div class="md:col-6 uppercase">
         <div class="uppercase">Col-6</div>
     </div>
 </div>
 <div class="row">
-    <div class="col-5 uppercase">
+    <div class="md:col-5 uppercase">
         <div class="uppercase">Col-5</div>
     </div>
-    <div class="col-7 uppercase">
+    <div class="md:col-7 uppercase">
         <div class="uppercase">Col-7</div>
     </div>
 </div>
 <div class="row">
-    <div class="col-4 uppercase">
+    <div class="md:col-4 uppercase">
         <div class="uppercase">Col-4</div>
     </div>
-    <div class="col-8 uppercase">
+    <div class="md:col-8 uppercase">
         <div class="uppercase">Col-8</div>
     </div>
 </div>
 <div class="row">
-    <div class="col-3 uppercase">
+    <div class="md:col-3 uppercase">
         <div class="uppercase">Col-3</div>
     </div>
-    <div class="col-9 uppercase">
+    <div class="md:col-9 uppercase">
         <div class="uppercase">Col-9</div>
     </div>
 </div>
 <div class="row">
-    <div class="col-2 uppercase">
+    <div class="md:col-2 uppercase">
         <div class="uppercase">Col-2</div>
     </div>
-    <div class="col-10 uppercase">
+    <div class="md:col-10 uppercase">
         <div class="uppercase">Col-10</div>
     </div>
 </div>
 <div class="row">
-    <div class="col-1 uppercase">
+    <div class="md:col-1 uppercase">
         <div class="uppercase">Col-1</div>
     </div>
-    <div class="col-11 uppercase">
+    <div class="md:col-11 uppercase">
         <div class="uppercase">Col-11</div>
     </div>
 </div>`}
@@ -260,10 +260,10 @@ export const ColumnsPage: React.FC<any> = (props) => {
                         </p>
                         <div id="grids">
                             <div className="row no-space">
-                                <div className="col-6">
+                                <div className="md:col-6">
                                     <div className="uppercase">Col-6</div>
                                 </div>
-                                <div className="col-6">
+                                <div className="md:col-6">
                                     <div className="uppercase">Col-6</div>
                                 </div>
                             </div>
@@ -271,10 +271,10 @@ export const ColumnsPage: React.FC<any> = (props) => {
                         <div className="space"></div>
                         <CodeBlock
                             code={`<div class="row no-space">
-    <div class="col-6">
+    <div class="md:col-6">
         <div class="uppercase">Col-6</div>
     </div>
-    <div class="col-6">
+    <div class="md:col-6">
         <div class="uppercase">Col-6</div>
     </div>
 </div>`}
@@ -288,27 +288,27 @@ export const ColumnsPage: React.FC<any> = (props) => {
                         </p>
                         <div id="grids">
                             <div className="row">
-                                <div className="col-6">
+                                <div className="md:col-6">
                                     <div className="uppercase">col-6</div>
                                 </div>
-                                <div className="col-6">
+                                <div className="md:col-6">
                                     <div className="uppercase">col-6</div>
                                 </div>
-                                <div className="col-6">
+                                <div className="md:col-6">
                                     <div className="uppercase">col-6</div>
                                 </div>
-                                <div className="col-6">
+                                <div className="md:col-6">
                                     <div className="uppercase">col-6</div>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-9">
+                                <div className="md:col-9">
                                     <div className="uppercase">col-9</div>
                                 </div>
-                                <div className="col-9">
+                                <div className="md:col-9">
                                     <div className="uppercase">col-9</div>
                                 </div>
-                                <div className="col-9">
+                                <div className="md:col-9">
                                     <div className="uppercase">col-9</div>
                                 </div>
                             </div>
@@ -319,13 +319,13 @@ export const ColumnsPage: React.FC<any> = (props) => {
                         </p>
                         <div id="grids">
                             <div className="row u-no-wrap">
-                                <div className="col-10">
+                                <div className="md:col-10">
                                     <div className="uppercase">col-10</div>
                                 </div>
-                                <div className="col-10">
+                                <div className="md:col-10">
                                     <div className="uppercase">col-10</div>
                                 </div>
-                                <div className="col-10">
+                                <div className="md:col-10">
                                     <div className="uppercase">col-10</div>
                                 </div>
                             </div>
@@ -333,13 +333,13 @@ export const ColumnsPage: React.FC<any> = (props) => {
                         <div className="space"></div>
                         <CodeBlock
                             code={`<div class="row u-no-wrap">
-    <div class="col-10">
+    <div class="md:col-10">
         <div class="uppercase">col-10</div>
     </div>
-    <div class="col-10">
+    <div class="md:col-10">
         <div class="uppercase">col-10</div>
     </div>
-    <div class="col-10">
+    <div class="md:col-10">
         <div class="uppercase">col-10</div>
     </div>
 </div>`}
@@ -385,7 +385,7 @@ export const ColumnsPage: React.FC<any> = (props) => {
 
                         <div id="grids">
                             <div className="row">
-                                <div className="col-2">
+                                <div className="md:col-2">
                                     <div className="uppercase">col-2</div>
                                 </div>
                                 <div className="col">
@@ -410,7 +410,7 @@ export const ColumnsPage: React.FC<any> = (props) => {
                         </p>
                         <p>
                             For example, to set the breakpoint for <code>col-5</code> to stack only for <code>sm</code>{' '}
-                            or smaller, you should use <code>col-sm-5</code>.
+                            or smaller, you should use <code>sm:col-5</code>.
                         </p>
 
                         <p>
@@ -425,13 +425,13 @@ export const ColumnsPage: React.FC<any> = (props) => {
                             <tbody>
                                 <tr>
                                     <td>
-                                        <code>col-xs-*</code>
+                                        <code>col-*</code>
                                     </td>
                                     <td>No stacking.</td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <code>col-sm-*</code>
+                                        <code>sm:col-*</code>
                                     </td>
                                     <td>
                                         Stack columns for widths below <code>640px</code>.
@@ -439,7 +439,7 @@ export const ColumnsPage: React.FC<any> = (props) => {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <code>col-*</code>,<code>col-md-*</code>
+                                        <code>col-*</code>,<code>md:col-*</code>
                                     </td>
                                     <td>
                                         Stack columns for widths below <code>768px</code>.
@@ -447,7 +447,7 @@ export const ColumnsPage: React.FC<any> = (props) => {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <code>col-lg-*</code>
+                                        <code>lg:col-*</code>
                                     </td>
                                     <td>
                                         Stack columns for widths below <code>1024px</code>.
@@ -455,7 +455,7 @@ export const ColumnsPage: React.FC<any> = (props) => {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <code>col-xl-*</code>
+                                        <code>xl:col-*</code>
                                     </td>
                                     <td>
                                         Stack columns for widths below <code>1280px</code>.
@@ -474,7 +474,7 @@ export const ColumnsPage: React.FC<any> = (props) => {
                         <div className="space space--lg"></div>
                         <h6>Prevent Stacking</h6>
                         <p>
-                            To prevent the default stacking behavior, we can use the <code>col-xs-[1..12]</code> class on the
+                            To prevent the default stacking behavior, we can use the <code>col-[1..12]</code> class on the
                             column.
                         </p>
 
@@ -498,11 +498,11 @@ export const ColumnsPage: React.FC<any> = (props) => {
                         <div className="space"></div>
                         <CodeBlock
                             code={`<div class="row">
-    <div class="col-xs-6">
-        <div class="uppercase">col-xs-6</div>
+    <div class="col-6">
+        <div class="uppercase">col-6</div>
     </div>
-    <div class="col-xs-6">
-        <div class="uppercase">col-xs-6</div>
+    <div class="col-6">
+        <div class="uppercase">col-6</div>
     </div>
 </div>`}
                             language="htmlbars"
@@ -527,38 +527,38 @@ export const ColumnsPage: React.FC<any> = (props) => {
 
                         <div id="grids">
                             <div className="row">
-                                <div className="col-3 offset-1">
+                                <div className="md:col-3 offset-1">
                                     <div className="uppercase">offset-1</div>
                                 </div>
-                                <div className="col-3 offset-3">
+                                <div className="md:col-3 offset-3">
                                     <div className="uppercase">offset-3</div>
                                 </div>
-                                <div className="col-3 offset-4">
+                                <div className="md:col-3 offset-4">
                                     <div className="uppercase">offset-4</div>
                                 </div>
-                                <div className="col-3 offset-6">
+                                <div className="md:col-3 offset-6">
                                     <div className="uppercase">offset-6</div>
                                 </div>
-                                <div className="col-3 offset-9">
+                                <div className="md:col-3 offset-9">
                                     <div className="uppercase">offset-9</div>
                                 </div>
                             </div>
                         </div>
                         <CodeBlock
                             code={`<div class="row">
-    <div class="col-3 offset-1">
+    <div class="md:col-3 offset-1">
         <div class="uppercase">offset-1</div>
     </div>
-    <div class="col-3 offset-3">
+    <div class="md:col-3 offset-3">
         <div class="uppercase">offset-3</div>
     </div>
-    <div class="col-3 offset-4">
+    <div class="md:col-3 offset-4">
         <div class="uppercase">offset-4</div>
     </div>
-    <div class="col-3 offset-6">
+    <div class="md:col-3 offset-6">
         <div class="uppercase">offset-6</div>
     </div>
-    <div class="col-3 offset-9">
+    <div class="md:col-3 offset-9">
         <div class="uppercase">offset-9</div>
     </div>
 </div>`}
@@ -573,26 +573,26 @@ export const ColumnsPage: React.FC<any> = (props) => {
                         <div className="space"></div>
                         <div id="grids">
                             <div className="row">
-                                <div className="col-2">
+                                <div className="md:col-2">
                                     <div className="uppercase">col-2</div>
                                 </div>
-                                <div className="col-3 offset-center">
-                                    <div className="uppercase"> col-3 offset-center</div>
+                                <div className="md:col-3 offset-center">
+                                    <div className="uppercase">md:col-3 offset-center</div>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-5 offset-1">
-                                    <div className="uppercase">col-3 offset-1</div>
+                                <div className="md:col-5 offset-1">
+                                    <div className="uppercase">md:col-5 offset-1</div>
                                 </div>
-                                <div className="col-3 offset-left">
+                                <div className="md:col-3 offset-left">
                                     <div className="uppercase">col-3 offset-left</div>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-5 offset-1">
+                                <div className="md:col-5 offset-1">
                                     <div className="uppercase">col-3 offset-1</div>
                                 </div>
-                                <div className="col-4 offset-right offset-6">
+                                <div className="md:col-4 offset-right offset-6">
                                     <div className="uppercase">col-4 offset-right</div>
                                 </div>
                             </div>
@@ -640,26 +640,26 @@ margin-right: auto;`}
                         <div className="space"></div>
                         <CodeBlock
                             code={`<div class="row">
-    <div class="col-2">
+    <div class="md:col-2">
         <div class="uppercase">col-2</div>
     </div>
-    <div class="col-3 offset-center">
-        <div class="uppercase"> col-3 offset-center</div>
+    <div class="md:col-3 offset-center">
+        <div class="uppercase">md:col-3 offset-center</div>
     </div>
 </div>
 <div class="row">
-    <div class="col-5 offset-1">
-        <div class="uppercase">col-3 offset-1</div>
+    <div class="md:col-5 offset-1">
+        <div class="uppercase">md:col-5 offset-1</div>
     </div>
-    <div class="col-3 offset-left">
+    <div class="md:col-3 offset-left">
         <div class="uppercase">col-3 offset-left</div>
     </div>
 </div>
 <div class="row">
-    <div class="col-5 offset-1">
+    <div class="md:col-5 offset-1">
         <div class="uppercase">col-3 offset-1</div>
     </div>
-    <div class="col-4 offset-right offset-6">
+    <div class="md:col-4 offset-right offset-6">
         <div class="uppercase">col-4 offset-right</div>
     </div>
 </div>`}

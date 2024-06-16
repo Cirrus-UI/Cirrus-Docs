@@ -45,7 +45,7 @@ export const FormGroupsPage: React.FC<any> = (props) => {
                         </p>
 
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="form-group">
                                     <input type="search" className="form-group-input" placeholder="Search" />
                                     <button className="form-group-btn">Go</button>
@@ -59,7 +59,7 @@ export const FormGroupsPage: React.FC<any> = (props) => {
                                     />
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="form-group">
     <input type="search" class="form-group-input" placeholder="Search"/>
@@ -80,13 +80,13 @@ export const FormGroupsPage: React.FC<any> = (props) => {
                             last.
                         </p>
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <div className="form-group">
                                     <input type="number" className="form-group-input" placeholder="How about now?" />
                                     <label className="form-group-label">$</label>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="lg:col-6">
                                 <CodeBlock
                                     code={`<div class="form-group">
     <input type="number" class="form-group-input" placeholder="How about now?"/>
@@ -224,7 +224,7 @@ export const FormGroupsPage: React.FC<any> = (props) => {
                             <div className="mb-1">
                                 <label className="font-bold">Contact</label>
                                 <div className="section-body row">
-                                    <div className="col-6 pl-0">
+                                    <div className="md:col-6 pl-0">
                                         <div className="input-control">
                                             <input
                                                 className="input-contains-icon input-contains-icon input-contains-icon-left"
@@ -236,7 +236,7 @@ export const FormGroupsPage: React.FC<any> = (props) => {
                                             </span>
                                         </div>
                                     </div>
-                                    <div className="col-6 pr-0">
+                                    <div className="md:col-6 pr-0">
                                         <div className="input-control">
                                             <input
                                                 className="input-contains-icon input-contains-icon-left input-contains-icon-right text-success input-success"
@@ -270,7 +270,7 @@ export const FormGroupsPage: React.FC<any> = (props) => {
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="mb-1 col-6 pl-0">
+                                <div className="mb-1 md:col-6 pl-0">
                                     <label className="font-bold">Choose One</label>
                                     <select className="select" placeholder="Choose one">
                                         <option>Shibe</option>
@@ -278,7 +278,7 @@ export const FormGroupsPage: React.FC<any> = (props) => {
                                         <option>Pupper</option>
                                     </select>
                                 </div>
-                                <div className="mb-1 col-6 pr-0">
+                                <div className="mb-1 md:col-6 pr-0">
                                     <label className="font-bold label--sm">
                                         Select One <span className="required">*</span>
                                     </label>
@@ -321,13 +321,13 @@ export const FormGroupsPage: React.FC<any> = (props) => {
                             code={`<div class="mb-1">
     <label class="font-bold">Contact</label>
     <div class="section-body row">
-        <div class="col-6 pl-0">
+        <div class="md:col-6 pl-0">
             <div class="input-control">
                 <input class="input-contains-icon input-contains-icon input-contains-icon-left" type="text" placeholder="Name" />
                 <span class="icon icon-left"><i class="fa fa-wrapper fa-user" aria-hidden="true"></i></span>
             </div>
         </div>
-        <div class="col-6 pr-0">
+        <div class="md:col-6 pr-0">
             <div class="input-control">
                 <input class="input-contains-icon input-contains-icon-left input-contains-icon-right text-success input-success" type="text" placeholder="Email" value="somebodyoncetoldme@gmail.com" />
                 <span class="icon icon-left"><i class="fa fa-wrapper fa-envelope" aria-hidden="true"></i></span>
@@ -346,7 +346,7 @@ export const FormGroupsPage: React.FC<any> = (props) => {
     </div>
 </div>
 <div class="row">
-    <div class="mb-1 col-6 pl-0">
+    <div class="mb-1 md:col-6 pl-0">
         <label class="font-bold">Choose One</label>
         <select class="select" placeholder="Choose one">
             <option>Shibe</option>
@@ -354,7 +354,7 @@ export const FormGroupsPage: React.FC<any> = (props) => {
             <option>Pupper</option>
         </select>
     </div>
-    <div class="mb-1 col-6 pr-0">
+    <div class="mb-1 md:col-6 pr-0">
         <label class="font-bold label--sm">Select One <span class="required">*</span></label>
         <div class="section-body">
             <label class="radio">
