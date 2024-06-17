@@ -207,11 +207,11 @@ padding-bottom: (0) !important;`,
                         <p>
                             The margin classes mentioned here support viewport based application. All you need to do is
                             add a <code>-&lt;viewport&gt;</code> at the end of the class(es) you are using. For example,
-                            use <code>p-3-md</code> to apply <code>p-3</code> on medium screens and above.
+                            use <code>md:p-3</code> to apply <code>p-3</code> on medium screens and above.
                         </p>
 
                         <CodeBlock
-                            code={`<div class="px-1 px-10-sm px-20-md">
+                            code={`<div class="px-1 sm:px-10 md:px-20">
     <!-- ... -->
 </div>`}
                             language="html"
@@ -221,7 +221,7 @@ padding-bottom: (0) !important;`,
 
                         <div className="mb-1">
                             <div className="bg-teal-100 p-2 u-round-xs u-flex u-justify-center u-items-center text-white">
-                                <p className="bg-teal-500 u-round-xs p-3 px-10-sm px-20-md u-shadow-lg m-0">
+                                <p className="bg-teal-500 u-round-xs p-3 sm:px-10 md:px-20 u-shadow-lg m-0">
                                     I grow with the window.
                                 </p>
                             </div>
@@ -229,7 +229,7 @@ padding-bottom: (0) !important;`,
 
                         <CodeBlock
                             code={`<div class="bg-purple-100 p-2 u-round-xs u-flex u-justify-center u-items-center text-white">
-    <p class="bg-purple-300 u-round-xs p-3 px-10-sm px-20-md u-shadow-lg m-0">I grow with the window.</p>
+    <p class="bg-purple-300 u-round-xs p-3 sm:px-10 md:px-20 u-shadow-lg m-0">I grow with the window.</p>
 </div>`}
                             language="htmlbars"
                         />

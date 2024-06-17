@@ -293,7 +293,7 @@ export const ViewportsPage: React.FC<any> = (props) => {
                                 <div class="u-overflow-hidden bg-white u-round-sm u-shadow-xl mx-2 my-8 u-flex u-flex-column u-flex-row-sm">
                                     <img src="https://images.unsplash.com/photo-1646534619918-39cfa52033bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=350&q=80" style="object-fit: cover;" />
                             
-                                    <div class="p-2 px-4-sm">
+                                    <div class="p-2 sm:px-4">
                                         <div class="tag-container">
                                             <div class="tag bg-green-100 text-green-500 text-sm uppercase font-bold u-shadow-xs">Exclusive</div>
                                             <div class="tag bg-indigo-100 text-indigo-500 text-sm uppercase font-bold u-shadow-xs">Popular</div>

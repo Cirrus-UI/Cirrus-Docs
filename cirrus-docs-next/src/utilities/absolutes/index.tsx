@@ -277,7 +277,7 @@ $config: (
                         <p>
                             To use the viewport variant of a given class, you just need to suffix each class with a
                             viewport selector. For example, if I only want <code>u-top-0</code> to be applied to some
-                            element for <code>lg</code> and above, then I would use the <code>u-top-0-lg</code> class.
+                            element for <code>lg</code> and above, then I would use the <code>lg:u-top-0</code> class.
                         </p>
 
                         <CodeBlock

@@ -247,7 +247,7 @@ export const MarginPage: React.FC<any> = (props) => {
                         </p>
 
                         <CodeBlock
-                            code={`<div class="mr-1 mr-5-sm mr-10-md">
+                            code={`<div class="mr-1 sm:mr-5 md:mr-10">
     <!-- ... -->
 </div>`}
                             language="html"
@@ -257,10 +257,10 @@ export const MarginPage: React.FC<any> = (props) => {
 
                         <div className="mb-1 text-white">
                             <div className="bg-orange-100 p-2 u-round-xs u-flex u-justify-center u-items-center">
-                                <p className="bg-orange-400 p-3 u-round-xs my-1 mr-1 mr-5-sm mr-10-md u-shadow-lg">
+                                <p className="bg-orange-400 p-3 u-round-xs my-1 mr-1 sm:mr-5 md:mr-10 u-shadow-lg">
                                     Shrink
                                 </p>
-                                <p className="bg-orange-400 p-3 u-round-xs my-1 ml-1 ml-5-sm ml-10-md u-shadow-lg">
+                                <p className="bg-orange-400 p-3 u-round-xs my-1 ml-1 sm:ml-5 md:ml-10 u-shadow-lg">
                                     Window
                                 </p>
                             </div>
@@ -268,8 +268,8 @@ export const MarginPage: React.FC<any> = (props) => {
 
                         <CodeBlock
                             code={`<div class="bg-orange-100 p-2 u-round-xs u-flex u-justify-center u-items-center">
-    <p class="bg-orange-400 p-3 u-round-xs my-1 mr-1 mr-5-sm mr-10-md u-shadow-lg">Shrink</p>
-    <p class="bg-orange-400 p-3 u-round-xs my-1 ml-1 ml-5-sm ml-10-md u-shadow-lg">Window</p>
+    <p class="bg-orange-400 p-3 u-round-xs my-1 mr-1 sm:mr-5 md:mr-10 u-shadow-lg">Shrink</p>
+    <p class="bg-orange-400 p-3 u-round-xs my-1 ml-1 sm:ml-5 md:ml-10 u-shadow-lg">Window</p>
 </div>`}
                             language="htmlbars"
                         />

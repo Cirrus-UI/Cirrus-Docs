@@ -2,7 +2,7 @@ import { wrapContent } from "../../../utils/iframe";
 
 export const TutorialComplete: string = wrapContent(`<div class="bg-gray-000 min-h-100p">
 	<section>
-		<div class="header header-clear u-unselectable header-animated px-0 px-2-md">
+		<div class="header header-clear u-unselectable header-animated px-0 md:px-2">
 			<div class="header-brand">
 				<div class="nav-item no-hover">
 					<a>
@@ -38,7 +38,7 @@ export const TutorialComplete: string = wrapContent(`<div class="bg-gray-000 min
 
 		<div class="hero">
 			<div class="hero-body">
-				<div class="content px-12-lg px-24-xl">
+				<div class="content lg:px-12 xl:px-24">
 					<div class="u-flex u-items-center u-gap-4 u-flex-column u-gap-8-lg u-flex-row-md">
 						<div>
 							<img class="u-round-xs w-100p w-60p-sm w-auto-md u-shadow-lg" src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" />
@@ -56,7 +56,7 @@ export const TutorialComplete: string = wrapContent(`<div class="bg-gray-000 min
 	</section>
 
 	<section class="mb-12">
-		<div class="content px-2 px-12-lg px-24-xl">
+		<div class="content px-2 lg:px-12 xl:px-24">
 			<h2>My Stats</h2>
 
 			<div class="u-flex u-flex-column u-flex-row-md u-gap-5 u-gap-8-lg">
@@ -123,7 +123,7 @@ export const TutorialComplete: string = wrapContent(`<div class="bg-gray-000 min
 	</section>
 
 	<section class="mb-12">
-		<div class="content px-2 px-12-lg px-24-xl">
+		<div class="content px-2 lg:px-12 xl:px-24">
 			<h3>Want to work together?</h3>
 			<p>Drop me a line!</p>
 
@@ -151,7 +151,7 @@ export const TutorialBase: string = wrapContent(`<div class="min-h-100p bg-gray-
 <section>
   <div class="hero">
     <div class="hero-body">
-      <div class="content px-12-lg px-24-xl">
+      <div class="content lg:px-12 xl:px-24">
         <div>
           <div>
             <img class="w-100p w-60p-sm w-auto-md" src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" />
@@ -166,12 +166,12 @@ export const TutorialBase: string = wrapContent(`<div class="min-h-100p bg-gray-
   </div>
 </section>
 <section class="mb-12">
-  <div class="content px-2 px-12-lg px-24-xl">
+  <div class="content px-2 lg:px-12 xl:px-24">
     <h2>My Stats</h2>
   </div>
 </section>
 <section class="mb-12">
-  <div class="content px-2 px-12-lg px-24-xl">
+  <div class="content px-2 lg:px-12 xl:px-24">
     <h3>Want to work together?</h3>
     <p>Drop me a line!</p>
   </div>
@@ -181,7 +181,7 @@ export const TutorialBase: string = wrapContent(`<div class="min-h-100p bg-gray-
 
 export const TutorialComponents: string = wrapContent(`<div class="bg-gray-000 min-h-100p">
   <section>
-    <div class="header header-clear u-unselectable header-animated px-0 px-2-md">
+    <div class="header header-clear u-unselectable header-animated px-0 md:px-2">
       <div class="header-brand">
         <div class="nav-item no-hover">
           <a>
@@ -216,7 +216,7 @@ export const TutorialComponents: string = wrapContent(`<div class="bg-gray-000 m
     </div>
     <div class="hero">
       <div class="hero-body">
-        <div class="content px-12-lg px-24-xl">
+        <div class="content lg:px-12 xl:px-24">
           <div>
             <div>
               <img class="w-100p w-60p-sm w-auto-md" src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" />
@@ -231,7 +231,7 @@ export const TutorialComponents: string = wrapContent(`<div class="bg-gray-000 m
     </div>
   </section>
   <section class="mb-12">
-    <div class="content px-2 px-12-lg px-24-xl">
+    <div class="content px-2 lg:px-12 xl:px-24">
       <h2>My Stats</h2>
       <div>
         <div>
@@ -295,7 +295,7 @@ export const TutorialComponents: string = wrapContent(`<div class="bg-gray-000 m
     </div>
   </section>
   <section class="mb-12">
-    <div class="content px-2 px-12-lg px-24-xl">
+    <div class="content px-2 lg:px-12 xl:px-24">
       <h3>Want to work together?</h3>
       <p>Drop me a line!</p>
       <div class="mb-1">

@@ -73,7 +73,7 @@ export const BorderWidthUtilsPage: React.FC<any> = (props) => {
 
                         <b>Hover over each button to see the difference in transition durations.</b>
 
-                        <div className="bg-blue-100 p-2 p-4-md u-round-sm row">
+                        <div className="bg-blue-100 p-2 md:p-4 u-round-sm row">
                             {Object.entries(DEFAULT_TRANSITION_DURATION_CLASSES).map((entry, i) => {
                                 return (
                                     <div className="md:col-4 u-flex u-flex-column u-text-center mb-2" key={i}>
