@@ -211,12 +211,12 @@ display: table !important;`,
                         <p>
                             All utility classes mentioned here support viewport based application. All you need to do is
                             add a <code>-&lt;viewport&gt;</code> at the end of the class(es) you are using. For example,
-                            use <code>u-clear-both-md</code> to apply <code>u-clear-both</code> on medium screens and
+                            use <code>md:u-clear-both</code> to apply <code>u-clear-both</code> on medium screens and
                             above.
                         </p>
 
                         <CodeBlock
-                            code={`<div class="u-clear-left u-clear-both-md">
+                            code={`<div class="u-clear-left md:u-clear-both">
     <!-- ... -->
 </div>`}
                             language="html"

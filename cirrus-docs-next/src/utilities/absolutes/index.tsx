@@ -281,7 +281,7 @@ $config: (
                         </p>
 
                         <CodeBlock
-                            code={`<div class="u-top-0-lg">
+                            code={`<div class="lg:u-top-0">
     <!-- ... -->
 </div>`}
                             language="html"

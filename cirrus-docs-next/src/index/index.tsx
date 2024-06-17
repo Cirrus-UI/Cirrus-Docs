@@ -109,7 +109,7 @@ const Landing: React.FC<any> = () => {
                                 <span className="font-bold text-pink-600">and less time worrying about CSS.</span>
                             </h1>
                             <div className="space"></div>
-                            <p className="sub-title lead font-alt font-normal mx-auto w-60p-md u-none u-block-lg">
+                            <p className="sub-title lead font-alt font-normal mx-auto w-60p-md u-none lg:u-block">
                                 Create <b>beautiful</b> designs in <b>less time</b> with Cirrus, the SCSS framework
                                 designed for <b className="">rapid prototyping</b>. Use beautiful pre-built components
                                 to bootstrap your next project and utility classes to polish your final design.

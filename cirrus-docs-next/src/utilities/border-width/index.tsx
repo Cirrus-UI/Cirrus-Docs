@@ -122,11 +122,11 @@ $config: (
                             To use the viewport variant of a given class, you just need to suffix each class with a
                             viewport selector. For example, if I only want <code>u-border-2</code> to be applied
                             to some element for <code>lg</code> and above, then I would use the{' '}
-                            <code>u-border-2-lg</code> class.
+                            <code>lg:u-border-2</code> class.
                         </p>
 
                         <CodeBlock
-                            code={`<div class="u-border-2-lg">
+                            code={`<div class="lg:u-border-2">
     <!-- ... -->
 </div>`}
                             language="html"

@@ -445,13 +445,13 @@ export const ResponsiveLandingHTML = `<section class="min-h-100p w-100p u-flex u
 				</div>
 			</div>
 			<div
-				class="u-relative u-flex u-items-center u-justify-center w-80p mx-auto mt-8 h-80p w-50p-md h-auto-md u-block-md">
+				class="u-relative u-flex u-items-center u-justify-center w-80p mx-auto mt-8 h-80p w-50p-md h-auto-md md:u-block">
 				<img src="https://cdn.dribbble.com/users/1722951/screenshots/15954834/media/7eee2181141576534bed5954fc1645f3.png" class="u-left-0 u-z-0 img-cover w-100p h-100p mx-auto u-round-xl md:mx-0 w-100p-md u-absolute-md md:u-top-0" alt="image">
-				<div class="u-absolute u-top-0 u-right-0 u-overflow-hidden u-shadow-xl u-right-0-md u-round-lg"
+				<div class="u-absolute u-top-0 u-right-0 u-overflow-hidden u-shadow-xl md:u-right-0 u-round-lg"
 					style="height: 8rem; width: 8rem; margin-top: -2.5rem; margin-right: -1.5rem;">
 					<img src="https://images.unsplash.com/photo-1489289827069-adf270f4f417?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" class="u-absolute u-z-0 img-cover w-100p h-100p" alt="image">
             </div>
-					<div class="u-absolute u-bottom-0 u-z-20 px-4 animated hover-grow u-left-0-md md:px-0"
+					<div class="u-absolute u-bottom-0 u-z-20 px-4 animated hover-grow md:u-left-0 md:px-0"
 						style="margin-left: -7rem; margin-bottom: -3rem;">
 						<a href="#" target="_blank"
 							class="u-flex u-items-stretch u-justify-flex-start u-overflow-hidden bg-gray-900 u-shadow-xl u-round-xl p-0">
@@ -473,7 +473,7 @@ export const ResponsiveLandingHTML = `<section class="min-h-100p w-100p u-flex u
 
 			<div class="u-relative u-z-0 u-flex u-items-center u-justify-flex-start py-12 md:py-0">
 				<div
-					class="u-relative u-none u-block-md u-z-10 w-100p max-w-lg px-8 pt-12 pb-12 mx-auto bg-indigo-500 w-50p-md md:mx-0 md:mt-0 md:pt-2 md:pb-4 u-round-md">
+					class="u-relative u-none md:u-block u-z-10 w-100p max-w-lg px-8 pt-12 pb-12 mx-auto bg-indigo-500 w-50p-md md:mx-0 md:mt-0 md:pt-2 md:pb-4 u-round-md">
 					<h3 class="text-xl font-bold text-white mx-0 my-1">
 						Built for All Creators
 					</h3>

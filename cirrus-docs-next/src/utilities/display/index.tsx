@@ -193,11 +193,11 @@ export const DisplayUtilsPage: React.FC<any> = (props) => {
                         <p>
                             All utility classes mentioned here support viewport based application. All you need to do is
                             add a <code>-&lt;viewport&gt;</code> at the end of the class(es) you are using. For example,
-                            use <code>u-none-md</code> to apply <code>u-none</code> on medium screens and above.
+                            use <code>md:u-none</code> to apply <code>u-none</code> on medium screens and above.
                         </p>
 
                         <CodeBlock
-                            code={`<div class="u-block u-none-md">
+                            code={`<div class="u-block md:u-none">
     <!-- ... -->
 </div>`}
                             language="html"

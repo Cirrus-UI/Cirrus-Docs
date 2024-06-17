@@ -233,7 +233,7 @@ export const ViewportsPage: React.FC<any> = (props) => {
                                     </tr>
                                     <tr>
                                         <td>
-                                            <code>u-none-sm</code>
+                                            <code>sm:u-none</code>
                                         </td>
                                         <td>
                                             Hide content for widths <code>641px</code> and above.
@@ -241,7 +241,7 @@ export const ViewportsPage: React.FC<any> = (props) => {
                                     </tr>
                                     <tr>
                                         <td>
-                                            <code>u-none-md</code>
+                                            <code>md:u-none</code>
                                         </td>
                                         <td>
                                             Hide content for widths <code>768px</code> and above.
@@ -249,7 +249,7 @@ export const ViewportsPage: React.FC<any> = (props) => {
                                     </tr>
                                     <tr>
                                         <td>
-                                            <code>u-none-lg</code>
+                                            <code>lg:u-none</code>
                                         </td>
                                         <td>
                                             Hide content for widths <code>1024px</code> and above.
@@ -257,7 +257,7 @@ export const ViewportsPage: React.FC<any> = (props) => {
                                     </tr>
                                     <tr>
                                         <td>
-                                            <code>u-none-xl</code>
+                                            <code>xl:u-none</code>
                                         </td>
                                         <td>
                                             Hide content for <code>1280px</code> and above.
@@ -318,13 +318,13 @@ export const ViewportsPage: React.FC<any> = (props) => {
                         <div className="space"></div>
 
                         <p className="lead font-bold">❌ Do not target mobile devices with small selectors.</p>
-                        <CodeBlock code={`<div class="u-none-sm">...</div>`} language="html" />
+                        <CodeBlock code={`<div class="sm:u-none">...</div>`} language="html" />
                         <div className="space"></div>
 
                         <p className="lead font-bold">
                             ✅ Use un-suffixed variant for mobile and suffixed classes for larger screens.
                         </p>
-                        <CodeBlock code={`<div class="u-none u-block-md u-flex-lg">...</div>`} language="html" />
+                        <CodeBlock code={`<div class="u-none md:u-block lg:u-flex">...</div>`} language="html" />
 
                         <div className="space"></div>
 

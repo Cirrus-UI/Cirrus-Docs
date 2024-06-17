@@ -304,21 +304,21 @@ export const OpacityUtilsPage: React.FC<any> = (props) => {
 
                         <p>
                             To use the viewport variant of a given class, you just need to suffix each class with a
-                            viewport selector. For example, use <code>u-opacity-50-md</code> to apply{' '}
+                            viewport selector. For example, use <code>md:u-opacity-50</code> to apply{' '}
                             <code>opacity: 0.5</code> to an element only at medium screen sizes and above.
                         </p>
 
                         <CodeBlock
-                            code={`<div class="u-opacity-50-md">
+                            code={`<div class="md:u-opacity-50">
     <!-- ... -->
 </div>
-<div class="u-bg-opacity-50-md">
+<div class="md:u-bg-opacity-50">
     <!-- ... -->
 </div>
-<div class="u-color-opacity-50-md">
+<div class="md:u-color-opacity-50">
     <!-- ... -->
 </div>
-<div class="u-border-opacity-50-md">
+<div class="md:u-border-opacity-50">
     <!-- ... -->
 </div>`}
                             language="html"
