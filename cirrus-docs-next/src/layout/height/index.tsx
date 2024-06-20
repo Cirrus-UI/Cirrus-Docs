@@ -218,11 +218,11 @@ export const HeightPage: React.FC<any> = (props) => {
                         <p>
                             All utility classes mentioned here support viewport based application. All you need to do is
                             add a <code>-&lt;viewport&gt;</code> at the end of the class(es) you are using. For example,
-                            use <code>h-30p-md</code> to apply <code>h-30p</code> on medium screens and above.
+                            use <code>md:h-30p</code> to apply <code>h-30p</code> on medium screens and above.
                         </p>
 
                         <CodeBlock
-                            code={`<div class="h-30p-md">
+                            code={`<div class="md:h-30p">
     <!-- ... -->
 </div>`}
                             language="html"

@@ -427,13 +427,13 @@ export const ResponsiveLandingHTML = `<section class="min-h-100p w-100p u-flex u
 	<div class="content w-80p">
 		<div
 			class="u-flex u-flex-column u-items-flex-start u-justify-flex-start u-relative md:u-flex-row- md:u-items-stretch">
-			<div class="pt-6 mx-auto w-50p-md md:mx-0 md:pb-4 md:pr-4">
-				<h1 class="headline-4 tracking-tighter text-5xl u-text-center text-white u-text-left-md">
+			<div class="pt-6 mx-auto md:w-50p md:mx-0 md:pb-4 md:pr-4">
+				<h1 class="headline-4 tracking-tighter text-5xl u-text-center text-white md:u-text-left">
 					Building the <br>
 					<span class="text-indigo-500 font-bold">Creator Economy
               </span>
 				</h1>
-                <p class="lead mt-4 mb-8 u-text-center text-gray-600 u-text-left-md">
+                <p class="lead mt-4 mb-8 u-text-center text-gray-600 md:u-text-left">
                     We're <b class="text-white">revolutionizing</b>, <b class="text-white">democratizing</b>, <b class="text-white">disrupting</b>, and [insert buzzword here]-ing to empower creatives around the world.
 				</p>
 				<div class="u-flex u-gap-1 u-flex-column u-justify-center mt-5 sm:u-flex-row mb-8 lg:mt-8">
@@ -445,8 +445,8 @@ export const ResponsiveLandingHTML = `<section class="min-h-100p w-100p u-flex u
 				</div>
 			</div>
 			<div
-				class="u-relative u-flex u-items-center u-justify-center w-80p mx-auto mt-8 h-80p w-50p-md h-auto-md md:u-block">
-				<img src="https://cdn.dribbble.com/users/1722951/screenshots/15954834/media/7eee2181141576534bed5954fc1645f3.png" class="u-left-0 u-z-0 img-cover w-100p h-100p mx-auto u-round-xl md:mx-0 w-100p-md u-absolute-md md:u-top-0" alt="image">
+				class="u-relative u-flex u-items-center u-justify-center w-80p mx-auto mt-8 h-80p md:w-50p md:h-auto md:u-block">
+				<img src="https://cdn.dribbble.com/users/1722951/screenshots/15954834/media/7eee2181141576534bed5954fc1645f3.png" class="u-left-0 u-z-0 img-cover w-100p h-100p mx-auto u-round-xl md:mx-0 md:w-100p md:u-absolute md:u-top-0" alt="image">
 				<div class="u-absolute u-top-0 u-right-0 u-overflow-hidden u-shadow-xl md:u-right-0 u-round-lg"
 					style="height: 8rem; width: 8rem; margin-top: -2.5rem; margin-right: -1.5rem;">
 					<img src="https://images.unsplash.com/photo-1489289827069-adf270f4f417?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" class="u-absolute u-z-0 img-cover w-100p h-100p" alt="image">
@@ -473,7 +473,7 @@ export const ResponsiveLandingHTML = `<section class="min-h-100p w-100p u-flex u
 
 			<div class="u-relative u-z-0 u-flex u-items-center u-justify-flex-start py-12 md:py-0">
 				<div
-					class="u-relative u-none md:u-block u-z-10 w-100p max-w-lg px-8 pt-12 pb-12 mx-auto bg-indigo-500 w-50p-md md:mx-0 md:mt-0 md:pt-2 md:pb-4 u-round-md">
+					class="u-relative u-none md:u-block u-z-10 w-100p max-w-lg px-8 pt-12 pb-12 mx-auto bg-indigo-500 md:w-50p md:mx-0 md:mt-0 md:pt-2 md:pb-4 u-round-md">
 					<h3 class="text-xl font-bold text-white mx-0 my-1">
 						Built for All Creators
 					</h3>

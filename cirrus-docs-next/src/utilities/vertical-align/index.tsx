@@ -110,11 +110,11 @@ $config: (
                         <p>
                             To use the viewport variant of a given class, you just need to suffix each class with a
                             viewport selector. For example, if I only want <code>u-align-inherit</code> to be applied to some
-                            element for <code>lg</code> and above, then I would use the <code>u-align-inherit-lg</code> class.
+                            element for <code>lg</code> and above, then I would use the <code>lg:u-align-inherit</code> class.
                         </p>
 
                         <CodeBlock
-                            code={`<div class="u-align-inherit-lg">
+                            code={`<div class="lg:u-align-inherit">
     <!-- ... -->
 </div>`}
                             language="html"

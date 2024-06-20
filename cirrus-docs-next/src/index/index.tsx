@@ -92,7 +92,7 @@ const Landing: React.FC<any> = () => {
                 ></div>
                 <div id="splash-img" className="hero fullscreen hero-img parallax-img">
                     <div className="hero-body u-z-1">
-                        <div className="content w-100p w-80p-md u-text-center">
+                        <div className="content w-100p md:w-80p u-text-center">
                             <h1
                                 className="headline-3 title"
                                 style={{
@@ -109,7 +109,7 @@ const Landing: React.FC<any> = () => {
                                 <span className="font-bold text-pink-600">and less time worrying about CSS.</span>
                             </h1>
                             <div className="space"></div>
-                            <p className="sub-title lead font-alt font-normal mx-auto w-60p-md u-none lg:u-block">
+                            <p className="sub-title lead font-alt font-normal mx-auto md:w-60p u-none lg:u-block">
                                 Create <b>beautiful</b> designs in <b>less time</b> with Cirrus, the SCSS framework
                                 designed for <b className="">rapid prototyping</b>. Use beautiful pre-built components
                                 to bootstrap your next project and utility classes to polish your final design.

@@ -340,7 +340,7 @@ export const ViewportsPage: React.FC<any> = (props) => {
                         </p>
 
                         <CodeBlock
-                            code={`<div class="u-sticky u-relative-sm u-sticky-md">
+                            code={`<div class="u-sticky sm:u-relative- md:u-sticky">
     <!-- ... -->
 />`}
                             language="html"

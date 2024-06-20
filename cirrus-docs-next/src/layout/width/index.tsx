@@ -198,11 +198,11 @@ export const WidthPage: React.FC<any> = (props) => {
                         <p>
                             All utility classes mentioned here support viewport based application. All you need to do is
                             add a <code>-&lt;viewport&gt;</code> at the end of the class(es) you are using. For example,
-                            use <code>w-50p-md</code> to apply <code>w-50p</code> on medium screens and above.
+                            use <code>md:w-50p</code> to apply <code>w-50p</code> on medium screens and above.
                         </p>
 
                         <CodeBlock
-                            code={`<div class="w-50p-md">
+                            code={`<div class="md:w-50p">
     <!-- ... -->
 </div>`}
                             language="html"

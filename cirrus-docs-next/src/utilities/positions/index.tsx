@@ -276,11 +276,11 @@ export const PositionUtilsPage: React.FC<any> = (props) => {
                         <p>
                             All utility classes mentioned here support viewport based application. All you need to do is
                             add a <code>-&lt;viewport&gt;</code> at the end of the class(es) you are using. For example,
-                            use <code>u-relative-md</code> to apply <code>u-relative</code> on medium screens and above.
+                            use <code>md:u-relative</code> to apply <code>u-relative</code> on medium screens and above.
                         </p>
 
                         <CodeBlock
-                            code={`<div class="u-absolute u-relative-md">
+                            code={`<div class="u-absolute md:u-relative">
     <!-- ... -->
 </div>`}
                             language="html"
