@@ -412,9 +412,9 @@ export const StartGuidePage: React.FC<any> = (props) => {
   <div class="hero">
     <div class="hero-body">
       <div class="content lg:px-12 xl:px-24">
-        <div class="u-flex u-items-center u-gap-4 u-flex-column lg:u-gap-8 u-flex-row-md">
+        <div class="u-flex u-items-center u-gap-4 u-flex-column lg:u-gap-8 md:u-flex-row">
           <div>
-            <img class="u-round-xs w-100p w-60p-sm w-auto-md u-shadow-lg" src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" />
+            <img class="u-round-xs w-100p sm:w-60p md:w-auto u-shadow-lg" src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" />
           </div>
           <div>
             <h1 class="headline-3">hey!</h1>

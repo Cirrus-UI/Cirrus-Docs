@@ -145,7 +145,7 @@ export const OpacityUtilsPage: React.FC<any> = (props) => {
                             .
                         </p>
 
-                        <div className="py-2 u-round-xs bg-gray-000 u-shadow-md u-flex u-items-center u-justify-space-around u-flex-wrap u-flex-nowrap-md">
+                        <div className="py-2 u-round-xs bg-gray-000 u-shadow-md u-flex u-items-center u-justify-space-around u-flex-wrap md:u-flex-nowrap">
                             <button className="btn-warning mb-0 u-bg-opacity-100">100%</button>
                             <button className="btn-warning mb-0 u-bg-opacity-90">90%</button>
                             <button className="btn-warning mb-0 u-bg-opacity-80">80%</button>
@@ -257,7 +257,7 @@ export const OpacityUtilsPage: React.FC<any> = (props) => {
                             </Link>
                             .
                         </p>
-                        <div className="bg-indigo-100 p-2 u-round-sm u-flex u-flex-column u-flex-row-md u-items-center u-gap-1">
+                        <div className="bg-indigo-100 p-2 u-round-sm u-flex u-flex-column md:u-flex-row u-items-center u-gap-1">
                             <div className="w-8 h-8 u-center u-round-sm bg-transparent text-indigo-600 font-bold border-indigo-600 u-border-4 u-border-opacity-20">
                                 <div>20</div>
                             </div>

@@ -68,7 +68,7 @@ export const BorderWidthUtilsPage: React.FC<any> = (props) => {
                         </p>
                         <div className="space"></div>
 
-                        <div className="bg-indigo-100 p-2 md:p-4 u-round-sm u-flex u-flex-column u-flex-row-md u-items-center u-justify-space-around u-gap-1">
+                        <div className="bg-indigo-100 p-2 md:p-4 u-round-sm u-flex u-flex-column md:u-flex-row u-items-center u-justify-space-around u-gap-1">
                             {Object.entries(DEFAULT_BORDER_WIDTH_CLASSES).map((entry) => {
                                 return (
                                     <div>

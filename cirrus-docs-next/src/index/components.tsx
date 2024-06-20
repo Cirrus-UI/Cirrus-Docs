@@ -426,7 +426,7 @@ export const ECommerceCard: React.FC<any> = (props) => {
 export const ResponsiveLandingHTML = `<section class="min-h-100p w-100p u-flex u-justify-center u-items-center" style="background: linear-gradient(to top, #141e30, #243b55);">
 	<div class="content w-80p">
 		<div
-			class="u-flex u-flex-column u-items-flex-start u-justify-flex-start u-relative u-flex-row-md u-items-stretch-md">
+			class="u-flex u-flex-column u-items-flex-start u-justify-flex-start u-relative md:u-flex-row- md:u-items-stretch">
 			<div class="pt-6 mx-auto w-50p-md md:mx-0 md:pb-4 md:pr-4">
 				<h1 class="headline-4 tracking-tighter text-5xl u-text-center text-white u-text-left-md">
 					Building the <br>
@@ -436,7 +436,7 @@ export const ResponsiveLandingHTML = `<section class="min-h-100p w-100p u-flex u
                 <p class="lead mt-4 mb-8 u-text-center text-gray-600 u-text-left-md">
                     We're <b class="text-white">revolutionizing</b>, <b class="text-white">democratizing</b>, <b class="text-white">disrupting</b>, and [insert buzzword here]-ing to empower creatives around the world.
 				</p>
-				<div class="u-flex u-gap-1 u-flex-column u-justify-center mt-5 u-flex-row-sm mb-8 lg:mt-8">
+				<div class="u-flex u-gap-1 u-flex-column u-justify-center mt-5 sm:u-flex-row mb-8 lg:mt-8">
 					<input type="text" id="input-field-top" class="u-flex-grow-1 w-auto min-w-0 px-3 font-semibold text-gray-300 bg-transparent u-border-opacity-30" placeholder="Enter Username">
 					<button
 					class="btn--sm btn-link mb-0">

@@ -198,12 +198,12 @@ $config: (
 
                         <p>
                             To use the viewport variant of a given class, you just need to suffix each class with a
-                            viewport selector. For example, use <code>u-gap-3-md</code> to apply{' '}
+                            viewport selector. For example, use <code>md:u-gap-3</code> to apply{' '}
                             <code>gap: calc(0.5rem * 3)</code> to an element only at medium screen sizes and above.
                         </p>
 
                         <CodeBlock
-                            code={`<div class="u-gap-3-md">
+                            code={`<div class="md:u-gap-3">
     <!-- ... -->
 </div>`}
                             language="html"

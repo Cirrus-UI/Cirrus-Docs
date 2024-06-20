@@ -227,10 +227,10 @@ export const ConfigurationPage: React.FC<any> = (props) => {
                             code={`.u-flex-column { ... }
 
 @media screen and (min-width: 640px) {
-    .u-flex-column-sm { ... }
+    .sm\:u-flex-column { ... }
 }
 @media screen and (min-width: 768px) {
-    .u-flex-column-md { ... }
+    .md\:u-flex-column { ... }
 }
 ...`}
                             language="css"
