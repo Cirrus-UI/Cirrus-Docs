@@ -230,8 +230,8 @@ export const GridSpanPage: React.FC<any> = (props) => {
                             class. The <i>cs</i> stands for <i>column start</i>.
                         </p>
                         <p>
-                            To specify the starting column position for an element, use the <code>grid-ce-*</code>{' '}
-                            class. The <i>cs</i> stands for <i>column end</i>.
+                            To specify the ending column position for an element, use the <code>grid-ce-*</code>{' '}
+                            class. The <i>ce</i> stands for <i>column end</i>.
                         </p>
 
                         <p>As stated prior, the '*' represents any number from 1 to 12 inclusive.</p>
@@ -276,37 +276,34 @@ export const GridSpanPage: React.FC<any> = (props) => {
 
                         <h6 className="font-alt">Rows</h6>
                         <p>
-                            To specify the starting column position for an element, use the <code>grid-rs-*</code>{' '}
-                            class. The <i>cs</i> stands for <i>row start</i>.
+                            To specify the starting row position for an element, use the <code>grid-rs-*</code>{' '}
+                            class. The <i>rs</i> stands for <i>row start</i>.
                         </p>
                         <p>
-                            To specify the starting column position for an element, use the <code>grid-re-*</code>{' '}
-                            class. The <i>cs</i> stands for <i>row end</i>.
+                            To specify the ending row position for an element, use the <code>grid-re-*</code>{' '}
+                            class. The <i>re</i> stands for <i>row end</i>.
                         </p>
-                        <div className="grid grid-cols-9 u-gap-2">
-                            <div className="grid-rs-10 grid-re-12 _grid-ex">10-12</div>
-                            <div className="grid-rs-8 grid-re-12 _grid-ex">8-12</div>
-                            <div className="grid-rs-6 grid-re-12 _grid-ex">6-12</div>
-                            <div className="grid-rs-4 grid-re-12 _grid-ex">4-12</div>
-                            <div className="grid-rs-2 grid-re-12 _grid-ex">2-12</div>
-                            <div className="grid-rs-4 grid-re-12 _grid-ex">4-12</div>
-                            <div className="grid-rs-6 grid-re-12 _grid-ex">6-12</div>
-                            <div className="grid-rs-8 grid-re-12 _grid-ex">8-12</div>
-                            <div className="grid-rs-10 grid-re-12 _grid-ex">10-12</div>
+                        <div className="grid grid-cols-5 grid-rows-4 u-gap-2">
+                            <div className="grid-rs-1 grid-re-4 _grid-ex">1-4</div>
+                            <div className="grid-rs-2 grid-re-4 _grid-ex">2-4</div>
+                            <div className="grid-rs-3 grid-re-4 _grid-ex">3-4</div>
+                            <div className="grid-rs-4 grid-re-4 _grid-ex">4-4</div>
+                            <div className="grid-rs-1 grid-re-2 _grid-ex">1-2</div>
+                            <div className="grid-rs-1 grid-re-3 _grid-ex">1-3</div>
+                            <div className="grid-rs-2 grid-re-3 _grid-ex">2-3</div>
                         </div>
                         <div className="space"></div>
                         <CodeBlock
-                            code={`<div class="grid grid-cols-9 u-gap-2">
-    <div class="grid-rs-10 grid-re-12">10-12</div>
-    <div class="grid-rs-8 grid-re-12">8-12</div>
-    <div class="grid-rs-6 grid-re-12">6-12</div>
-    <div class="grid-rs-4 grid-re-12">4-12</div>
-    <div class="grid-rs-2 grid-re-12">2-12</div>
-    <div class="grid-rs-4 grid-re-12">4-12</div>
-    <div class="grid-rs-6 grid-re-12">6-12</div>
-    <div class="grid-rs-8 grid-re-12">8-12</div>
-    <div class="grid-rs-10 grid-re-12">10-12</div>
-</div>`}
+                            code={`<div class="grid grid-cols-5 grid-rows-4 u-gap-2">
+    <div class="grid-rs-1 grid-re-4 _grid-ex">1-4</div>
+    <div class="grid-rs-2 grid-re-4 _grid-ex">2-4</div>
+    <div class="grid-rs-3 grid-re-4 _grid-ex">3-4</div>
+    <div class="grid-rs-4 grid-re-4 _grid-ex">4-4</div>
+    <div class="grid-rs-1 grid-re-2 _grid-ex">1-2</div>
+    <div class="grid-rs-1 grid-re-3 _grid-ex">1-3</div>
+    <div class="grid-rs-2 grid-re-3 _grid-ex">2-3</div>
+</div>
+`}
                             language="htmlbars"
                         />
 
