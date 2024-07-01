@@ -161,12 +161,12 @@ $config: (
 
                         <p>
                             All utility classes mentioned here support viewport based application. All you need to do is
-                            add a <code>-&lt;viewport&gt;</code> at the end of the class(es) you are using. For example,
-                            use <code>tracking-tight-md</code> to apply <code>tracking-tight</code> on medium screens and above.
+                            add a <code>&lt;viewport&gt;:&lt;class&gt;</code> at the end of the class(es) you are using. For example,
+                            use <code>md:tracking-tight</code> to apply <code>tracking-tight</code> on medium screens and above.
                         </p>
 
                         <CodeBlock
-                            code={`<div class="tracking-tight-md">
+                            code={`<div class="md:tracking-tight">
     <!-- ... -->
 </div>`}
                             language="html"

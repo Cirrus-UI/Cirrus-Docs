@@ -70,12 +70,11 @@ export const ViewportsPage: React.FC<any> = (props) => {
                         <div className="divider"></div>
                         <span className="tag-container group-tags">
                             <div className="tag tag--dark">Updated</div>
-                            <div className="tag tag--info">0.6.2</div>
+                            <div className="tag tag--info">0.8.0</div>
                         </span>
                         <p>
                             The standard breakpoints used in Cirrus are <code>xs</code>, <code>sm</code>,{' '}
-                            <code>md</code>, and <code>lg</code>. This replaces the <code>mobile</code>,{' '}
-                            <code>tablet</code>, and <code>desktop</code> designations used in older versions.
+                            <code>md</code>, and <code>lg</code>. These can be found on all utility classes and a few others to apply certain styles based on the current viewport.
                         </p>
                         <div className="space"></div>
 
@@ -182,7 +181,7 @@ export const ViewportsPage: React.FC<any> = (props) => {
                                         </td>
                                         <td colSpan={4}>
                                             <p className="toast toast--info" style={{ width: 'auto' }}>
-                                                *-sm
+                                                sm:*
                                             </p>
                                         </td>
                                     </tr>
@@ -192,7 +191,7 @@ export const ViewportsPage: React.FC<any> = (props) => {
                                         </td>
                                         <td colSpan={3}>
                                             <p className="toast toast--info" style={{ width: 'auto' }}>
-                                                *-md
+                                                md:*
                                             </p>
                                         </td>
                                     </tr>
@@ -202,7 +201,7 @@ export const ViewportsPage: React.FC<any> = (props) => {
                                         </td>
                                         <td colSpan={2}>
                                             <p className="toast toast--info" style={{ width: 'auto' }}>
-                                                *-lg
+                                                lg:*
                                             </p>
                                         </td>
                                     </tr>
@@ -212,7 +211,7 @@ export const ViewportsPage: React.FC<any> = (props) => {
                                         </td>
                                         <td colSpan={1}>
                                             <p className="toast toast--info" style={{ width: 'auto' }}>
-                                                *-xl
+                                                xl:*
                                             </p>
                                         </td>
                                     </tr>
@@ -220,7 +219,7 @@ export const ViewportsPage: React.FC<any> = (props) => {
                             </table>
                         </TableWrapper>
                         <p>
-                            An example of style that follows this convention is the <code>u-none-*</code> class.
+                            An example of style that follows this convention is the <code>[sm|md|lg|xl]:u-none</code> class.
                         </p>
                         <TableWrapper>
                             <table className="table bordered">

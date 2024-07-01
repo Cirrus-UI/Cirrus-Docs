@@ -840,7 +840,7 @@ export const FlexboxUtilsPage: React.FC<any> = (props) => {
                         </span>
                         <p>
                             All utility classes mentioned here support viewport based application. All you need to do is
-                            add a <code>-&lt;viewport&gt;</code> at the end of the class(es) you are using. For example,
+                            add a <code>&lt;viewport&gt;:&lt;class&gt;</code> at the end of the class(es) you are using. For example,
                             use <code>md:u-flex-row</code> to apply <code>u-flex-row</code> on medium screens and above.
                         </p>
 

@@ -206,7 +206,7 @@ padding-bottom: (0) !important;`,
                         <VersionTag version="0.6.3." text="New" />
                         <p>
                             The margin classes mentioned here support viewport based application. All you need to do is
-                            add a <code>-&lt;viewport&gt;</code> at the end of the class(es) you are using. For example,
+                            add a <code>&lt;viewport&gt;:&lt;class&gt;</code> at the end of the class(es) you are using. For example,
                             use <code>md:p-3</code> to apply <code>p-3</code> on medium screens and above.
                         </p>
 

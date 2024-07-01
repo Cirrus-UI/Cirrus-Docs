@@ -242,7 +242,7 @@ export const MarginPage: React.FC<any> = (props) => {
                         </span>
                         <p>
                             The margin classes mentioned here support viewport based application. All you need to do is
-                            add a <code>-&lt;viewport&gt;</code> at the end of the class(es) you are using. For example,
+                            add a <code>&lt;viewport&gt;:&lt;class&gt;</code> at the end of the class(es) you are using. For example,
                             use <code>md:m-3</code> to apply <code>m-3</code> on medium screens and above.
                         </p>
 

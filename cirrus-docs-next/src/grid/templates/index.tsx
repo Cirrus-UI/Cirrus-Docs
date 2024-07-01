@@ -119,7 +119,7 @@ export const GridTemplatesPage: React.FC<any> = (props) => {
                         <div className="divider"></div>
                         <p>
                             By default, the default <code>grid</code> class supports up to <code>12</code> columns. To
-                            change this, you can use any of the <code>grid-cols-[1..12]</code> classes.
+                            change this, you can use any of the <code>grid-cols-[1-12]</code> classes.
                         </p>
 
                         <div className="grid u-gap-2 grid-cols-1">
@@ -238,7 +238,7 @@ export const GridTemplatesPage: React.FC<any> = (props) => {
                         <div className="space"></div>
                         <p>
                             If you want to specify the number of rows a <code>grid</code> has, then you must use the{' '}
-                            <code>grid-cols-[1..12]</code> class. By default, a <code>grid</code> has{' '}
+                            <code>grid-cols-[1-12]</code> class. By default, a <code>grid</code> has{' '}
                             <code>grid-template-rows</code> set to <code>auto</code>.
                         </p>
 
@@ -271,11 +271,11 @@ export const GridTemplatesPage: React.FC<any> = (props) => {
                         <p>
                             To use the viewport variant of a given class, you just need to suffix each class with a
                             viewport selector. For example, if I only want <code>grid</code> to be applied to some
-                            contaner for <code>lg</code> and above, then I would use the <code>grid-lg</code> class.
+                            contaner for <code>lg</code> and above, then I would use the <code>lg:grid</code> class.
                         </p>
 
                         <CodeBlock
-                            code={`<div class="grid-lg">
+                            code={`<div class="lg:grid">
     <!-- ... -->
 </div>`}
                             language="html"

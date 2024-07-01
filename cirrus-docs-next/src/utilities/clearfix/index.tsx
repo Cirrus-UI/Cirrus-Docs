@@ -210,7 +210,7 @@ display: table !important;`,
                         </span>
                         <p>
                             All utility classes mentioned here support viewport based application. All you need to do is
-                            add a <code>-&lt;viewport&gt;</code> at the end of the class(es) you are using. For example,
+                            add a <code>&lt;viewport&gt;:&lt;class&gt;</code> at the end of the class(es) you are using. For example,
                             use <code>md:u-clear-both</code> to apply <code>u-clear-both</code> on medium screens and
                             above.
                         </p>

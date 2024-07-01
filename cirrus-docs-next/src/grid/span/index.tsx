@@ -43,7 +43,7 @@ export const GridSpanPage: React.FC<any> = (props) => {
 
                         <h6 className="font-alt">Columns</h6>
                         <p>
-                            Use <code>grid-c-*</code> where '*' is any integer from 1 through 12 inclusive to specify
+                            Use <code>grid-c-[1-12]</code> to specify
                             how many columns an element should span.
                         </p>
 
@@ -226,15 +226,14 @@ export const GridSpanPage: React.FC<any> = (props) => {
 
                         <h6 className="font-alt">Columns</h6>
                         <p>
-                            To specify the starting column position for an element, use the <code>grid-cs-*</code>{' '}
+                            To specify the starting column position for an element, use the <code>grid-cs-[1-12]</code>{' '}
                             class. The <i>cs</i> stands for <i>column start</i>.
                         </p>
                         <p>
-                            To specify the ending column position for an element, use the <code>grid-ce-*</code>{' '}
+                            To specify the ending column position for an element, use the <code>grid-ce-[1-12]</code>{' '}
                             class. The <i>ce</i> stands for <i>column end</i>.
                         </p>
 
-                        <p>As stated prior, the '*' represents any number from 1 to 12 inclusive.</p>
                         <div className="space space--lg"></div>
 
                         <div className="grid u-gap-2">
@@ -276,11 +275,11 @@ export const GridSpanPage: React.FC<any> = (props) => {
 
                         <h6 className="font-alt">Rows</h6>
                         <p>
-                            To specify the starting row position for an element, use the <code>grid-rs-*</code>{' '}
+                            To specify the starting row position for an element, use the <code>grid-rs-[1-4]</code>{' '}
                             class. The <i>rs</i> stands for <i>row start</i>.
                         </p>
                         <p>
-                            To specify the ending row position for an element, use the <code>grid-re-*</code>{' '}
+                            To specify the ending row position for an element, use the <code>grid-re-[1-4]</code>{' '}
                             class. The <i>re</i> stands for <i>row end</i>.
                         </p>
                         <div className="grid grid-cols-5 grid-rows-4 u-gap-2">

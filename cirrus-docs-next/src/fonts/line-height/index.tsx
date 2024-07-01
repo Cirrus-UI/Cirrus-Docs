@@ -119,12 +119,12 @@ $config: (
 
                         <p>
                             All utility classes mentioned here support viewport based application. All you need to do is
-                            add a <code>-&lt;viewport&gt;</code> at the end of the class(es) you are using. For example,
-                            use <code>leading-tight-md</code> to apply <code>leading-tight</code> on medium screens and above.
+                            add a <code>&lt;viewport&gt;:&lt;class&gt;</code> at the end of the class(es) you are using. For example,
+                            use <code>md:leading-tight</code> to apply <code>leading-tight</code> on medium screens and above.
                         </p>
 
                         <CodeBlock
-                            code={`<div class="u-leading-tight-md">
+                            code={`<div class="leading-tight-md">
     <!-- ... -->
 </div>`}
                             language="html"

@@ -57,8 +57,7 @@ export const ColumnsPage: React.FC<any> = (props) => {
                         <div className="divider"></div>
                         <p>
                             Every flexbox layout begins with a <code>row</code>. Every <code>row</code> contains columns
-                            represented with the <code>col-*</code> class, where the '*' represents any number from 1
-                            through 12 inclusive.
+                            represented with the <code>col-[1-12]</code> class.
                         </p>
                         <div id="grids">
                             <div className="row">
@@ -474,7 +473,7 @@ export const ColumnsPage: React.FC<any> = (props) => {
                         <div className="space space--lg"></div>
                         <h6>Prevent Stacking</h6>
                         <p>
-                            To prevent the default stacking behavior, we can use the <code>col-[1..12]</code> class on the
+                            To prevent the default stacking behavior, we can use the <code>col-[1-12]</code> class on the
                             column.
                         </p>
 
@@ -517,8 +516,7 @@ export const ColumnsPage: React.FC<any> = (props) => {
 
                         <p>
                             Instead of using empty columns to create offsets for columns, the <code>offset-*</code>{' '}
-                            class when when applied on the <code>col-*</code> will offset the column to the right
-                            depending on the value of '*'. The value of '*' uses values from 1 through 12 inclusive.
+                            class when when applied on the <code>col-[1-12]</code> will offset the column to the right.
                         </p>
                         <p>
                             In other words, a column with <code>col-5 offset-3</code> is offset from the left by the
