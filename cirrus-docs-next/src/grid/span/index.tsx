@@ -146,67 +146,43 @@ export const GridSpanPage: React.FC<any> = (props) => {
                         <h6 className="font-alt">Rows</h6>
                         <p>
                             Like what is shown above for columns, the same applies for spanning rows -- this time using
-                            the <code>grid-r-*</code> class.
+                            the <code>grid-r-[1-6]</code> class.
                         </p>
 
                         <div
-                            className="grid u-gap-2"
+                            className="grid grid-cols-6 u-gap-2"
                             style={{
                                 height: '500px',
                             }}
                         >
-                            <div className="grid-r-1 _grid-ex level">
+                            <div className="grid-r-1 _grid-ex u-text-center">
                                 <span>grid-r-1</span>
                             </div>
-                            <div className="grid-r-2 _grid-ex level">
+                            <div className="grid-r-2 _grid-ex u-text-center">
                                 <span>grid-r-2</span>
                             </div>
-                            <div className="grid-r-3 _grid-ex level">
+                            <div className="grid-r-3 _grid-ex u-text-center">
                                 <span>grid-r-3</span>
                             </div>
-                            <div className="grid-r-4 _grid-ex level">
+                            <div className="grid-r-4 _grid-ex u-text-center">
                                 <span>grid-r-4</span>
                             </div>
-                            <div className="grid-r-5 _grid-ex level">
+                            <div className="grid-r-5 _grid-ex u-text-center">
                                 <span>grid-r-5</span>
                             </div>
-                            <div className="grid-r-6 _grid-ex level">
+                            <div className="grid-r-6 _grid-ex u-text-center">
                                 <span>grid-r-6</span>
-                            </div>
-                            <div className="grid-r-7 _grid-ex level">
-                                <span>grid-r-7</span>
-                            </div>
-                            <div className="grid-r-8 _grid-ex level">
-                                <span>grid-r-8</span>
-                            </div>
-                            <div className="grid-r-9 _grid-ex level">
-                                <span>grid-r-9</span>
-                            </div>
-                            <div className="grid-r-10 _grid-ex level">
-                                <span>grid-r-10</span>
-                            </div>
-                            <div className="grid-r-11 _grid-ex level">
-                                <span>grid-r-11</span>
-                            </div>
-                            <div className="grid-r-12 _grid-ex level">
-                                <span>grid-r-12</span>
                             </div>
                         </div>
                         <div className="space"></div>
                         <CodeBlock
-                            code={`<div class="grid u-gap-2" style="height: 500px;">
-    <div class="grid-r-1 level"><span>grid-r-1</span></div>
-    <div class="grid-r-2 level"><span>grid-r-2</span></div>
-    <div class="grid-r-3 level"><span>grid-r-3</span></div>
-    <div class="grid-r-4 level"><span>grid-r-4</span></div>
-    <div class="grid-r-5 level"><span>grid-r-5</span></div>
-    <div class="grid-r-6 level"><span>grid-r-6</span></div>
-    <div class="grid-r-7 level"><span>grid-r-7</span></div>
-    <div class="grid-r-8 level"><span>grid-r-8</span></div>
-    <div class="grid-r-9 level"><span>grid-r-9</span></div>
-    <div class="grid-r-10 level"><span>grid-r-10</span></div>
-    <div class="grid-r-11 level"><span>grid-r-11</span></div>
-    <div class="grid-r-12 level"><span>grid-r-12</span></div>
+                            code={`<div class="grid grid-cols-6 u-gap-2" style="height: 500px;">
+    <div class="grid-r-1"><span>grid-r-1</span></div>
+    <div class="grid-r-2"><span>grid-r-2</span></div>
+    <div class="grid-r-3"><span>grid-r-3</span></div>
+    <div class="grid-r-4"><span>grid-r-4</span></div>
+    <div class="grid-r-5"><span>grid-r-5</span></div>
+    <div class="grid-r-6"><span>grid-r-6</span></div>
 </div>`}
                             language="htmlbars"
                         />

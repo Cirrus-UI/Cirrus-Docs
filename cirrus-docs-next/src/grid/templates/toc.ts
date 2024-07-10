@@ -11,8 +11,13 @@ export const toc: TableOfContentsEntry[] = [
                 children: null,
             },
             {
-                name: 'Template Sizes',
-                anchor: '#sizes',
+                name: 'Template Sizes - Columns',
+                anchor: '#sizes-cols',
+                children: null,
+            },,
+            {
+                name: 'Template Sizes - Rows',
+                anchor: '#sizes-rows',
                 children: null,
             },
             {

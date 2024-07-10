@@ -91,9 +91,10 @@ export const GridTemplatesPage: React.FC<any> = (props) => {
                             now, any element you add inside of a grid layout will take up 1 unit of space.
                         </p>
                         <p>
-                            For example, if we define a layout using <code>grid grid-cols-2</code>, a single{' '}
+                            For example, if we define a layout using <code>grid grid-rows-2</code>, a single{' '}
                             <code>div</code> will use slot 1 of 2 of the columns. Adding another <code>div</code> will
-                            use slot 2 of 2. Adding any more will just overflow onto the next row.
+                            use slot 2 of 2. Adding any more will just overflow onto the next row. See{' '}
+                            <Link href={`#sizes-rows`}>below</Link> for more info.
                         </p>
 
                         <div className="grid u-gap-2 grid-cols-2">
@@ -113,10 +114,11 @@ export const GridTemplatesPage: React.FC<any> = (props) => {
                     </div>
                 </section>
 
-                <section className="padtop" id="sizes">
+                <section className="padtop" id="sizes-cols">
                     <div className="content">
-                        <Headline title="Template Sizes" link="#sizes" size="4" />
+                        <Headline title="Template Sizes - Columns" link="#sizes-cols" size="4" />
                         <div className="divider"></div>
+                        <VersionTag version="0.7.2" />
                         <p>
                             By default, the default <code>grid</code> class supports up to <code>12</code> columns. To
                             change this, you can use any of the <code>grid-cols-[1-12]</code> classes.
@@ -263,6 +265,83 @@ export const GridTemplatesPage: React.FC<any> = (props) => {
                     </div>
                 </section>
 
+                <section className="padtop" id="sizes-rows">
+                    <div className="content">
+                        <Headline title="Template Sizes - Rows" link="#sizes-rows" size="4" />
+                        <div className="divider"></div>
+                        <VersionTag version="0.7.2" />
+                        <p>
+                            By default, the default <code>grid</code> class supports up to <code>6</code> rows. To
+                            change this, you can use any of the <code>grid-rows-[1-6]</code> classes.
+                        </p>
+
+                        <div className="grid u-gap-2 grid-rows-1">
+                            <div className="_grid-ex grid-r-1">
+                                <p>1</p>
+                            </div>
+                        </div>
+
+                        <div className="grid u-gap-2 grid-rows-2">
+                            <div className="_grid-ex grid-r-2">
+                                <p>2</p>
+                            </div>
+                            <div className="_grid-ex grid-r-1">
+                                <p>1</p>
+                            </div>
+                        </div>
+
+                        <div className="grid u-gap-2 grid-rows-3">
+                            <div className="_grid-ex grid-r-3">
+                                <p>3</p>
+                            </div>
+                            <div className="_grid-ex grid-r-2">
+                                <p>2</p>
+                            </div>
+                            <div className="_grid-ex grid-r-1">
+                                <p>1</p>
+                            </div>
+                        </div>
+
+                        <div className="grid u-gap-2 grid-rows-4">
+                            <div className="_grid-ex grid-r-4">
+                                <p>4</p>
+                            </div>
+                            <div className="_grid-ex grid-r-3">
+                                <p>3</p>
+                            </div>
+                            <div className="_grid-ex grid-r-2">
+                                <p>2</p>
+                            </div>
+                            <div className="_grid-ex grid-r-1">
+                                <p>1</p>
+                            </div>
+                        </div>
+                        <div className="space"></div>
+                        <CodeBlock
+                            language="html"
+                            code={`<div class="grid u-gap-2 grid-rows-1">
+    <div class="grid-r-1"><p>1</p></div>
+</div>
+<div class="grid u-gap-2 grid-rows-2">
+    <div class="grid-r-2"><p>2</p></div>
+    <div class="grid-r-1"><p>1</p></div>
+</div>
+<div class="grid u-gap-2 grid-rows-3">
+    <div class="grid-r-3"><p>3</p></div>
+    <div class="grid-r-2"><p>2</p></div>
+    <div class="grid-r-1"><p>1</p></div>
+</div>
+<div class="grid u-gap-2 grid-rows-4">
+    <div class="grid-r-4"><p>4</p></div>
+    <div class="grid-r-3"><p>3</p></div>
+    <div class="grid-r-2"><p>2</p></div>
+    <div class="grid-r-1"><p>1</p></div>
+</div>
+`}
+                        />
+                    </div>
+                </section>
+
                 <section className="padtop" id="responsive">
                     <div className="content">
                         <Headline title="Responsive" link="#responsive" size="4" />
@@ -345,7 +424,10 @@ export const GridTemplatesPage: React.FC<any> = (props) => {
                                 <code>grid-re</code>
                             </li>
                         </ul>
-                        <p>The same idea also applies to the <code>grid-rows</code> class. Instead, you will have to update the <code>grid-rows</code> property in the configuration.</p>
+                        <p>
+                            The same idea also applies to the <code>grid-rows</code> class. Instead, you will have to
+                            update the <code>grid-rows</code> property in the configuration.
+                        </p>
                     </div>
                 </section>
 
