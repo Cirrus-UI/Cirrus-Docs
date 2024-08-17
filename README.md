@@ -1,19 +1,21 @@
-<p align="center"><img src="https://github.com/Spiderpig86/Cirrus/blob/master/img/CirrusLogo.png" width="200"></p>
-<h1 align="center">Cirrus</h1>
+<p align="center"><img src="https://raw.githubusercontent.com/Spiderpig86/Cirrus/master/img/CirrusLogo.png" width="200"></p>
+<h1 align="center">Cirrus Docs</h1>
 
 <div align="center">
 
-  [![v.0.6.2.1](https://img.shields.io/badge/cirrus-0.6.2.1-blue.svg)](https://github.com/Spiderpig86/Cirrus)
+  [![v.0.7.2](https://img.shields.io/badge/cirrus-0.7.2-blue.svg)](https://github.com/Spiderpig86/Cirrus)
   [![MIT License](https://img.shields.io/github/license/Spiderpig86/Cirrus.svg)](https://opensource.org/licenses/MIT)
   [![Github Actions](https://github.com/Spiderpig86/Cirrus/actions/workflows/ci.yml/badge.svg)](https://github.com/Spiderpig86/Cirrus/actions)
   [![Known Vulnerabilities](https://snyk.io/test/github/Spiderpig86/Cirrus/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Spiderpig86/Cirrus?targetFile=package.json)
   [![Known Vulnerabilities](https://img.shields.io/npm/dm/cirrus-ui.svg)](https://www.npmjs.com/package/cirrus-ui)
   [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
+  [![Featured on Openbase](https://badges.openbase.com/js/featured/cirrus-ui.svg?token=aDr+bdA+d7gMXIHh7XKd6fQiB1OgYBjxxvA2YxyKqP8=)](https://openbase.com/js/cirrus-ui?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
+  [![](https://data.jsdelivr.com/v1/package/npm/cirrus-ui/badge)](https://www.jsdelivr.com/package/npm/cirrus-ui)
 
 </div>
 
 <p align="center">
-A fully responsive and comprehensive CSS framework with beautiful controls and simplistic structure. Cirrus is designed to be adaptable to existing themes or when starting fresh.
+A component-and-utility-centric SCSS framework designed for rapid prototyping. Use beautiful pre-built components to bootstrap your next project and utility classes to polish your final design.
 <br />
 <a href="https://cirrus-ui.netlify.app/"><strong>Check out the docs »</strong></a>
 <br />
@@ -25,7 +27,25 @@ A fully responsive and comprehensive CSS framework with beautiful controls and s
 <a href="https://cirrus-ui.netlify.app/getting-started/examples" target="_blank">Examples</a>
 </p>
 
-## :hammer: Quick Install
+
+## :sparkles: Features
+
+* :art: **Beautiful Components** - Beautifully designed components come right out of the box for rapid prototyping.
+* :balloon: **Sass First** - Forget bundling tons of JavaScript with each component. All styles require no JS for interactions/functionality (see Modals, Dropdowns, etc.).
+* :rainbow: **Configuration at its Core** - Add additional components, remove utility classes, disable features, etc. Cirrus takes a generative approach to building your stylesheets. 
+* :zap: **Lightweight** - A large amount of features with a minimal footprint.
+* :iphone: **Responsive** - Fully responsive by design.
+* :computer: **Vscode Extension Support** - Install it [here](https://marketplace.visualstudio.com/items?itemName=Spiderpig86.cirrus-intellisense).
+* 🤹‍♂️ **Playground** - Try out whatever experiment you want with Cirrus [here](https://www.cirrus-ui.com/playground).
+
+## :dart: Supported Browsers
+Cirrus relies on [What CSS to prefix?](http://shouldiprefix.com/) to determine which selectors need prefixes.
+
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Opera | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/electron/electron_48x48.png" alt="Electron" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Electron |
+| --- | --- | --- | --- | --- | --- |
+| IE11, Edge | last 3 versions, ESR | last 3 versions | last 3 versions | last 3 versions | last 3 versions |
+
+## 📦 Install
 
 #### Npm
 ```sh
@@ -40,85 +60,207 @@ yarn add cirrus-ui
 
 #### CDN
 
+For CDNs, it is recommended to attach a specific versions to the URLs to avoid unexpected updates to maintain consistency in your project.
+
+**Please do not reference the `dist` folder artifacts directly as these are subject to change at any time.**
+
+##### Unpkg
 ```html
-https://unpkg.com/cirrus-ui
+<link rel="stylesheet" href="https://unpkg.com/cirrus-ui">
 ```
 
-## :sparkles: Why not other frameworks?
-Even with a multitude of CSS frameworks, some are either too basic that require lots of custom styling and some are too bogged down with a lot of styles that don't end up getting used. Cirrus is meant to bridge a gap between boilerplate stylesheets and UI frameworks.
+##### JsDelivr
 
-* :zap: **Lightweight** - Cirrus consists of a single minified file using only **10.3kb** and **17.2kb** respectively.
-* :gift: **Beautiful Components** - Construct your web app or website using by composing beautifully designed components.
-* :gem: **Clean** - Styles are easy to follow and written using [BEM Notation](http://getbem.com/introduction/).
-* :iphone: **Responsive** - Fully responsive by design.
-* :ship: **Modular** - Import what you need.
-<br />
+```html
+<link rel="stylesheet" href="https://www.jsdelivr.com/package/npm/cirrus-ui">
+```
 
-## :dart: Supported Browsers
-Cirrus relies on [What CSS to prefix?](http://shouldiprefix.com/) to determine which selectors need prefixes.
+Check out the [Setup](https://www.cirrus-ui.com/getting-started/setup) guide for more information.
 
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Opera | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/electron/electron_48x48.png" alt="Electron" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Electron |
-| --- | --- | --- | --- | --- | --- |
-| IE9, IE10, IE11, Edge | last 3 versions, ESR | last 3 versions | last 3 versions | last 3 versions | last 3 versions |
-<br />
+## :hammer: Usage
+
+#### Basic Page
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
+    <link href="https://unpkg.com/cirrus-ui" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>👋Hello World</h1>
+  </body>
+</html>
+```
+
+#### React
+
+```jsx
+import { StrictMode } from "react";
+import ReactDOM from "react-dom";
+
+import App from "./App";
+
+import 'cirrus-ui'; // You can import it here if you want
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+    <StrictMode>
+        <App />
+    </StrictMode>,
+    rootElement
+);
+```
+
+#### Vue
+
+```js
+import Vue from 'vue';
+import App from './App.vue';
+
+import 'cirrus-ui';
+
+Vue.config.productionTip = false;
+
+new Vue({
+    render: (h) => h(App),
+}).$mount('#app');
+```
+
+#### Svelte
+
+```js
+import App from "./App.svelte";
+import "cirrus-ui";
+
+const app = new App({
+    target: document.body
+});
+
+export default app;
+```
+
+#### Sass/Scss
+
+```scss
+@use "node_modules/cirrus-ui/src/cirrus-ext" as * with (
+    $config: (
+        excludes: (
+            ABSOLUTES,
+        ),
+        opacity: null, // Disable default opacity classes
+        extend: (
+            // Add your own
+            opacity: (
+                25: .25,
+                50: .5,
+                75: .75,
+            )
+        )
+    ),
+);
+```
+
+Check out the [Setup](https://www.cirrus-ui.com/getting-started/setup) guide for more information.
+
+## :computer: Development
+
+Use Gitpod, a free online dev environment for GitHub.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Spiderpig86/Cirrus)
+
+Or clone locally:
+
+```bash
+$ git clone git@github.com:Spiderpig86/Cirrus.git
+$ cd cirrus
+$ yarn install
+$ yarn watch
+```
 
 ## :crystal_ball: What's Included
-Framework components are now broken down into `core` and `ext` packages. The `core` package only contains the essentials for basic styling while `core + ext` adds specially designed components.
 
-The `helpers` folder contains configurations, utilities, and other styles shared by both `core` and `ext`.
-
-#### Core
-* [Buttons](https://github.com/Spiderpig86/Cirrus/blob/master/src/core/button.scss "Buttons") - Styles for the button with 3 different variations.
-* [Code](https://github.com/Spiderpig86/Cirrus/blob/master/src/core/code.scss "Code") - Style for code markup blocks.
-* [Default (Base)](https://github.com/Spiderpig86/Cirrus/blob/master/src/core/default.scss "Default") - The core of this framework.
-* [Font](https://github.com/Spiderpig86/Cirrus/blob/master/src/core/font.scss "Font") - All text styles for this framework for headers, articles, blockquotes, and paragraphs.
-* [Footer](https://github.com/Spiderpig86/Cirrus/blob/master/src/core/footer.scss "Footer") - Basic styles for setting up a page footer.
-* [Forms](https://github.com/Spiderpig86/Cirrus/blob/master/src/core/forms.scss "Forms") - Form styles for textboxes, textfields, selects, and layout.
-* [Frames](https://github.com/Spiderpig86/Cirrus/blob/master/src/core/frames.scss "Frames") - Flexible panel with header, body, and footer for layouts.
-* [Header](https://github.com/Spiderpig86/Cirrus/blob/master/src/core/header.scss "Header") - Styles for header elements including drop down menus.
-* [Layout](https://github.com/Spiderpig86/Cirrus/blob/master/src/core/layout.scss "Layout") - Rules for grids, item alignment, and layout borders.
-* [Links](https://github.com/Spiderpig86/Cirrus/blob/master/src/core/links.scss "Links") - Link styles with different effects.
-* [Lists](https://github.com/Spiderpig86/Cirrus/blob/master/src/core/lists.scss "Lists") - A simple stylesheet to simplify list UI.
-* [Media](https://github.com/Spiderpig86/Cirrus/blob/master/src/core/media.scss "Media") - Rules for styling images, videos, figures, avatars, and other media components.
-* [Spacing](https://github.com/Spiderpig86/Cirrus/blob/master/src/core/spacing.scss "Spacing") - Classes for margin/padding.
-* [Tables](https://github.com/Spiderpig86/Cirrus/blob/master/src/core/table.scss "Tables") - Clean designs for tables.
-* [Theme](https://github.com/Spiderpig86/Cirrus/blob/master/src/core/theme.scss "Theme") - Default colors of the framework.
-* [Util](https://github.com/Spiderpig86/Cirrus/blob/master/src/core/utils "Utils") - Designed to solve many common headaches with CSS and provide flexibility for modifying existing classes.
-
-#### Ext
-* [Animations](https://github.com/Spiderpig86/Cirrus/blob/master/src/ext/animations.scss "Animations") - Consists of animations that will work with the controls.
-* [Avatar](https://github.com/Spiderpig86/Cirrus/blob/master/src/ext/avatar.scss "Avatar") - Styles for user avatars.
-* [Cards](https://github.com/Spiderpig86/Cirrus/blob/master/src/ext/card.scss "Cards") - Base for card controls.
-* [Grid](https://github.com/Spiderpig86/Cirrus/blob/master/src/ext/card.scss "Grid") - Experimental implementation of CSS Grid standard.
-* [Modal](https://github.com/Spiderpig86/Cirrus/blob/master/src/core/modal.scss "Modal") - Styles for a pop up modal dialog.
-* [Modifiers](https://github.com/Spiderpig86/Cirrus/blob/master/src/ext/modifiers.scss "Modifiers") - Classes designed for modifying text and backgrounds.
-* [Pagination](https://github.com/Spiderpig86/Cirrus/blob/master/src/ext/pagination.scss "Pagination") - Design for pagination and pagination navigation links.
-* [Placeholder](https://github.com/Spiderpig86/Cirrus/blob/master/src/ext/placeholder.scss "Placeholder") - Styles for a control designed to be a placeholder such as "Coming Soon" panels and so on.
-* [Tabs](https://github.com/Spiderpig86/Cirrus/blob/master/src/ext/tabs.scss "Tabs") - Contains styles for tab controls.
-* [Tags](https://github.com/Spiderpig86/Cirrus/blob/master/src/ext/tags.scss "Tags") - Chip-like controls that are helpful for listing items.
-* [Tiles](https://github.com/Spiderpig86/Cirrus/blob/master/src/ext/tiles.scss "Tiles") - Flexible layout used for tiling controls horizontally.
-* [Toast](https://github.com/Spiderpig86/Cirrus/blob/master/src/ext/toast.scss "Toast") - A small overlay notification for websites.
-* [Tooltips](https://github.com/Spiderpig86/Cirrus/blob/master/src/ext/tooltips.scss "Tooltips") - Add tooltips to any control for contextual info.
-<br />
-
-## :pager: jQuery
-* jQuery is **not needed** in order to use this framework.
-* You may use jQuery for adding functionality such as toggling the dropdown menu for the `Header` component on mobile devices, but you can accomplish the same thing with vanilla JavaScript.
-* It is possible to use these components without jQuery in other frameworks like Angular and React by mimicking the behavior of toggling the class.
-<br />
+- **Base** - base styles.
+  - Animations
+  - Default
+  - Font
+  - Grid
+  - Layout
+  - Media
+  - Modifiers
+  - Spacing
+- **Builds** - build files for `core` and `ext`.
+- **Components** - framework components.
+  - Accordion
+  - Avatar
+  - Breadcrumb
+  - Button
+  - Card
+  - Code
+  - Footer
+  - Forms
+  - Frames
+  - Header
+  - Links
+  - Lists
+  - Modal
+  - Pagination
+  - Placeholder
+  - Progress
+  - Table
+  - Tabs
+  - Tags
+  - Tiles
+  - Toast
+  - Tooltips
+- **Internal** - internal APIs, functions, constants, etc.
+- **Utils** - utility classes.
+  - Absolute
+  - Blur
+  - Border
+  - Clearfix
+  - Display
+  - Flex
+  - Misc
+  - Opacity
+  - Overflow
+  - Position
+  - Shadow
+  - Transitions
+  - Z-Index
 
 ## :clap: Related Projects
-| Project                                                                              | Description                                                                            |
-|--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [vue-cirrus](https://github.com/FlorianWoelki/vue-cirrus)   | Cirrus components for Vue.js with straightforward syntax                                             |
-<br />
-
-## :gem: Examples that use Cirrus
-* [Polarity 9](http://polarity.x10.mx/browser "Polarity 9 Promo Page")
-* [Phraze](https://phrazes.net "Phraze")
-<br />
+| Project                                                   | Description                                                                           |
+| --------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| [vue-cirrus](https://github.com/FlorianWoelki/vue-cirrus) | Cirrus components for Vue.js with straightforward syntax                              |
+| cirrus-blocks                                             | A collection of beautiful components built with Cirrus ready to be copied and pasted. |
+| [cirrus-reset](https://github.com/Cirrus-UI/Cirrus-Reset) | A simple CSS reset from Cirrus.                                                       |
 
 ## :newspaper: License and Attribution
 Cirrus is licensed under the [MIT license](https://github.com/Spiderpig86/Cirrus/blob/master/LICENSE "MIT License"). If this frame work has helped you in any way, attribution in the footer of your website would be much appreciated.
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSpiderpig86%2FCirrus.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FSpiderpig86%2FCirrus?ref=badge_large)
+
+## 🤝 Contributing [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+Read our [contributing guide](https://github.com/Spiderpig86/Cirrus/blob/master/.github/CONTRIBUTING.yml) and improve Cirrus together.
+
+We welcome all contributions. Please read our [CONTRIBUTING.md](https://github.com/Spiderpig86/Cirrus/blob/master/.github/CONTRIBUTING.md) first. You can submit any ideas as [pull requests](https://github.com/Spiderpig86/Cirrus/pulls) or as [GitHub issues](https://github.com/Spiderpig86/Cirrus/issues). If you'd like to improve code, check out the [Development Instructions](https://www.cirrus-ui.com/getting-started/developing) and have a good time! :)
+
+When creating issues, please follow the templates provided for the issue type you selected. The added detail and formatting will help me understand and resolve your issue faster.
+
+[![Let's fund issues in this repository](https://issuehunt.io/static/embed/issuehunt-button-v1.svg)](https://issuehunt.io/r/Spiderpig86/Cirrus)
+
+## ❤️ Sponsors and Backers
+
+I would greatly appreciate any support for the continued development of this project. :smile:
+
+[![](https://opencollective.com/cirrus/tiers/sponsors.svg?avatarHeight=36)](https://opencollective.com/cirrus#support)
+
+[![](https://opencollective.com/cirrus/tiers/backers.svg?avatarHeight=36)](https://opencollective.com/cirrus#support)
