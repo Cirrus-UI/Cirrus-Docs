@@ -10,9 +10,9 @@ export interface ModalProps {
 
 export const Modal: React.FC<ModalProps> = (props) => {
     return (
-        <div className={`modal ${props.size ?? ``} ${props.animation ?? ``}`} id={props.id}>
+        <div className={`modal-container ${props.animation ?? ``}`} id={props.id}>
             <a href="#searchModalDialog" className="modal-overlay close-btn" aria-label="Close"></a>
-            <div className="modal-content" role="document">
+            <div className={`modal ${props.size ?? ``}`} role="document">
                 {props.children ? (
                     props.children
                 ) : (

@@ -13,6 +13,8 @@ import { DefaultLayout } from '../../../layouts/default';
 import { toc } from './toc';
 import { PAGE_TITLE_PREFIX } from '../../../constants';
 import { TITLE_ELEMENTS } from '../../../config/sidebar';
+import { VersionTag } from '../../../layouts/components/tag';
+import Link from 'next/link';
 
 export const ModalsPage: React.FC<any> = (props) => {
     return (
@@ -70,7 +72,7 @@ export const ModalsPage: React.FC<any> = (props) => {
                                     <p className="tile__subtitle m-0">jnewman@gmail.com</p>
                                 </div>
                                 <div className="tile__buttons">
-                                    <button className="btn-success btn--sm uppercase">
+                                    <button className="btn-info outline btn--sm uppercase">
                                         <span className="icon">
                                             <FontAwesomeIcon
                                                 className="fa-wrapper small"
@@ -95,7 +97,7 @@ export const ModalsPage: React.FC<any> = (props) => {
                                     <p className="tile__subtitle m-0">fwatsonm@gmail.com</p>
                                 </div>
                                 <div className="tile__buttons">
-                                    <button className="btn-success btn--sm uppercase">
+                                    <button className="btn-info outline btn--sm uppercase">
                                         <span className="icon">
                                             <FontAwesomeIcon
                                                 className="fa-wrapper small"
@@ -120,7 +122,7 @@ export const ModalsPage: React.FC<any> = (props) => {
                                     <p className="tile__subtitle m-0">croberts@outlook.com</p>
                                 </div>
                                 <div className="tile__buttons">
-                                    <button className="btn-danger btn--sm uppercase">
+                                    <button className="btn-danger outline btn--sm uppercase">
                                         <span className="icon">
                                             <FontAwesomeIcon
                                                 className="fa-wrapper small"
@@ -145,7 +147,7 @@ export const ModalsPage: React.FC<any> = (props) => {
                                     <p className="tile__subtitle m-0">dalvarado@yahoo.com</p>
                                 </div>
                                 <div className="tile__buttons">
-                                    <button className="btn-success btn--sm uppercase">
+                                    <button className="btn-info outline btn--sm uppercase">
                                         <span className="icon">
                                             <FontAwesomeIcon
                                                 className="fa-wrapper small"
@@ -170,7 +172,7 @@ export const ModalsPage: React.FC<any> = (props) => {
                                     <p className="tile__subtitle m-0">slim@stanleylim.me</p>
                                 </div>
                                 <div className="tile__buttons">
-                                    <button className="btn-success btn--sm uppercase">
+                                    <button className="btn-info outline btn--sm uppercase">
                                         <span className="icon">
                                             <FontAwesomeIcon
                                                 className="fa-wrapper small"
@@ -194,9 +196,9 @@ export const ModalsPage: React.FC<any> = (props) => {
                     </div>
                 </Modal>
 
-                <Modal id="small-modal" size="modal-small" />
+                <Modal id="small-modal" size="modal--sm" />
                 <Modal id="normal-modal" />
-                <Modal id="large-modal" size="modal-large" />
+                <Modal id="large-modal" size="modal--lg" />
 
                 <Modal id="dropdown-modal" animation="modal-animated--dropdown" />
                 <Modal id="in-modal" animation="modal-animated--zoom-in" />
@@ -206,6 +208,7 @@ export const ModalsPage: React.FC<any> = (props) => {
                     <div className="content">
                         <Headline title="Modals" link="#modals" />
                         <div className="divider"></div>
+                        <VersionTag text='Update' version='0.8.0' />
 
                         <p>Modals are CSS-powered prompts designed for any site.</p>
                         <a href="#example-modal">
@@ -219,16 +222,16 @@ export const ModalsPage: React.FC<any> = (props) => {
                         <Headline title="Structure" link="#structure" size="4" />
                         <div className="divider"></div>
                         <p>
-                            A <code>modal</code> comprises of these classes:
+                            A <b>modal</b> comprises of these classes:
                         </p>
 
                         <ul>
                             <li>
-                                <code>modal</code> - the darkened translucent background around{' '}
-                                <code>modal-content</code>. Think of this as the modal container.
+                                <code>modal-container</code> - the darkened translucent background around the{' '}
+                                <code>modal</code>. This is where you apply the <Link href="#animations">animation</Link> related classes.
                                 <ul>
                                     <li>
-                                        <code>modal-content</code> - the main dialog itself.
+                                        <code>modal</code> - the main dialog itself. Other classes that can be applied here include <Link href="#sizes">sizes</Link>.
                                         <ul>
                                             <li>
                                                 <code>modal-header</code> - header or title bar of the dialog.
@@ -286,8 +289,8 @@ function toggleModal() {
 <!-- Button to open/close modal -->
 <button onclick="toggleModal()">Open Modal</button>
 
-<div class="modal modal--visible" id="example-modal"><a onclick="toggleModal" class="modal-overlay close-btn" aria-label="Close"></a>
-  <div class="modal-content" role="document">
+<div class="modal-container modal--visible" id="example-modal"><a onclick="toggleModal" class="modal-overlay close-btn" aria-label="Close"></a>
+  <div class="modal" role="document">
     <div class="modal-header u-flex u-justify-space-between">
       <div class="modal-title">Modal Dialog</div>
       <div onclick="toggleModal()"
@@ -386,9 +389,9 @@ function toggleModal() {
                         <div className="space"></div>
 
                         <CodeBlock
-                            code={`<div class="modal modal-animated--zoom-in" id="basic-modal">
+                            code={`<div class="modal-container modal-animated--zoom-in" id="basic-modal">
     <a href="#searchModalDialog" class="modal-overlay close-btn" aria-label="Close"></a>
-    <div class="modal-content" role="document">
+    <div class="modal" role="document">
         <div class="modal-header u-flex u-justify-space-between"><a href="#components" aria-label="Close"><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="u-inline-block fa-times fa-w-11 fa-wrapper" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg></span></a>
             <div class="modal-title">Invite</div>
         </div>
@@ -484,10 +487,10 @@ function toggleModal() {
                         <Headline title="Sizes" link="#sizes" size="4" />
                         <div className="divider"></div>
                         <p>
-                            Modals come in 3 sizes: <code>modal-small</code>, normal, and <code>modal-large</code>.
+                            Modals come in 3 sizes: <code>modal--sm</code>, normal, and <code>modal--lg</code>.
                             Append these classes to <code>modal</code> to set the size. Note that these width
-                            constraints apply to <code>.modal-content</code> and not <code>.modal</code> as{' '}
-                            <code>.modal-content</code> is the dialog itself.
+                            constraints apply to <code>.modal</code> and not <code>.modal-container</code> as{' '}
+                            <code>.modal</code> is the dialog itself.
                         </p>
 
                         <div className="w-100p mt-3 u-flex u-gap-1 u-justify-center">
@@ -503,20 +506,20 @@ function toggleModal() {
                         </div>
 
                         <CodeBlock language='htmlbars' code={`<!-- Small modal -->
-    <div class="modal modal-small">
-        <div class="modal-content">
+    <div class="modal-container modal--sm">
+        <div class="modal">
             <!-- Stuff -->
         </div>
     </div>
 <!-- Normal modal -->
 <div class="modal">
-    <div class="modal-content">
+    <div class="modal">
         <!-- Stuff -->
     </div>
 </div>
 <!-- Small modal -->
-<div class="modal modal-large">
-    <div class="modal-content">
+<div class="modal-container modal--lg">
+    <div class="modal">
         <!-- Stuff -->
     </div>
 </div>`} />
@@ -545,20 +548,20 @@ function toggleModal() {
                             </a>
                         </div>
                         <CodeBlock language='htmlbars' code={`<!-- Drop down modal -->
-    <div class="modal modal-animated--dropdown">
-        <div class="modal-content">
+    <div class="modal-container modal-animated--dropdown">
+        <div class="modal">
             <!-- Stuff -->
         </div>
     </div>
 <!-- Zoom in modal -->
-<div class="modal modal-animated--zoom-in">
-    <div class="modal-content">
+<div class="modal-container modal-animated--zoom-in">
+    <div class="modal">
         <!-- Stuff -->
     </div>
 </div>
 <!-- Zoom out modal -->
-<div class="modal modal-animated--zoom-out">
-    <div class="modal-content">
+<div class="modal-container modal-animated--zoom-out">
+    <div class="modal">
         <!-- Stuff -->
     </div>
 </div>`} />

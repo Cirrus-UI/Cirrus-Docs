@@ -161,7 +161,7 @@ export const ColorsPage: React.FC<any> = (props) => {
 
                 <section className="padtop" id="v2">
                     <div className="content">
-                        <Headline title="v2 Colors (Expanded)" link="#v2" size={'4'} />
+                        <Headline title="v2 Colors (Extended)" link="#v2" size={'4'} />
                         <div className="divider"></div>
                         <span className="tag-container group-tags">
                             <div className="tag tag--dark">Updated</div>
