@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { withLayout } from '@moxy/next-layout';
 import ReactMarkdown from 'react-markdown';
+import { Prism } from 'react-syntax-highlighter';
+import { duotoneDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 import { TableOfContents, TableOfContentsEntry } from '../../../layouts/components/toc';
 import { Headline } from '../../../layouts/components/headline';
@@ -17,7 +19,6 @@ const importAll = (r: any) => r.keys().map(r);
 const releaseNotesMd = importAll(require.context('../../../static/markdown', false, /\.md$/)).sort().reverse();
 
 export const ReleaseNotesPage: React.FC<any> = (props) => {
-
     const [releaseNotes, setReleaseNotes] = useState<Map<string, string>>(new Map());
     const [toc, setToc] = useState<TableOfContentsEntry[]>([
         {
@@ -76,7 +77,29 @@ export const ReleaseNotesPage: React.FC<any> = (props) => {
                             <div className="content">
                                 <Headline title={version} link={`#${version}`} size="4" />
                                 <div className="divider"></div>
-                                <ReactMarkdown source={releaseNotes.get(version)} escapeHtml={false} />
+                                <ReactMarkdown
+                                    children={releaseNotes.get(version)}
+                                    components={{
+                                        code({ node, inline, className, children, ...props }: any) {
+                                            const match = /language-(\w+)/.exec(className || '');
+
+                                            return !inline && match ? (
+                                                <Prism
+                                                    style={duotoneDark}
+                                                    PreTag="div"
+                                                    language={match[1]}
+                                                    {...props}
+                                                >
+                                                    {String(children).replace(/\n$/, '')}
+                                                </Prism>
+                                            ) : (
+                                                <code className={className} {...props}>
+                                                    {children}
+                                                </code>
+                                            );
+                                        },
+                                    }}
+                                />
                             </div>
                         </section>
                     );
