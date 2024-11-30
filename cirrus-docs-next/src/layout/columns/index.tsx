@@ -34,7 +34,7 @@ export const ColumnsPage: React.FC<any> = (props) => {
 
                         <p>
                             Classes for using Cirrus' column system powered by Flexbox. By default, 12 columns are
-                            created. However, this can be modified to any number you'd like by modifying a
+                            created. However, this can be modified to any number you'd like by modifying a{' '}
                             <Link href="/grid/templates#customization">
                                 <a className="u u-LR">single variable</a>
                             </Link>{' '}
