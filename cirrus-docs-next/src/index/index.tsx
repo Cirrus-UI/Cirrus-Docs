@@ -593,7 +593,7 @@ import 'cirrus-ui';`}
                                             <div className="frame__body">
                                                 <div className="row u-items-center py-2">
                                                     <div className="md:col-6">
-                                                        <div className="grid-md grid-cols-2">
+                                                        <div className="md:grid grid-cols-2">
                                                             {['none', 'xs', 'sm', 'md', 'lg', 'xl'].map((level) => {
                                                                 return (
                                                                     <div

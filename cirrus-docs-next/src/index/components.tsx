@@ -15,7 +15,7 @@ export const MenuList: React.FC<any> = (props) => {
                 <div className="tile level">
                     <div className="tile__icon">
                         <figure className="avatar">
-                            <img src="https://crunchbase-production-res.cloudinary.com/image/upload/c_thumb,h_256,w_256,f_auto,g_faces,z_0.7,q_auto:eco/v1398292826/a1tq244sp7uqhb5a0utg.png" />
+                            <img src="https://images.crunchbase.com/image/upload/c_thumb,h_170,w_170,f_auto,g_face,z_0.7,b_white,q_auto:eco,dpr_1/v1398292826/a1tq244sp7uqhb5a0utg.png" />
                         </figure>
                     </div>
                     <div className="tile__container">
@@ -266,7 +266,7 @@ export const LoginCard: React.FC<any> = (props) => {
                 <div className="input-control">
                     <input
                         type="email"
-                        className="input-contains-icon bg-gray-900 text-white"
+                        className="input-contains-icon bg-gray-900 border-gray-800 text-white"
                         placeholder="Email"
                         style={{
                             border: '1px solid transparent !important',
@@ -279,7 +279,7 @@ export const LoginCard: React.FC<any> = (props) => {
                 <div className="input-control">
                     <input
                         type="password"
-                        className="input-contains-icon bg-gray-900 text-white"
+                        className="input-contains-icon bg-gray-900 border-gray-800 text-white"
                         placeholder="Password"
                         style={{
                             border: '1px solid transparent !important',
@@ -426,7 +426,7 @@ export const ECommerceCard: React.FC<any> = (props) => {
 export const ResponsiveLandingHTML = `<section class="min-h-100p w-100p u-flex u-justify-center u-items-center" style="background: linear-gradient(to top, #141e30, #243b55);">
 	<div class="content w-80p">
 		<div
-			class="u-flex u-flex-column u-items-flex-start u-justify-flex-start u-relative md:u-flex-row- md:u-items-stretch">
+			class="u-flex u-flex-column u-items-flex-start u-justify-flex-start u-relative md:u-flex-row md:u-items-stretch">
 			<div class="pt-6 mx-auto md:w-50p md:mx-0 md:pb-4 md:pr-4">
 				<h1 class="headline-4 tracking-tighter text-5xl u-text-center text-white md:u-text-left">
 					Building the <br>

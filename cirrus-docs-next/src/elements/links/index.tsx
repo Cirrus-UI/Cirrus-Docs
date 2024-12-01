@@ -52,7 +52,7 @@ export const LinksPage: React.FC<any> = (props) => {
                         <div className="space"></div>
 
                         <h6 className="uppercase">Types</h6>
-                        <p className="title">Standard</p>
+                        <p className="font-bold mb-0">Standard</p>
                         <p className="subtitle">A standard link with only a color transition.</p>
                         <div className="row">
                             <div className="md:col-6">
@@ -63,7 +63,7 @@ export const LinksPage: React.FC<any> = (props) => {
                             </div>
                         </div>
 
-                        <p className="title">Underline</p>
+                        <p className="font-bold mb-0">Underline</p>
                         <p className="subtitle">A link with underlined text.</p>
                         <div className="row">
                             <div className="md:col-6">
@@ -79,7 +79,7 @@ export const LinksPage: React.FC<any> = (props) => {
                             </div>
                         </div>
 
-                        <p className="title">Underline Animation (Left to Right)</p>
+                        <p className="font-bold mb-0">Underline Animation (Left to Right)</p>
                         <p className="subtitle">Animated underlined link with a transition from left to right.</p>
                         <div className="row">
                             <div className="md:col-6">
@@ -95,7 +95,7 @@ export const LinksPage: React.FC<any> = (props) => {
                             </div>
                         </div>
 
-                        <p className="title">Underline Animation (Right to Left)</p>
+                        <p className="font-bold mb-0">Underline Animation (Right to Left)</p>
                         <p className="subtitle">Animated underlined link with a transition from right to left.</p>
                         <div className="row">
                             <div className="md:col-6">
@@ -111,7 +111,7 @@ export const LinksPage: React.FC<any> = (props) => {
                             </div>
                         </div>
 
-                        <p className="title">Underline Animation (Center)</p>
+                        <p className="font-bold mb-0">Underline Animation (Center)</p>
                         <p className="subtitle">Animated underlined link with a transition from the center.</p>
                         <div className="row">
                             <div className="md:col-6">
@@ -124,7 +124,7 @@ export const LinksPage: React.FC<any> = (props) => {
                             </div>
                         </div>
 
-                        <p className="title">Outline Animation (Left to Right)</p>
+                        <p className="font-bold mb-0">Outline Animation (Left to Right)</p>
                         <p className="subtitle">Animated outlined link with a transition from left to right.</p>
                         <div className="row">
                             <div className="md:col-6">
@@ -140,7 +140,7 @@ export const LinksPage: React.FC<any> = (props) => {
                             </div>
                         </div>
 
-                        <p className="title">Outline Animation (Right to Left)</p>
+                        <p className="font-bold mb-0">Outline Animation (Right to Left)</p>
                         <p className="subtitle">Animated outlined link with a transition from right to left.</p>
                         <div className="row">
                             <div className="md:col-6">
@@ -156,7 +156,7 @@ export const LinksPage: React.FC<any> = (props) => {
                             </div>
                         </div>
 
-                        <p className="title">Outline Animation (Center)</p>
+                        <p className="font-bold mb-0">Outline Animation (Center)</p>
                         <p className="subtitle">Animated outlined link with a transition from the center.</p>
                         <div className="row">
                             <div className="md:col-6">
@@ -169,7 +169,7 @@ export const LinksPage: React.FC<any> = (props) => {
                             </div>
                         </div>
 
-                        <p className="title">Opposite Transitions {'(L -> R / R -> L'})</p>
+                        <p className="font-bold mb-0">Opposite Transitions {'(L -> R / R -> L'})</p>
                         <p className="subtitle">
                             Animated outlined link with a transition with the top moving left to right and the bottom
                             right to left. Keep in mind that the class name refers to the direction of movement of the
@@ -189,7 +189,7 @@ export const LinksPage: React.FC<any> = (props) => {
                             </div>
                         </div>
 
-                        <p className="title">Opposite Transitions {'(R -> L / L -> R)'}</p>
+                        <p className="font-bold mb-0">Opposite Transitions {'(R -> L / L -> R)'}</p>
                         <p className="subtitle">
                             Animated outlined link with a transition with the top moving right to left and the bottom
                             left to right. Keep in mind that the class name refers to the direction of movement of the
@@ -204,42 +204,6 @@ export const LinksPage: React.FC<any> = (props) => {
                             <div className="md:col-6">
                                 <CodeBlock
                                     code={`<a href="!#" class="utb utb-ORL">Crisscross</a>`}
-                                    language="htmlbars"
-                                />
-                            </div>
-                        </div>
-
-                        <p className="title">Square</p>
-                        <p className="subtitle">Animated link with simultaneously drawn borders.</p>
-                        <div className="row">
-                            <div className="md:col-6">
-                                <span className="usquare">
-                                    <a href="!#" className="utb utb-OLR">
-                                        I am a square
-                                    </a>
-                                </span>
-                            </div>
-                            <div className="md:col-6">
-                                <CodeBlock
-                                    code={`<a href="!#" class="utb utb-OLR">I am a square</a>`}
-                                    language="htmlbars"
-                                />
-                            </div>
-                        </div>
-
-                        <p className="title">Delayed Square</p>
-                        <p className="subtitle">Animated link with sequentially drawn borders.</p>
-                        <div className="row">
-                            <div className="md:col-6">
-                                <span className="usquare delay">
-                                    <a href="!#" className="utb utb-OLR">
-                                        I am a square
-                                    </a>
-                                </span>
-                            </div>
-                            <div className="md:col-6">
-                                <CodeBlock
-                                    code={`<a href="!#" class="utb utb-OLR">I am a square</a>`}
                                     language="htmlbars"
                                 />
                             </div>

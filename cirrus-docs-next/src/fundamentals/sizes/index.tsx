@@ -10,11 +10,22 @@ import { toc } from './toc';
 import { PAGE_TITLE_PREFIX } from '../../../constants';
 import { CodeBlock } from '../../../layouts/components/codeblock';
 import { VersionTag } from '../../../layouts/components/tag';
-import { TableWrapper } from '../../../layouts/components/table-wrapper';
 
 export const SizesPage: React.FC<any> = (props) => {
-    const sizes = [0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24, 32];
+    const sizes = [0, `px`, 1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24, 32];
+    const sizeMappings = {
+        'px': 1
+    };
     const tableRows = sizes.map((size) => {
+        if (typeof size !== 'number') {
+            return {
+                size,
+                pixel: sizeMappings[size],
+                rem: sizeMappings[size] / 16,
+                example: <div className={`bg-indigo-500 u-round-xs u-shadow-lg pb-${size}`}></div>,
+            }
+        }
+
         return {
             size,
             pixel: size * 8,
