@@ -308,7 +308,7 @@ export const CardsPage: React.FC<any> = (props) => {
                                         <div
                                             className="card__image"
                                             style={{
-                                                backgroundImage: 'url(https://placeimg.com/640/480/nature)',
+                                                backgroundImage: 'url(https://unsplash.it/g/640/480?random)',
                                             }}
                                         ></div>
 
@@ -337,7 +337,7 @@ export const CardsPage: React.FC<any> = (props) => {
                                             className="card__image"
                                             style={{
                                                 backgroundImage:
-                                                    'url(https://source.unsplash.com/category/nature/640x480)',
+                                                    'url(https://unsplash.it/g/640/480?random)',
                                             }}
                                         ></div>
 
@@ -366,7 +366,7 @@ export const CardsPage: React.FC<any> = (props) => {
                                             className="card__image"
                                             style={{
                                                 backgroundImage:
-                                                    'url(https://source.unsplash.com/category/nature/640x480)',
+                                                    'url(https://unsplash.it/g/640/480?random)',
                                             }}
                                         ></div>
                                         <div className="card__title-container">
@@ -466,7 +466,7 @@ export const CardsPage: React.FC<any> = (props) => {
                                         <div
                                             className="card__image"
                                             style={{
-                                                backgroundImage: 'url(https://source.unsplash.com/user/erondu/640x480)',
+                                                backgroundImage: 'url(https://unsplash.it/g/640/480?random)',
                                             }}
                                         ></div>
                                     </div>

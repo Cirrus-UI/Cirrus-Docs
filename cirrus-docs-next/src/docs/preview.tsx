@@ -1509,7 +1509,7 @@ export const Preview: React.FC<any> = (props) => {
                                     <div className="tile level">
                                         <div className="tile__icon">
                                             <figure className="avatar">
-                                                <img src="https://crunchbase-production-res.cloudinary.com/image/upload/c_thumb,h_256,w_256,f_auto,g_faces,z_0.7,q_auto:eco/v1398292826/a1tq244sp7uqhb5a0utg.png" />
+                                                <img src="https://images.crunchbase.com/image/upload/c_thumb,h_170,w_170,f_auto,g_face,z_0.7,b_white,q_auto:eco,dpr_1/v1398292826/a1tq244sp7uqhb5a0utg.png" />
                                             </figure>
                                         </div>
                                         <div className="tile__container">
