@@ -220,7 +220,7 @@ export const FormGroupsPage: React.FC<any> = (props) => {
                         <div className="divider"></div>
                         <p>Below is an example form that uses a bunch of different fields together.</p>
 
-                        <div className="u-no-padding">
+                        <div className="p-0">
                             <div className="mb-1">
                                 <label className="font-bold">Contact</label>
                                 <div className="section-body row">
@@ -284,7 +284,7 @@ export const FormGroupsPage: React.FC<any> = (props) => {
                                     </label>
                                     <div className="section-body">
                                         <div className="u-flex">
-                                            <div className="form-ext-control form-ext-radio m-0">
+                                            <div className="form-ext-control form-ext-radio m-0 mr-1">
                                                 <input
                                                     id="radio-1"
                                                     name="member"
@@ -318,58 +318,101 @@ export const FormGroupsPage: React.FC<any> = (props) => {
                         </div>
                         <div className="space"></div>
                         <CodeBlock
-                            code={`<div class="mb-1">
-    <label class="font-bold">Contact</label>
-    <div class="section-body row">
-        <div class="md:col-6 pl-0">
-            <div class="input-control">
-                <input class="input-contains-icon input-contains-icon input-contains-icon-left" type="text" placeholder="Name" />
-                <span class="icon icon-left"><i class="fa fa-wrapper fa-user" aria-hidden="true"></i></span>
+                            code={`<div class="p-0">
+    <div class="mb-1">
+        <label class="font-bold">Contact</label>
+        <div class="section-body row">
+            <div class="md:col-6 pl-0">
+                <div class="input-control">
+                    <input
+                        class="input-contains-icon input-contains-icon input-contains-icon-left"
+                        type="text"
+                        placeholder="Name"
+                    />
+                    <span class="icon icon-left">
+                        <FontAwesomeIcon class="fa-wrapper" icon={['fas', 'user']} />
+                    </span>
+                </div>
+            </div>
+            <div class="md:col-6 pr-0">
+                <div class="input-control">
+                    <input
+                        class="input-contains-icon input-contains-icon-left input-contains-icon-right text-success input-success"
+                        type="text"
+                        placeholder="Email"
+                        defaultValue="somebodyoncetoldme@gmail.com"
+                    />
+                    <span class="icon icon-left">
+                        <FontAwesomeIcon class="fa-wrapper" icon={['fas', 'envelope']} />
+                    </span>
+                    <span class="icon icon-right">
+                        <FontAwesomeIcon class="fa-wrapper" icon={['fas', 'check']} />
+                    </span>
+                </div>
             </div>
         </div>
-        <div class="md:col-6 pr-0">
-            <div class="input-control">
-                <input class="input-contains-icon input-contains-icon-left input-contains-icon-right text-success input-success" type="text" placeholder="Email" value="somebodyoncetoldme@gmail.com" />
-                <span class="icon icon-left"><i class="fa fa-wrapper fa-envelope" aria-hidden="true"></i></span>
-                <span class="icon icon-right"><i class="fa fa-wrapper fa-check" aria-hidden="true"></i></span>
-            </div>
-        </div>
     </div>
-</div>
-<div class="mb-1">
-    <label class="font-bold">Phone <span class="info inline font-light">We are not telemarketers.</span></label>
-    <div class="section-body">
-        <div class="form-group">
-            <label class="form-group-label">+1</label>
-            <input type="text" class="form-group-input" placeholder="Enter your phone number" />
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="mb-1 md:col-6 pl-0">
-        <label class="font-bold">Choose One</label>
-        <select class="select" placeholder="Choose one">
-            <option>Shibe</option>
-            <option>Doggo</option>
-            <option>Pupper</option>
-        </select>
-    </div>
-    <div class="mb-1 md:col-6 pr-0">
-        <label class="font-bold label--sm">Select One <span class="required">*</span></label>
+    <div class="mb-1">
+        <label class="font-bold">
+            Phone <span class="info inline font-light">We are not telemarketers.</span>
+        </label>
         <div class="section-body">
-            <label class="radio">
-                <input type="radio" name="member" /> Yes
-            </label>
-            <label class="radio">
-                <input type="radio" name="member" /> No
-            </label>
+            <div class="form-group">
+                <label class="form-group-label">+1</label>
+                <input
+                    type="text"
+                    class="form-group-input"
+                    placeholder="Enter your phone number"
+                />
+            </div>
         </div>
-        <span class="required info">This section is required.</span>
     </div>
-</div>
-<div class="mb-1">
-    <label class="font-bold">Message</label>
-    <textarea placeholder="Enter your message"></textarea>
+    <div class="row">
+        <div class="mb-1 md:col-6 pl-0">
+            <label class="font-bold">Choose One</label>
+            <select class="select" placeholder="Choose one">
+                <option>Shibe</option>
+                <option>Doggo</option>
+                <option>Pupper</option>
+            </select>
+        </div>
+        <div class="mb-1 md:col-6 pr-0">
+            <label class="font-bold label--sm">
+                Select One <span class="required">*</span>
+            </label>
+            <div class="section-body">
+                <div class="u-flex">
+                    <div class="form-ext-control form-ext-radio m-0 mr-1">
+                        <input
+                            id="radio-1"
+                            name="member"
+                            class="form-ext-input"
+                            type="radio"
+                        />
+                        <label class="form-ext-label" htmlFor="radio-1">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-ext-control form-ext-radio m-0">
+                        <input
+                            id="radio-2"
+                            name="member"
+                            class="form-ext-input"
+                            type="radio"
+                        />
+                        <label class="form-ext-label" htmlFor="radio-2">
+                            No
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <span class="required info">This section is required.</span>
+        </div>
+    </div>
+    <div class="mb-1">
+        <label class="font-bold">Message</label>
+        <textarea placeholder="Enter your message"></textarea>
+    </div>
 </div>`}
                             language="htmlbars"
                         />

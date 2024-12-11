@@ -104,24 +104,6 @@ export const TextElementsPage: React.FC<any> = (props) => {
 </p>`}
                             language="htmlbars"
                         />
-                        <div className="space"></div>
-
-                        <h6>Title and Subtitle</h6>
-                        <p>
-                            The <code>title</code> and <code>subtitle</code> helper classes bring two elements
-                            representing a title and a subtitle closer together. The <code>title</code> is bolded by
-                            default.
-                        </p>
-                        <div className="bg-gray-100 u-round-xs p-3">
-                            <h6 className="title">I am the title.</h6>
-                            <p className="subtitle">I am the subtitle.</p>
-                        </div>
-                        <div className="space"></div>
-                        <CodeBlock
-                            code={`<h6 className="title">I am the title.</h6>
-<p className="subtitle">I am the subtitle.</p>`}
-                            language="htmlbars"
-                        />
                     </div>
                 </section>
 

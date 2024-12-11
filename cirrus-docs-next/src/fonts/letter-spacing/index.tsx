@@ -200,7 +200,7 @@ $config: (
 $config: (
     extend: (
         letter-spacing: (
-            2x-tighter: '-.1em'
+            2x-tighter: '-.1rem'
         )
     )
 ) !default;`}

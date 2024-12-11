@@ -44,7 +44,7 @@ export const AboutPage: React.FC<any> = (props) => {
                                 <a
                                     href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=5JW89TNNHB4JL&currency_code=USD&source=url"
                                     target="_blank"
-                                    className="u-no-padding u-inline-block"
+                                    className="p-0 u-inline-block"
                                 >
                                     <img src="/img/paypal.jpg" className="_shadow" />
                                 </a>
@@ -56,7 +56,7 @@ export const AboutPage: React.FC<any> = (props) => {
                                 <a
                                     href="https://www.patreon.com/bePatron?u=20654861"
                                     target="_blank"
-                                    className="u-no-padding u-inline-block"
+                                    className="p-0 u-inline-block"
                                 >
                                     <img src="/img/become_a_patron_button.png" className="_shadow" />
                                 </a>
