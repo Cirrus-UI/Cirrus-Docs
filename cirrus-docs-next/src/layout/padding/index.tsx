@@ -203,7 +203,7 @@ padding-bottom: (0) !important;`,
                     <div className="content">
                         <Headline title="Responsive" link="#responsive" size="4" />
                         <div className="divider"></div>
-                        <VersionTag version="0.6.3." text="New" />
+                        <VersionTag version="0.6.3" text="New" />
                         <p>
                             The margin classes mentioned here support viewport based application. All you need to do is
                             add a <code>&lt;viewport&gt;:&lt;class&gt;</code> at the end of the class(es) you are using. For example,

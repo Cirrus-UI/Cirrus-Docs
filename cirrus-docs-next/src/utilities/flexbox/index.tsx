@@ -804,7 +804,7 @@ export const FlexboxUtilsPage: React.FC<any> = (props) => {
                         <div className="space space--lg"></div>
 
                         <p>
-                            You can also use <code>flex-basis</code> util classes with percentages.
+                            You can also use <code>flex-basis</code> util classes with percentages (e.g. <code>u-basis-[10|20|30|40|50|60|70|80|90|100]p</code>).
                         </p>
                         <div className="u-flex h-12 bg-red-200 font-bold text-white p-3 u-gap-1">
                             <div className="bg-red-600 u-shadow-lg p-2 u-round-xs u-flex u-items-center u-justify-center u-basis-20p">

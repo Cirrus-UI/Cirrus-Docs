@@ -74,7 +74,7 @@ export const WidthPage: React.FC<any> = (props) => {
                         <div className="divider"></div>
                         <VersionTag version="0.7.2" text="Updated" />
                         <p>
-                            The <code>{`w-{{value}}`}</code> classes gives an element a percentage based width.
+                            The <code>{`w-{{value}}p`}</code> classes gives an element a percentage based width.
                         </p>
 
                         <div className="u-flex u-flex-column u-justify-space-evenly p-6 bg-orange-100 mb-2">
