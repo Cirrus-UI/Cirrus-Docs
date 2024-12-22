@@ -624,7 +624,7 @@ unknown printer took a galley of type and scrambled it to make a type specimen b
 It has survived not only five centuries, but also the leap into electronic
 typesetting, remaining essentially unchanged.`}
                                 ></textarea>
-                                <input disabled type="submit" className="btn-primary pull-right" />
+                                <input type="submit" className="btn-primary pull-right" />
                             </div>
                             <div className="lg:col-6">
                                 <CodeBlock

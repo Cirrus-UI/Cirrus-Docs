@@ -251,18 +251,6 @@ export const FootersPage: React.FC<any> = (props) => {
                                 src="/static/html/demo-footer-social.html"
                             />
                         </LazyLoad>
-                        <div className="space space--lg"></div>
-                        <div className="placeholder">
-                            <div className="placeholder-icon">
-                                <span className="icon">
-                                    <FontAwesomeIcon className="fa-wrapper" icon={['fas', 'clock']} />
-                                </span>
-                                <h5 className="placeholder-title light">Coming Soon</h5>
-                                <p className="placeholder-subtitle">
-                                    Currently working hard coming up with different designs. Check back later.
-                                </p>
-                            </div>
-                        </div>
                     </div>
                 </section>
 

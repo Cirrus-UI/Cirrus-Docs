@@ -8,11 +8,49 @@ import { Pagination } from '../../../layouts/components/pagination';
 import { CodeBlock } from '../../../layouts/components/codeblock';
 import { DefaultLayout } from '../../../layouts/default';
 import { toc } from './toc';
-import { PAGE_TITLE_PREFIX } from '../../../constants';
+import { DEFAULT_COLUMN_SIZING_SYSTEM, DEFAULT_ROW_SIZING_SYSTEM, DEFAULT_ROW_START_END_SIZING_SYSTEM, PAGE_TITLE_PREFIX } from '../../../constants';
 import Link from 'next/link';
 import { TITLE_GRID } from '../../../config/sidebar';
+import { ClassTable } from '../../../layouts/components/class-table';
 
 export const GridSpanPage: React.FC<any> = (props) => {
+    const GRID_COLUMN_CLASS_TABLE = DEFAULT_COLUMN_SIZING_SYSTEM.map((size) => {
+        return {
+            class: `grid-c-${size}`,
+            style: `grid-column: span ${size} / span ${size}`,
+        };
+    });
+    const GRID_ROW_CLASS_TABLE = DEFAULT_ROW_SIZING_SYSTEM.map((size) => {
+        return {
+            class: `grid-r-${size}`,
+            style: `grid-row: span ${size} / span ${size}`,
+        };
+    });
+    const GRID_CS_CLASS_TABLE = DEFAULT_COLUMN_SIZING_SYSTEM.map((size) => {
+        return {
+            class: `grid-cs-${size}`,
+            style: `grid-column-start: ${size+1}`,
+        };
+    });
+    const GRID_CE_CLASS_TABLE = DEFAULT_COLUMN_SIZING_SYSTEM.map((size) => {
+        return {
+            class: `grid-ce-${size}`,
+            style: `grid-column-end: ${size+1}`,
+        };
+    });
+    const GRID_RS_CLASS_TABLE = DEFAULT_ROW_START_END_SIZING_SYSTEM.map((size) => {
+        return {
+            class: `grid-rs-${size}`,
+            style: `grid-row-start: ${size+1}`,
+        };
+    });
+    const GRID_RE_CLASS_TABLE = DEFAULT_ROW_START_END_SIZING_SYSTEM.map((size) => {
+        return {
+            class: `grid-re-${size}`,
+            style: `grid-row-end: ${size+1}`,
+        };
+    });
+
     return (
         <main className="page-layout">
             <Head>
@@ -43,9 +81,10 @@ export const GridSpanPage: React.FC<any> = (props) => {
 
                         <h6 className="font-alt">Columns</h6>
                         <p>
-                            Use <code>grid-c-[1-12]</code> to specify
-                            how many columns an element should span.
+                            Use <code>grid-c-[1-12]</code> to specify how many columns an element should span.
                         </p>
+
+                        <ClassTable classTable={GRID_COLUMN_CLASS_TABLE} />
 
                         <div className="grid u-gap-2">
                             <div className="grid-c-1 _grid-ex">
@@ -149,6 +188,8 @@ export const GridSpanPage: React.FC<any> = (props) => {
                             the <code>grid-r-[1-6]</code> class.
                         </p>
 
+                        <ClassTable classTable={GRID_ROW_CLASS_TABLE} />
+
                         <div
                             className="grid grid-cols-6 u-gap-2"
                             style={{
@@ -205,10 +246,12 @@ export const GridSpanPage: React.FC<any> = (props) => {
                             To specify the starting column position for an element, use the <code>grid-cs-[1-12]</code>{' '}
                             class. The <i>cs</i> stands for <i>column start</i>.
                         </p>
+                        <ClassTable classTable={GRID_CS_CLASS_TABLE} />
                         <p>
                             To specify the ending column position for an element, use the <code>grid-ce-[1-12]</code>{' '}
                             class. The <i>ce</i> stands for <i>column end</i>.
                         </p>
+                        <ClassTable classTable={GRID_CE_CLASS_TABLE} />
 
                         <div className="space space--lg"></div>
 
@@ -254,10 +297,12 @@ export const GridSpanPage: React.FC<any> = (props) => {
                             To specify the starting row position for an element, use the <code>grid-rs-[1-4]</code>{' '}
                             class. The <i>rs</i> stands for <i>row start</i>.
                         </p>
+                        <ClassTable classTable={GRID_RS_CLASS_TABLE} />
                         <p>
-                            To specify the ending row position for an element, use the <code>grid-re-[1-4]</code>{' '}
-                            class. The <i>re</i> stands for <i>row end</i>.
+                            To specify the ending row position for an element, use the <code>grid-re-[1-4]</code> class.
+                            The <i>re</i> stands for <i>row end</i>.
                         </p>
+                        <ClassTable classTable={GRID_RE_CLASS_TABLE} />
                         <div className="grid grid-cols-5 grid-rows-4 u-gap-2">
                             <div className="grid-rs-1 grid-re-4 _grid-ex">1-4</div>
                             <div className="grid-rs-2 grid-re-4 _grid-ex">2-4</div>
@@ -302,7 +347,6 @@ export const GridSpanPage: React.FC<any> = (props) => {
                     </div>
                 </section>
 
-                
                 <section className="padtop" id="variants">
                     <div className="content">
                         <Headline title="Variants" link="#variants" size="4" />
@@ -316,11 +360,16 @@ export const GridSpanPage: React.FC<any> = (props) => {
                             variable amount of rows. This value can be changed in the framework as well by modifying the
                             grid count inside <code>_config.scss</code>.
                         </p>
-                        <p>To learn more about how to configure what clases are generated for grid spans, refer to the <Link href="/grid/templates#variants"><a className="u u-LR">Grid Variants</a></Link> docs.</p>
-
+                        <p>
+                            To learn more about how to configure what clases are generated for grid spans, refer to the{' '}
+                            <Link href="/grid/templates#variants">
+                                <a className="u u-LR">Grid Variants</a>
+                            </Link>{' '}
+                            docs.
+                        </p>
                     </div>
                 </section>
-                
+
                 <Pagination
                     lookupProps={{
                         sectionName: TITLE_GRID,

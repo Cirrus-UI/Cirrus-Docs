@@ -13,10 +13,24 @@ import { BreakpointsDemo } from './breakpoints-demo';
 import { toc } from './toc';
 
 import initializeExamples from '../../../static/js/fluid-column-example.js';
-import { PAGE_TITLE_PREFIX } from '../../../constants';
+import { DEFAULT_COLUMN_SIZING_SYSTEM, DEFAULT_MAX_COLUMN, PAGE_TITLE_PREFIX } from '../../../constants';
 import { TITLE_LAYOUT } from '../../../config/sidebar';
+import { ClassTable } from '../../../layouts/components/class-table';
 
 export const ColumnsPage: React.FC<any> = (props) => {
+    const COLUMN_CLASS_TABLE = DEFAULT_COLUMN_SIZING_SYSTEM.map((size) => {
+        return {
+            class: `col-${size}`,
+            style: `width: ${(1 / DEFAULT_MAX_COLUMN) * size * 100}%;`,
+        };
+    });
+    const OFFSET_CLASS_TABLE = DEFAULT_COLUMN_SIZING_SYSTEM.map((size) => {
+        return {
+            class: `offset-${size}`,
+            style: `margin-left: ${(1 / DEFAULT_MAX_COLUMN) * size * 100}%;`,
+        };
+    });
+
     useEffect(() => {
         initializeExamples();
     });
@@ -59,6 +73,9 @@ export const ColumnsPage: React.FC<any> = (props) => {
                             Every flexbox layout begins with a <code>row</code>. Every <code>row</code> contains columns
                             represented with the <code>col-[1-12]</code> class.
                         </p>
+
+                        <ClassTable classTable={COLUMN_CLASS_TABLE} />
+                        
                         <div id="grids">
                             <div className="row">
                                 <div className="md:col-12 uppercase">
@@ -314,10 +331,10 @@ export const ColumnsPage: React.FC<any> = (props) => {
                         </div>
                         <div className="space"></div>
                         <p>
-                            To change this behavior, you can use the <code>u-no-wrap</code> utility class.
+                            To change this behavior, you can use the <code>row--no-wrap</code> utility class.
                         </p>
                         <div id="grids">
-                            <div className="row u-no-wrap">
+                            <div className="row row--no-wrap">
                                 <div className="md:col-10">
                                     <div className="uppercase">col-10</div>
                                 </div>
@@ -438,7 +455,7 @@ export const ColumnsPage: React.FC<any> = (props) => {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <code>col-*</code>,<code>md:col-*</code>
+                                        <code>md:col-*</code>
                                     </td>
                                     <td>
                                         Stack columns for widths below <code>768px</code>.
@@ -469,43 +486,6 @@ export const ColumnsPage: React.FC<any> = (props) => {
                         </p>
 
                         <BreakpointsDemo />
-
-                        <div className="space space--lg"></div>
-                        <h6>Prevent Stacking</h6>
-                        <p>
-                            To prevent the default stacking behavior, we can use the <code>col-[1-12]</code> class on the
-                            column.
-                        </p>
-
-                        <p className="title">Before</p>
-                        <LazyLoad height={200}>
-                            <iframe
-                                src="/static/html/width-ignore-before.html"
-                                style={{ height: '250px', width: '100%', maxWidth: '700px' }}
-                                className="w-100p p-1"
-                            />
-                        </LazyLoad>
-                        <div className="space"></div>
-                        <p className="title">After</p>
-                        <LazyLoad height={200}>
-                            <iframe
-                                src="/static/html/width-ignore-after.html"
-                                style={{ height: '250px', width: '100%', maxWidth: '700px' }}
-                                className="w-100p p-1"
-                            />
-                        </LazyLoad>
-                        <div className="space"></div>
-                        <CodeBlock
-                            code={`<div class="row">
-    <div class="col-6">
-        <div class="uppercase">col-6</div>
-    </div>
-    <div class="col-6">
-        <div class="uppercase">col-6</div>
-    </div>
-</div>`}
-                            language="htmlbars"
-                        />
                     </div>
                 </section>
 
@@ -522,6 +502,8 @@ export const ColumnsPage: React.FC<any> = (props) => {
                             In other words, a column with <code>col-5 offset-3</code> is offset from the left by the
                             same width of a <code>col-3</code>.
                         </p>
+
+                        <ClassTable classTable={OFFSET_CLASS_TABLE} />
 
                         <div id="grids">
                             <div className="row">
@@ -575,12 +557,12 @@ export const ColumnsPage: React.FC<any> = (props) => {
                                     <div className="uppercase">col-2</div>
                                 </div>
                                 <div className="md:col-3 offset-center">
-                                    <div className="uppercase">md:col-3 offset-center</div>
+                                    <div className="uppercase">col-3 offset-center</div>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="md:col-5 offset-1">
-                                    <div className="uppercase">md:col-5 offset-1</div>
+                                    <div className="uppercase">col-5 offset-1</div>
                                 </div>
                                 <div className="md:col-3 offset-left">
                                     <div className="uppercase">col-3 offset-left</div>

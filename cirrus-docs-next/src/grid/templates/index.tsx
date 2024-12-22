@@ -9,11 +9,27 @@ import { Pagination } from '../../../layouts/components/pagination';
 import { toc } from './toc';
 import { CodeBlock } from '../../../layouts/components/codeblock';
 import { DefaultLayout } from '../../../layouts/default';
-import { PAGE_TITLE_PREFIX } from '../../../constants';
+import { DEFAULT_COLUMN_SIZING_SYSTEM, DEFAULT_ROW_SIZING_SYSTEM, PAGE_TITLE_PREFIX } from '../../../constants';
 import { Tag, VersionTag } from '../../../layouts/components/tag';
 import { TITLE_GRID } from '../../../config/sidebar';
+import { ClassTable } from '../../../layouts/components/class-table';
 
 export const GridTemplatesPage: React.FC<any> = (props) => {
+
+    const GRID_COLUMN_CLASS_TABLE = DEFAULT_COLUMN_SIZING_SYSTEM.map((size) => {
+        return {
+            class: `grid-cols-${size}`,
+            style: `--grid-template-column: repeat(${size}, minmax(0, 1fr));`,
+        };
+    });
+    const GRID_ROW_CLASS_TABLE = DEFAULT_ROW_SIZING_SYSTEM.map((size) => {
+        return {
+            class: `grid-rows-${size}`,
+            style: `--grid-template-row: repeat(${size}, minmax(0, 1fr));
+grid-template-rows: var(--grid-template-row);`,
+        };
+    });
+
     return (
         <main className="page-layout">
             <Head>
@@ -124,6 +140,8 @@ export const GridTemplatesPage: React.FC<any> = (props) => {
                             change this, you can use any of the <code>grid-cols-[1-12]</code> classes.
                         </p>
 
+                        <ClassTable classTable={GRID_COLUMN_CLASS_TABLE} />
+
                         <div className="grid u-gap-2 grid-cols-1">
                             <div className="_grid-ex">
                                 <p>grid-cols-1</p>
@@ -165,11 +183,11 @@ export const GridTemplatesPage: React.FC<any> = (props) => {
                                 <p>grid-cols-4</p>
                             </div>
                         </div>
+                        <div className="space"></div>
 
                         <p>
                             As another example, let's use a grid of 3 columns with the <code>grid-cols-3</code> class.
                         </p>
-                        <div className="space"></div>
                         <div className="row">
                             <div className="lg:col-6">
                                 <div className="grid grid-cols-3 u-gap-2">
@@ -274,6 +292,8 @@ export const GridTemplatesPage: React.FC<any> = (props) => {
                             By default, the default <code>grid</code> class supports up to <code>6</code> rows. To
                             change this, you can use any of the <code>grid-rows-[1-6]</code> classes.
                         </p>
+
+                        <ClassTable classTable={GRID_ROW_CLASS_TABLE} />
 
                         <div className="grid u-gap-2 grid-rows-1">
                             <div className="_grid-ex grid-r-1">
