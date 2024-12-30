@@ -555,6 +555,12 @@ export const sidebarConfig: SidebarConfig[] = [
             {
                 fontWeight: 'semibold',
                 glyph: null,
+                text: 'Cursor',
+                url: '/utils/cursor',
+            },
+            {
+                fontWeight: 'semibold',
+                glyph: null,
                 text: 'Display',
                 url: '/utils/display',
             },
