@@ -14,6 +14,8 @@ import { toc } from './toc';
 import { PAGE_TITLE_PREFIX } from '../../../constants';
 import { Blockquote } from '../../../layouts/components/blockquote';
 import { TITLE_UTILITIES } from '../../../config/sidebar';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
+import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const BorderWidthUtilsPage: React.FC<any> = (props) => {
     const DEFAULT_TRANSITION_DURATION_CLASSES = {
@@ -56,6 +58,9 @@ export const BorderWidthUtilsPage: React.FC<any> = (props) => {
                         <p>These are utility classes that specify the duration of transitions.</p>
 
                         <ClassTable classTable={classTable} />
+                        <div className="space"></div>
+
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
                     </div>
                 </section>
 

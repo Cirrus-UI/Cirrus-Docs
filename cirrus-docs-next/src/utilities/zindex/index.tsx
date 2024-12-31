@@ -14,6 +14,8 @@ import { toc } from './toc';
 import { PAGE_TITLE_PREFIX } from '../../../constants';
 import { Blockquote } from '../../../layouts/components/blockquote';
 import { TITLE_UTILITIES } from '../../../config/sidebar';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
+import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const ZIndexUtilsPage: React.FC<any> = (props) => {
     const DEFAULT_Z_INDEX_CLASSES = {
@@ -57,6 +59,9 @@ export const ZIndexUtilsPage: React.FC<any> = (props) => {
                         <p>These are utility classes that specify the z-index of elements.</p>
 
                         <ClassTable classTable={classTable} />
+                        <div className="space"></div>
+
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
                     </div>
                 </section>
 

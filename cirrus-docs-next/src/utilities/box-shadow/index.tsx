@@ -13,6 +13,8 @@ import { DefaultLayout } from '../../../layouts/default';
 import { toc } from './toc';
 import { PAGE_TITLE_PREFIX } from '../../../constants';
 import { TITLE_UTILITIES } from '../../../config/sidebar';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
+import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const BoxShadowUtilsPage: React.FC<any> = (props) => {
     const DEFAULT_BOX_SHADOW_CLASSES = {
@@ -54,6 +56,9 @@ export const BoxShadowUtilsPage: React.FC<any> = (props) => {
                         <p>Utility classes to apply a box shadow around any element.</p>
 
                         <ClassTable classTable={classTable} />
+                        <div className="space"></div>
+
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
                     </div>
                 </section>
 

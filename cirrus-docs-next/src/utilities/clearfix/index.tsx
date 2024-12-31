@@ -12,6 +12,8 @@ import { DefaultLayout } from '../../../layouts/default';
 import { PAGE_TITLE_PREFIX } from '../../../constants';
 import { toc } from './toc';
 import { TITLE_UTILITIES } from '../../../config/sidebar';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
+import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const ClearfixUtilsPage: React.FC<any> = (props) => {
     const classTable = [
@@ -52,6 +54,9 @@ display: table !important;`,
                         <p>These are utility classes that control object clearfix.</p>
 
                         <ClassTable classTable={classTable} />
+                        <div className="space"></div>
+
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
                     </div>
                 </section>
 

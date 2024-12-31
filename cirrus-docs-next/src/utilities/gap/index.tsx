@@ -14,6 +14,8 @@ import { DEFAULT_SIZING_SYSTEM, PAGE_TITLE_PREFIX } from '../../../constants';
 import { ClassTable } from '../../../layouts/components/class-table';
 import { Blockquote } from '../../../layouts/components/blockquote';
 import { TITLE_UTILITIES } from '../../../config/sidebar';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
+import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const GapUtilsPage: React.FC<any> = (props) => {
     let classTable = [
@@ -79,6 +81,9 @@ export const GapUtilsPage: React.FC<any> = (props) => {
                         </p>
 
                         <ClassTable classTable={classTable} />
+                        <div className="space"></div>
+
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
                     </div>
                 </section>
 

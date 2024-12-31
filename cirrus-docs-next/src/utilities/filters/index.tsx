@@ -13,6 +13,8 @@ import { DefaultLayout } from '../../../layouts/default';
 import { PAGE_TITLE_PREFIX } from '../../../constants';
 import { Blockquote } from '../../../layouts/components/blockquote';
 import { SIDEBAR_CONFIG_MAP, TITLE_UTILITIES } from '../../../config/sidebar';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
+import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const FilterUtilsPage: React.FC<any> = (props) => {
     const PAGE_TITLE = `Filters`;
@@ -50,6 +52,9 @@ export const FilterUtilsPage: React.FC<any> = (props) => {
                         <p>These are utility classes that applies filters to elements.</p>
 
                         <ClassTable classTable={classTable} />
+                        <div className="space"></div>
+
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
                     </div>
                 </section>
 

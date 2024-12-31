@@ -14,6 +14,8 @@ import { DefaultLayout } from '../../../layouts/default';
 import { PAGE_TITLE_PREFIX } from '../../../constants';
 import { DocExample } from '../../../models/doc-example';
 import { TITLE_UTILITIES } from '../../../config/sidebar';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
+import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const DisplayUtilsPage: React.FC<any> = (props) => {
     const displayNames = ['none', 'inline', 'inline-block', 'block', 'table', 'table-row', 'table-cell'];
@@ -143,6 +145,9 @@ export const DisplayUtilsPage: React.FC<any> = (props) => {
                         <p>These are utility classes that control the display of elements.</p>
 
                         <ClassTable classTable={classTable} />
+                        <div className="space"></div>
+
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
                     </div>
                 </section>
 

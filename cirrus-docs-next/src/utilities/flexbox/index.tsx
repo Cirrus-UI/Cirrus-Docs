@@ -15,6 +15,8 @@ import { DefaultLayout } from '../../../layouts/default';
 import { PAGE_TITLE_PREFIX } from '../../../constants';
 import { DocExample } from '../../../models/doc-example';
 import { TITLE_UTILITIES } from '../../../config/sidebar';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
+import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const FlexboxUtilsPage: React.FC<any> = (props) => {
     const flexDirectionNames = ['row', 'row-reverse', 'column', 'column-reverse'];
@@ -379,6 +381,9 @@ export const FlexboxUtilsPage: React.FC<any> = (props) => {
                         <p>These are utility classes that are related to flexbox.</p>
 
                         <ClassTable classTable={classTable} />
+                        <div className="space"></div>
+
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
                     </div>
                 </section>
 

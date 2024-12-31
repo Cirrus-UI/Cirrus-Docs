@@ -13,6 +13,8 @@ import { toc } from './toc';
 import { DEFAULT_PERCENTAGES, PAGE_TITLE_PREFIX } from '../../../constants';
 import { ClassTable } from '../../../layouts/components/class-table';
 import { TITLE_UTILITIES } from '../../../config/sidebar';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
+import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const OpacityUtilsPage: React.FC<any> = (props) => {
     const classTable = DEFAULT_PERCENTAGES.map((opacity) => {
@@ -53,6 +55,9 @@ export const OpacityUtilsPage: React.FC<any> = (props) => {
                         <p>These are utility classes that specify the z-index of elements.</p>
 
                         <ClassTable classTable={classTable} />
+                        <div className="space"></div>
+
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
                     </div>
                 </section>
 
@@ -132,6 +137,9 @@ export const OpacityUtilsPage: React.FC<any> = (props) => {
                                 ))}
                             </tbody>
                         </table>
+                        <div className="space"></div>
+
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
 
                         <div className="space"></div>
 
