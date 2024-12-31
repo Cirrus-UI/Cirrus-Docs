@@ -22,6 +22,8 @@ import { Blockquote } from '../../../layouts/components/blockquote';
 import { ExternalLink } from '../../../layouts/components/link';
 import { GenerateNegativeClassVariants } from '../../../utils/classes';
 import { TITLE_UTILITIES } from '../../../config/sidebar';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
+import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const AbsolutesUtilsPage: React.FC<any> = (props) => {
     const DEFAULT_DIRECTIONS = ['top', 'left', 'bottom', 'right'];
@@ -65,6 +67,9 @@ export const AbsolutesUtilsPage: React.FC<any> = (props) => {
                         </p>
 
                         <ClassTable classTable={classTable} />
+                        <div className="space"></div>
+
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
                     </div>
                 </section>
 
