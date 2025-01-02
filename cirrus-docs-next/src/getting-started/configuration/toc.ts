@@ -16,8 +16,8 @@ export const toc: TableOfContentsEntry[] = [
                 children: null,
             },
             {
-                name: 'Viewports',
-                anchor: '#viewports',
+                name: 'Pseudo-Variants',
+                anchor: '#pseudo-variants',
                 children: null,
             },
             {
