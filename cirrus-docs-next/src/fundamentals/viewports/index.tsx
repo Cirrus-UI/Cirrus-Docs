@@ -289,7 +289,7 @@ export const ViewportsPage: React.FC<any> = (props) => {
                         <ResizableInternal top="40%" height="750px" minWidth="300px">
                             <IFrame
                                 content={wrapContent(`<div class="h-100p u-center bg-gray-100 p-2">
-                                <div class="u-overflow-hidden bg-white u-round-sm u-shadow-xl mx-2 my-8 u-flex u-flex-column sm:u-flex-row">
+                                <div class="u-overflow-hidden bg-white u-round-sm u-shadow-xl mx-2 my-8 u-flex u-flex-column md:u-flex-row">
                                     <img src="https://images.unsplash.com/photo-1646534619918-39cfa52033bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=350&q=80" style="object-fit: cover;" />
                             
                                     <div class="p-2 sm:px-4">
