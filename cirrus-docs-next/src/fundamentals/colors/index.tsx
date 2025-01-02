@@ -15,6 +15,7 @@ import { v1, v2Colors, v2, DEFAULT_SEMANTIC_COLORS, DEFAULT_LEVELS } from './col
 import { DEFAULT_PERCENTAGES, PAGE_TITLE_PREFIX } from '../../../constants';
 import { Capitalize } from '../../../utils/string';
 import { Blockquote } from '../../../layouts/components/blockquote';
+import { TITLE_FUNDAMENTALS } from '../../../config/sidebar';
 
 export const ColorsPage: React.FC<any> = (props) => {
     const v1ClassTable = DEFAULT_SEMANTIC_COLORS.flatMap((color) => {
@@ -411,14 +412,11 @@ Error: $color: "ERROR [fill()]: [fill] Unknown color key \`gray 500\`." is not a
                     </div>
                 </section>
 
+
                 <Pagination
-                    prevLink={{
-                        name: 'Default Styles',
-                        link: './default-styles',
-                    }}
-                    nextLink={{
-                        name: 'Typography',
-                        link: './typography',
+                    lookupProps={{
+                        sectionName: TITLE_FUNDAMENTALS,
+                        pageName: `Colors`,
                     }}
                 />
             </div>

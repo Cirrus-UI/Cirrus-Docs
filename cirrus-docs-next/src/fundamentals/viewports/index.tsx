@@ -14,6 +14,7 @@ import { ResizableInternal } from '../../../layouts/components/resizable';
 import { IFrame } from '../../../layouts/components/iframe';
 import { wrapContent } from '../../../utils/iframe';
 import { VersionTag } from '../../../layouts/components/tag';
+import { TITLE_FUNDAMENTALS } from '../../../config/sidebar';
 
 export const ViewportsPage: React.FC<any> = (props) => {
     return (
@@ -410,9 +411,9 @@ export const ViewportsPage: React.FC<any> = (props) => {
                 </section>
 
                 <Pagination
-                    prevLink={{
-                        name: 'Typography',
-                        link: './typography',
+                    lookupProps={{
+                        sectionName: TITLE_FUNDAMENTALS,
+                        pageName: `Viewports`,
                     }}
                 />
             </div>

@@ -9,6 +9,7 @@ import { DefaultLayout } from '../../../layouts/default';
 import { toc } from './toc';
 import { PAGE_TITLE_PREFIX } from '../../../constants';
 import { CodeBlock } from '../../../layouts/components/codeblock';
+import { TITLE_FUNDAMENTALS } from '../../../config/sidebar';
 
 export const DefaultStylesPage: React.FC<any> = (props) => {
     return (
@@ -215,10 +216,11 @@ fieldset {
                     </div>
                 </section>
 
+
                 <Pagination
-                    nextLink={{
-                        name: 'Colors',
-                        link: './colors',
+                    lookupProps={{
+                        sectionName: TITLE_FUNDAMENTALS,
+                        pageName: `Default Styles`,
                     }}
                 />
             </div>

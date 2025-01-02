@@ -143,6 +143,12 @@ export const sidebarConfig: SidebarConfig[] = [
             {
                 fontWeight: 'semibold',
                 glyph: null,
+                text: 'Pseudo Variants',
+                url: '/fundamentals/pseudo-variants',
+            },
+            {
+                fontWeight: 'semibold',
+                glyph: null,
                 text: 'Viewports',
                 url: '/fundamentals/viewports',
             },

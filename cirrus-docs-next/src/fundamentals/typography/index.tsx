@@ -8,6 +8,7 @@ import { Pagination } from '../../../layouts/components/pagination';
 import { DefaultLayout } from '../../../layouts/default';
 import { toc } from './toc';
 import { PAGE_TITLE_PREFIX } from '../../../constants';
+import { TITLE_FUNDAMENTALS } from '../../../config/sidebar';
 
 export const TypographyPage: React.FC<any> = (props) => {
     return (
@@ -124,14 +125,11 @@ export const TypographyPage: React.FC<any> = (props) => {
                     </div>
                 </section>
 
+
                 <Pagination
-                    prevLink={{
-                        name: 'Colors',
-                        link: './colors',
-                    }}
-                    nextLink={{
-                        name: 'Viewports',
-                        link: './viewports',
+                    lookupProps={{
+                        sectionName: TITLE_FUNDAMENTALS,
+                        pageName: `Typography`,
                     }}
                 />
             </div>

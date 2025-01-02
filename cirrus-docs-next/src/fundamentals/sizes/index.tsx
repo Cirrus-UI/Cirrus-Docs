@@ -10,6 +10,7 @@ import { toc } from './toc';
 import { PAGE_TITLE_PREFIX } from '../../../constants';
 import { CodeBlock } from '../../../layouts/components/codeblock';
 import { VersionTag } from '../../../layouts/components/tag';
+import { TITLE_FUNDAMENTALS } from '../../../config/sidebar';
 
 export const SizesPage: React.FC<any> = (props) => {
     const sizes = [0, `px`, 1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24, 32];
@@ -106,13 +107,9 @@ export const SizesPage: React.FC<any> = (props) => {
                 </section>
 
                 <Pagination
-                    prevLink={{
-                        name: 'Colors',
-                        link: './colors',
-                    }}
-                    nextLink={{
-                        name: 'Typography',
-                        link: './typography',
+                    lookupProps={{
+                        sectionName: TITLE_FUNDAMENTALS,
+                        pageName: `Sizes`,
                     }}
                 />
             </div>
