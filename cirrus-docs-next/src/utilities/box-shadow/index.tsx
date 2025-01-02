@@ -58,7 +58,14 @@ export const BoxShadowUtilsPage: React.FC<any> = (props) => {
                         <ClassTable classTable={classTable} />
                         <div className="space"></div>
 
-                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
+                        <PseudoVariant
+                            defaultEnabledPseudos={[
+                                PseudoVariantsEnum.FOCUS,
+                                PseudoVariantsEnum.FOCUS_VISIBLE,
+                                PseudoVariantsEnum.FOCUS_WITHIN,
+                                PseudoVariantsEnum.HOVER,
+                            ]}
+                        />
                     </div>
                 </section>
 

@@ -11,7 +11,6 @@ export const PseudoVariant: React.FC<any> = (props: PseudoVariantProps) => {
         PseudoVariantsEnum.CHECKED,
         PseudoVariantsEnum.DARK,
         PseudoVariantsEnum.DISABLED,
-        PseudoVariantsEnum.EXPAND,
         PseudoVariantsEnum.FIRST_OF_TYPE,
         PseudoVariantsEnum.FOCUS,
         PseudoVariantsEnum.FOCUS_VISIBLE,
@@ -35,7 +34,7 @@ export const PseudoVariant: React.FC<any> = (props: PseudoVariantProps) => {
 
     return (
         <>
-            <h6>Supported Pseudo-Variants</h6>
+            <h6 className="font-normal">Supported Pseudo-Variants</h6>
             <div className="u-flex u-gap-1 u-flex-wrap">
                 {PSEUDO_VARIANTS.map((pseudo) => (
                     <div

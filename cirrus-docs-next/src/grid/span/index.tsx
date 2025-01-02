@@ -12,6 +12,8 @@ import { DEFAULT_COLUMN_SIZING_SYSTEM, DEFAULT_ROW_SIZING_SYSTEM, DEFAULT_ROW_ST
 import Link from 'next/link';
 import { TITLE_GRID } from '../../../config/sidebar';
 import { ClassTable } from '../../../layouts/components/class-table';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
+import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const GridSpanPage: React.FC<any> = (props) => {
     const GRID_COLUMN_CLASS_TABLE = DEFAULT_COLUMN_SIZING_SYSTEM.map((size) => {
@@ -85,6 +87,8 @@ export const GridSpanPage: React.FC<any> = (props) => {
                         </p>
 
                         <ClassTable classTable={GRID_COLUMN_CLASS_TABLE} />
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
+                        <div className="space space--lg"></div>
 
                         <div className="grid u-gap-2">
                             <div className="grid-c-1 _grid-ex">
@@ -189,6 +193,8 @@ export const GridSpanPage: React.FC<any> = (props) => {
                         </p>
 
                         <ClassTable classTable={GRID_ROW_CLASS_TABLE} />
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
+                        <div className="space space--lg"></div>
 
                         <div
                             className="grid grid-cols-6 u-gap-2"
@@ -247,13 +253,17 @@ export const GridSpanPage: React.FC<any> = (props) => {
                             class. The <i>cs</i> stands for <i>column start</i>.
                         </p>
                         <ClassTable classTable={GRID_CS_CLASS_TABLE} />
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
+                        <div className="space space--xl"></div>
+
                         <p>
                             To specify the ending column position for an element, use the <code>grid-ce-[1-12]</code>{' '}
                             class. The <i>ce</i> stands for <i>column end</i>.
                         </p>
                         <ClassTable classTable={GRID_CE_CLASS_TABLE} />
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
 
-                        <div className="space space--lg"></div>
+                        <div className="space space--xl"></div>
 
                         <div className="grid u-gap-2">
                             <div className="grid-cs-2 grid-ce-7 _grid-ex">2-7</div>
@@ -298,11 +308,15 @@ export const GridSpanPage: React.FC<any> = (props) => {
                             class. The <i>rs</i> stands for <i>row start</i>.
                         </p>
                         <ClassTable classTable={GRID_RS_CLASS_TABLE} />
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
+                        <div className="space space--xl"></div>
                         <p>
                             To specify the ending row position for an element, use the <code>grid-re-[1-4]</code> class.
                             The <i>re</i> stands for <i>row end</i>.
                         </p>
                         <ClassTable classTable={GRID_RE_CLASS_TABLE} />
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
+                        <div className="space space--xl"></div>
                         <div className="grid grid-cols-5 grid-rows-4 u-gap-2">
                             <div className="grid-rs-1 grid-re-4 _grid-ex">1-4</div>
                             <div className="grid-rs-2 grid-re-4 _grid-ex">2-4</div>

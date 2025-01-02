@@ -14,6 +14,7 @@ import { toc } from './toc';
 import { PAGE_TITLE_PREFIX } from '../../../constants';
 import { TITLE_FONTS } from '../../../config/sidebar';
 import { Blockquote } from '../../../layouts/components/blockquote';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
 
 export const LineHeightsPage: React.FC<any> = (props) => {
     const DEFAULT_LINE_HEIGHT_CLASSES = {
@@ -46,6 +47,8 @@ export const LineHeightsPage: React.FC<any> = (props) => {
                         <p>These are utility classes that specify the line height of an element's text.</p>
 
                         <ClassTable classTable={classTable} />
+                        <div className="space"></div>
+                        <PseudoVariant defaultEnabledPseudos={[]} />
                     </div>
                 </section>
 

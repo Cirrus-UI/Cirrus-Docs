@@ -147,7 +147,7 @@ export const DisplayUtilsPage: React.FC<any> = (props) => {
                         <ClassTable classTable={classTable} />
                         <div className="space"></div>
 
-                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE, PseudoVariantsEnum.GROUP_HOVER, PseudoVariantsEnum.HOVER]} />
                     </div>
                 </section>
 

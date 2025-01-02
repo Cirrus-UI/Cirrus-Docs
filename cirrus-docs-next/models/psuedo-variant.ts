@@ -3,7 +3,6 @@ export enum PseudoVariantsEnum {
     CHECKED = 'checked',
     DARK = 'dark',
     DISABLED = 'disabled',
-    EXPAND = 'expand',
     FIRST_OF_TYPE = 'first-of-type',
     FOCUS = 'focus',
     FOCUS_VISIBLE = 'focus-visible',

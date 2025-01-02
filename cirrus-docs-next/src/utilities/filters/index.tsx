@@ -52,9 +52,6 @@ export const FilterUtilsPage: React.FC<any> = (props) => {
                         <p>These are utility classes that applies filters to elements.</p>
 
                         <ClassTable classTable={classTable} />
-                        <div className="space"></div>
-
-                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
                     </div>
                 </section>
 
@@ -62,7 +59,9 @@ export const FilterUtilsPage: React.FC<any> = (props) => {
                     <div className="content">
                         <Headline title="Blur" link="#blur" size="4" />
                         <div className="divider"></div>
+                        <PseudoVariant defaultEnabledPseudos={[]} />
 
+                        <div className="space"></div>
                         <p>
                             Blur elements using the blur utility classes. These classes follow the form:{' '}
                             <code>u-blur-[{Object.keys(DEFAULT_BLUR_CLASSES).join('|')}]</code>.
@@ -120,8 +119,9 @@ $config: (
 
                         <p>
                             All utility classes mentioned here support viewport based application. All you need to do is
-                            add a <code>&lt;viewport&gt;:&lt;class&gt;</code> at the end of the class(es) you are using. For example,
-                            use <code>md:u-blur-sm</code> to apply <code>u-blur-sm</code> on medium screens and above.
+                            add a <code>&lt;viewport&gt;:&lt;class&gt;</code> at the end of the class(es) you are using.
+                            For example, use <code>md:u-blur-sm</code> to apply <code>u-blur-sm</code> on medium screens
+                            and above.
                         </p>
 
                         <CodeBlock

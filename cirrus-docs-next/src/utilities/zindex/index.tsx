@@ -19,7 +19,7 @@ import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const ZIndexUtilsPage: React.FC<any> = (props) => {
     const DEFAULT_Z_INDEX_CLASSES = {
-        'n1': -1,
+        n1: -1,
         0: 0,
         1: 1,
         10: 10,
@@ -61,7 +61,14 @@ export const ZIndexUtilsPage: React.FC<any> = (props) => {
                         <ClassTable classTable={classTable} />
                         <div className="space"></div>
 
-                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
+                        <PseudoVariant
+                            defaultEnabledPseudos={[
+                                PseudoVariantsEnum.FOCUS,
+                                PseudoVariantsEnum.FOCUS_VISIBLE,
+                                PseudoVariantsEnum.FOCUS_WITHIN,
+                                PseudoVariantsEnum.HOVER,
+                            ]}
+                        />
                     </div>
                 </section>
 
@@ -72,7 +79,7 @@ export const ZIndexUtilsPage: React.FC<any> = (props) => {
 
                         <p>Below is a demo of all supported z-index utility classes.</p>
 
-                        <div className="bg-teal-100 u-flex u-flex-column p-4" style={{zIndex: -2}}>
+                        <div className="bg-teal-100 u-flex u-flex-column p-4" style={{ zIndex: -2 }}>
                             <div
                                 className="square u-round-sm bg-teal-500 text-white p-3 u-shadow-xl u-z-50"
                                 style={{ marginLeft: '7rem' }}
@@ -122,7 +129,9 @@ export const ZIndexUtilsPage: React.FC<any> = (props) => {
                                 <h3 className="my-1">-1</h3>
                             </div>
                             <div className="u-text-center text-teal-500">
-                                <p>The div with <code>u-z-n1</code> is up there somewhere.</p>
+                                <p>
+                                    The div with <code>u-z-n1</code> is up there somewhere.
+                                </p>
                                 <p>And of course...</p>
                             </div>
                             <div className="square u-round-sm bg-teal-500 text-white p-3 u-shadow-xl u-z-auto">
@@ -159,7 +168,7 @@ export const ZIndexUtilsPage: React.FC<any> = (props) => {
                             </p>
 
                             <div className="space"></div>
-                            
+
                             <CodeBlock
                                 code={`//_configs.scss
 $config: (
@@ -237,7 +246,7 @@ $config: (
                         </p>
                     </div>
                 </section>
-                
+
                 <Pagination
                     lookupProps={{
                         sectionName: TITLE_UTILITIES,

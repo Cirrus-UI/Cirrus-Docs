@@ -13,6 +13,8 @@ import { DEFAULT_COLUMN_SIZING_SYSTEM, DEFAULT_ROW_SIZING_SYSTEM, PAGE_TITLE_PRE
 import { Tag, VersionTag } from '../../../layouts/components/tag';
 import { TITLE_GRID } from '../../../config/sidebar';
 import { ClassTable } from '../../../layouts/components/class-table';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
+import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const GridTemplatesPage: React.FC<any> = (props) => {
 
@@ -141,6 +143,8 @@ grid-template-rows: var(--grid-template-row);`,
                         </p>
 
                         <ClassTable classTable={GRID_COLUMN_CLASS_TABLE} />
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
+                        <div className="space space--lg"></div>
 
                         <div className="grid u-gap-2 grid-cols-1">
                             <div className="_grid-ex">
@@ -294,6 +298,8 @@ grid-template-rows: var(--grid-template-row);`,
                         </p>
 
                         <ClassTable classTable={GRID_ROW_CLASS_TABLE} />
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
+                        <div className="space space--lg"></div>
 
                         <div className="grid u-gap-2 grid-rows-1">
                             <div className="_grid-ex grid-r-1">

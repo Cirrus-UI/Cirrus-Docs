@@ -14,6 +14,8 @@ import { DEFAULT_PERCENTAGES, DEFAULT_SIZING_SYSTEM, PAGE_TITLE_PREFIX } from '.
 import { ClassTable } from '../../../layouts/components/class-table';
 import { VersionTag } from '../../../layouts/components/tag';
 import { TITLE_LAYOUT } from '../../../config/sidebar';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
+import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const WidthPage: React.FC<any> = (props) => {
     let classTable = [
@@ -65,6 +67,9 @@ export const WidthPage: React.FC<any> = (props) => {
                         <p>Classes to set the width of an element.</p>
 
                         <ClassTable classTable={classTable} />
+                        <div className="space"></div>
+
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
                     </div>
                 </section>
 

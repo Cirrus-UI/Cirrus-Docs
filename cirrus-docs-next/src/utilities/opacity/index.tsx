@@ -57,7 +57,18 @@ export const OpacityUtilsPage: React.FC<any> = (props) => {
                         <ClassTable classTable={classTable} />
                         <div className="space"></div>
 
-                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
+
+                        <PseudoVariant
+                            defaultEnabledPseudos={[
+                                PseudoVariantsEnum.RESPONSIVE,
+                                PseudoVariantsEnum.FOCUS,
+                                PseudoVariantsEnum.FOCUS_VISIBLE,
+                                PseudoVariantsEnum.FOCUS_WITHIN,
+                                PseudoVariantsEnum.GROUP_FOCUS,
+                                PseudoVariantsEnum.GROUP_HOVER,
+                                PseudoVariantsEnum.HOVER,
+                            ]}
+                        />
                     </div>
                 </section>
 
@@ -139,7 +150,13 @@ export const OpacityUtilsPage: React.FC<any> = (props) => {
                         </table>
                         <div className="space"></div>
 
-                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
+                        <PseudoVariant
+                            defaultEnabledPseudos={[
+                                PseudoVariantsEnum.FOCUS,
+                                PseudoVariantsEnum.FOCUS_WITHIN,
+                                PseudoVariantsEnum.HOVER,
+                            ]}
+                        />
 
                         <div className="space"></div>
 

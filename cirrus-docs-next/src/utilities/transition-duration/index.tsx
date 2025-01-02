@@ -60,7 +60,7 @@ export const BorderWidthUtilsPage: React.FC<any> = (props) => {
                         <ClassTable classTable={classTable} />
                         <div className="space"></div>
 
-                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
+                        <PseudoVariant defaultEnabledPseudos={[]} />
                     </div>
                 </section>
 

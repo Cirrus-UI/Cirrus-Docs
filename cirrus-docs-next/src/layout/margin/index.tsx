@@ -14,6 +14,8 @@ import Link from 'next/link';
 import { ClassTable } from '../../../layouts/components/class-table';
 import { Tag } from '../../../layouts/components/tag';
 import { TITLE_LAYOUT } from '../../../config/sidebar';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
+import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const MarginPage: React.FC<any> = (props) => {
     const types = [
@@ -80,6 +82,17 @@ export const MarginPage: React.FC<any> = (props) => {
                         <Headline title="Margin" link="#margin" />
                         <div className="divider"></div>
                         <p>These are utility classes used to add margins for any element.</p>
+
+                        <ClassTable classTable={classTable} />
+                        <div className="space"></div>
+
+                        <PseudoVariant
+                            defaultEnabledPseudos={[
+                                PseudoVariantsEnum.RESPONSIVE,
+                                PseudoVariantsEnum.FIRST_OF_TYPE,
+                                PseudoVariantsEnum.LAST_OF_TYPE,
+                            ]}
+                        />
                     </div>
                 </section>
 
@@ -96,8 +109,6 @@ export const MarginPage: React.FC<any> = (props) => {
                             </Link>{' '}
                             below.
                         </p>
-
-                        <ClassTable classTable={classTable} />
                     </div>
                 </section>
 
@@ -242,8 +253,8 @@ export const MarginPage: React.FC<any> = (props) => {
                         </span>
                         <p>
                             The margin classes mentioned here support viewport based application. All you need to do is
-                            add a <code>&lt;viewport&gt;:&lt;class&gt;</code> at the end of the class(es) you are using. For example,
-                            use <code>md:m-3</code> to apply <code>m-3</code> on medium screens and above.
+                            add a <code>&lt;viewport&gt;:&lt;class&gt;</code> at the end of the class(es) you are using.
+                            For example, use <code>md:m-3</code> to apply <code>m-3</code> on medium screens and above.
                         </p>
 
                         <CodeBlock

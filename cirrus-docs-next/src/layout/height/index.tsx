@@ -14,6 +14,8 @@ import { DEFAULT_PERCENTAGES, DEFAULT_SIZING_SYSTEM, PAGE_TITLE_PREFIX } from '.
 import { ClassTable } from '../../../layouts/components/class-table';
 import { VersionTag } from '../../../layouts/components/tag';
 import { TITLE_LAYOUT } from '../../../config/sidebar';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
+import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const HeightPage: React.FC<any> = (props) => {
     let classTable = [
@@ -66,6 +68,9 @@ export const HeightPage: React.FC<any> = (props) => {
                         <p>Classes to set the height of an element.</p>
 
                         <ClassTable classTable={classTable} />
+                        <div className="space"></div>
+
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
                     </div>
                 </section>
 
@@ -217,8 +222,9 @@ export const HeightPage: React.FC<any> = (props) => {
                         </span>
                         <p>
                             All utility classes mentioned here support viewport based application. All you need to do is
-                            add a <code>&lt;viewport&gt;:&lt;class&gt;</code> at the end of the class(es) you are using. For example,
-                            use <code>md:h-30p</code> to apply <code>h-30p</code> on medium screens and above.
+                            add a <code>&lt;viewport&gt;:&lt;class&gt;</code> at the end of the class(es) you are using.
+                            For example, use <code>md:h-30p</code> to apply <code>h-30p</code> on medium screens and
+                            above.
                         </p>
 
                         <CodeBlock

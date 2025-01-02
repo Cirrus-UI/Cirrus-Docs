@@ -14,6 +14,8 @@ import { DefaultLayout } from '../../../layouts/default';
 import { toc } from './toc';
 import { PAGE_TITLE_PREFIX } from '../../../constants';
 import { TITLE_LAYOUT } from '../../../config/sidebar';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
+import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const MaxWidthPage: React.FC<any> = (props) => {
     const DEFAULT_CLASSES = {
@@ -57,6 +59,9 @@ export const MaxWidthPage: React.FC<any> = (props) => {
                         <p>Classes to set the maximum width of an element.</p>
 
                         <ClassTable classTable={classTable} />
+                        <div className="space"></div>
+
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
                     </div>
                 </section>
 

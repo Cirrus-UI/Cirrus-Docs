@@ -14,6 +14,8 @@ import { DefaultLayout } from '../../../layouts/default';
 import { toc } from './toc';
 import { PAGE_TITLE_PREFIX } from '../../../constants';
 import { TITLE_LAYOUT } from '../../../config/sidebar';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
+import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const MaxHeightPage: React.FC<any> = (props) => {
     const DEFAULT_CLASSES = {
@@ -52,6 +54,9 @@ export const MaxHeightPage: React.FC<any> = (props) => {
                         <p>Classes to set the maximum height of an element.</p>
 
                         <ClassTable classTable={classTable} />
+                        <div className="space"></div>
+
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
                     </div>
                 </section>
 
@@ -60,22 +65,26 @@ export const MaxHeightPage: React.FC<any> = (props) => {
                         <Headline title="Examples" link="#examples" size="4" />
                         <div className="divider"></div>
 
-                        <p>Using these classes it quite simple to control the maximum height an element should have. You can either use a percentage based class or use a class to span the whole screen using the <code>max-h-[size]</code> syntax.</p>
+                        <p>
+                            Using these classes it quite simple to control the maximum height an element should have.
+                            You can either use a percentage based class or use a class to span the whole screen using
+                            the <code>max-h-[size]</code> syntax.
+                        </p>
 
                         <div className="p-4 bg-green-100 u-round-xs text-white font-bold u-text-center">
-                            <div className="max-h-100p p-2 bg-green-500 u-round-xs">
-                                max-h-100p
-                            </div>
+                            <div className="max-h-100p p-2 bg-green-500 u-round-xs">max-h-100p</div>
                         </div>
                         <div className="space"></div>
 
-                        <CodeBlock code={`<div class="p-4 bg-green-100 u-round-xs text-white font-bold u-text-center">
+                        <CodeBlock
+                            code={`<div class="p-4 bg-green-100 u-round-xs text-white font-bold u-text-center">
     <div class="max-h-100p p-2 bg-green-500 u-round-xs">max-h-100p</div>
-</div>`} language='htmlbars' />
-
+</div>`}
+                            language="htmlbars"
+                        />
                     </div>
                 </section>
-                
+
                 <section className="padtop" id="responsive">
                     <div className="content">
                         <Headline title="Responsive" link="#responsive" size="4" />
@@ -123,15 +132,15 @@ $config: (
                         </p>
                     </div>
                 </section>
-                
+
                 <section className="padtop" id="variants">
                     <div className="content">
                         <Headline title="Variants" link="#variants" size="4" />
                         <div className="divider"></div>
 
                         <p>
-                            The classes specified above are the default utility classes for setting maximum heights. You can
-                            add, change, or remove classes within the <code>_config.scss</code> file of Cirrus.
+                            The classes specified above are the default utility classes for setting maximum heights. You
+                            can add, change, or remove classes within the <code>_config.scss</code> file of Cirrus.
                         </p>
 
                         <div className="space"></div>

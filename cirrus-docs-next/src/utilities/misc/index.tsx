@@ -99,9 +99,6 @@ position: absolute;`,
                         </p>
 
                         <ClassTable classTable={classTable} />
-                        <div className="space"></div>
-
-                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
                     </div>
                 </section>
 
@@ -109,6 +106,9 @@ position: absolute;`,
                     <div className="content">
                         <Headline title="Floats" link="#floats" size="4" />
                         <div className="divider"></div>
+
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
+                        <div className="space"></div>
 
                         <h6>Float Left</h6>
                         <p>
@@ -218,6 +218,9 @@ position: absolute;`,
                     <div className="content">
                         <Headline title="Text" link="#text" size="4" />
                         <div className="divider"></div>
+
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
+                        <div className="space"></div>
                         <p>Utility classes meant for specifying text positioning and alignment.</p>
 
                         <h6>Text Left</h6>

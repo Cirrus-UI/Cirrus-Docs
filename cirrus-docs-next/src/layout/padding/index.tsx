@@ -14,6 +14,8 @@ import Link from 'next/link';
 import { ClassTable } from '../../../layouts/components/class-table';
 import { VersionTag } from '../../../layouts/components/tag';
 import { TITLE_LAYOUT } from '../../../config/sidebar';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
+import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const PaddingPage: React.FC<any> = (props) => {
     const types = [
@@ -101,6 +103,15 @@ padding-bottom: (0) !important;`,
                         </p>
 
                         <ClassTable classTable={classTable} />
+                        <div className="space"></div>
+
+                        <PseudoVariant
+                            defaultEnabledPseudos={[
+                                PseudoVariantsEnum.RESPONSIVE,
+                                PseudoVariantsEnum.FIRST_OF_TYPE,
+                                PseudoVariantsEnum.LAST_OF_TYPE,
+                            ]}
+                        />
                     </div>
                 </section>
 
@@ -206,8 +217,8 @@ padding-bottom: (0) !important;`,
                         <VersionTag version="0.6.3" text="New" />
                         <p>
                             The margin classes mentioned here support viewport based application. All you need to do is
-                            add a <code>&lt;viewport&gt;:&lt;class&gt;</code> at the end of the class(es) you are using. For example,
-                            use <code>md:p-3</code> to apply <code>p-3</code> on medium screens and above.
+                            add a <code>&lt;viewport&gt;:&lt;class&gt;</code> at the end of the class(es) you are using.
+                            For example, use <code>md:p-3</code> to apply <code>p-3</code> on medium screens and above.
                         </p>
 
                         <CodeBlock

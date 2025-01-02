@@ -14,6 +14,8 @@ import { toc } from './toc';
 import { PAGE_TITLE_PREFIX } from '../../../constants';
 import { TITLE_FONTS } from '../../../config/sidebar';
 import { Blockquote } from '../../../layouts/components/blockquote';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
+import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const LetterSpacingPage: React.FC<any> = (props) => {
     const DEFAULT_LETTER_SPACING_CLASSES = {
@@ -56,6 +58,8 @@ export const LetterSpacingPage: React.FC<any> = (props) => {
                         <p>These are utility classes that specify the letter spacing (tracking) of an element.</p>
 
                         <ClassTable classTable={classTable} />
+                        <div className="space"></div>
+                        <PseudoVariant defaultEnabledPseudos={[PseudoVariantsEnum.RESPONSIVE]} />
                     </div>
                 </section>
 
