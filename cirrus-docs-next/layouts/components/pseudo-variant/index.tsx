@@ -53,7 +53,7 @@ export const PseudoVariant: React.FC<any> = (props: PseudoVariantProps) => {
                 ))}
             </div>
             <div className="space"></div>
-            <p>See more <InternalLink url="/fundamentals/viewports">pseudo-variants TODO PAGE</InternalLink>.</p>
+            <p>See more <InternalLink url="/fundamentals/pseudo-variants">pseudo-variants</InternalLink>.</p>
         </>
     );
 };

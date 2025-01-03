@@ -6,7 +6,7 @@ import { TableOfContents } from '../../../layouts/components/toc';
 import { Headline } from '../../../layouts/components/headline';
 import { Pagination } from '../../../layouts/components/pagination';
 import { DefaultLayout } from '../../../layouts/default';
-import { Tag } from '../../../layouts/components/tag';
+import { Tag, VersionTag } from '../../../layouts/components/tag';
 
 import { toc } from './toc';
 import { PAGE_TITLE_PREFIX } from '../../../constants';
@@ -24,16 +24,7 @@ export const ConfigurationPage: React.FC<any> = (props) => {
                     <div className="content">
                         <Headline title="Configuration" link="#configuration" />
                         <div className="divider"></div>
-                        <Tag
-                            leftProps={{
-                                classes: `tag--dark`,
-                                text: `New`,
-                            }}
-                            rightProps={{
-                                classes: `tag--info`,
-                                text: `0.7.0`,
-                            }}
-                        />
+                        <VersionTag version='0.8.0' text='Updated' />
                         <p>
                             Almost every aspect of Cirrus can be customized. You can modify existing component styles,
                             add new utility classes, turn off some default styles, and more with the brand new
@@ -202,7 +193,7 @@ export const ConfigurationPage: React.FC<any> = (props) => {
                             The <code>pseudo-variants</code> field is used to configure which pseudo powered classes to generate.
                         </p>
                         <p>
-                            A <InternalLink url="/fundamentals/viewports">TODO PAGE</InternalLink> pseudo-variant is simply a
+                            A <InternalLink url="/fundamentals/pseudo-variants">pseudo-variant</InternalLink> is simply a
                             variation of an existing class that correspond to a CSS psuedo property (e.g. <code>hover</code>) or custom generation behaviors like classes with different <InternalLink url="/fundamentals/viewports">viewports</InternalLink>.
                         </p>
                         <p>
