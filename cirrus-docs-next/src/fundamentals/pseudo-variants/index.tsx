@@ -10,6 +10,7 @@ import { toc } from './toc';
 import { PAGE_TITLE_PREFIX } from '../../../constants';
 import { CodeBlock } from '../../../layouts/components/codeblock';
 import { TITLE_FUNDAMENTALS } from '../../../config/sidebar';
+import { title } from 'process';
 
 export const PseudoVariantsPage: React.FC<any> = (props) => {
     return (
@@ -117,9 +118,13 @@ export const PseudoVariantsPage: React.FC<any> = (props) => {
                 </section>
 
                 <Pagination
-                    lookupProps={{
-                        sectionName: TITLE_FUNDAMENTALS,
-                        pageName: `Pseudo Variants`,
+                    prevLink={{
+                        name: 'Typography',
+                        link: './typography',
+                    }}
+                    nextLink={{
+                        name: 'Viewports',
+                        link: './viewports',
                     }}
                 />
             </div>

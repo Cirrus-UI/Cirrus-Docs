@@ -107,9 +107,13 @@ export const SizesPage: React.FC<any> = (props) => {
                 </section>
 
                 <Pagination
-                    lookupProps={{
-                        sectionName: TITLE_FUNDAMENTALS,
-                        pageName: `Sizes`,
+                    prevLink={{
+                        name: 'Sizes',
+                        link: './sizes',
+                    }}
+                    nextLink={{
+                        name: 'Pseudo Variants',
+                        link: './pseudo-variants',
                     }}
                 />
             </div>

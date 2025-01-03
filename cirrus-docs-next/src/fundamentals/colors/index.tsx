@@ -414,9 +414,13 @@ Error: $color: "ERROR [fill()]: [fill] Unknown color key \`gray 500\`." is not a
 
 
                 <Pagination
-                    lookupProps={{
-                        sectionName: TITLE_FUNDAMENTALS,
-                        pageName: `Colors`,
+                    prevLink={{
+                        name: 'Default Styles',
+                        link: './default-styles',
+                    }}
+                    nextLink={{
+                        name: 'Sizes',
+                        link: './sizes',
                     }}
                 />
             </div>

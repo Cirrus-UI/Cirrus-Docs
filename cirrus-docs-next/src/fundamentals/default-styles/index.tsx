@@ -218,9 +218,9 @@ fieldset {
 
 
                 <Pagination
-                    lookupProps={{
-                        sectionName: TITLE_FUNDAMENTALS,
-                        pageName: `Default Styles`,
+                    nextLink={{
+                        name: 'Colors',
+                        link: './colors',
                     }}
                 />
             </div>

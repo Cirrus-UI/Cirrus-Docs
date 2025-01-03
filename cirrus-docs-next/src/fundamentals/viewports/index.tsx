@@ -411,9 +411,9 @@ export const ViewportsPage: React.FC<any> = (props) => {
                 </section>
 
                 <Pagination
-                    lookupProps={{
-                        sectionName: TITLE_FUNDAMENTALS,
-                        pageName: `Viewports`,
+                    prevLink={{
+                        name: 'Pseudo Variants',
+                        link: './pseudo-variants',
                     }}
                 />
             </div>
