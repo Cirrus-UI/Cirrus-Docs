@@ -19,6 +19,7 @@ import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const BorderWidthUtilsPage: React.FC<any> = (props) => {
     const DEFAULT_TRANSITION_DURATION_CLASSES = {
+        0: '0ms',
         75: '75ms',
         100: '100ms',
         200: '200ms',
@@ -93,7 +94,8 @@ export const BorderWidthUtilsPage: React.FC<any> = (props) => {
 
                         <div className="space space--lg"></div>
                         <CodeBlock
-                            code={`<div class="u-duration-75..."></div>
+                            code={`<div class="u-duration-0..."></div>
+<div class="u-duration-75..."></div>
 <div class="u-duration-100 ..."></div>
 <div class="u-duration-200 ..."></div>
 <div class="u-duration-300 ..."></div>
