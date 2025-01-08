@@ -8,10 +8,9 @@ export const BuildSizeTable: React.FC<any> = (props) => {
             <table className="table bordered">
                 <tbody>
                     <tr>
-                        <th>Flavor</th>
+                        <th>Compression</th>
                         <th>Minified</th>
                         <th>Gzip</th>
-                        <th>Brotli</th>
                     </tr>
                     <tr>
                         <td>Core</td>
@@ -21,9 +20,6 @@ export const BuildSizeTable: React.FC<any> = (props) => {
                         <td>
                             <img className="mx-auto" src="https://img.badgesize.io/Spiderpig86/Cirrus/master/dist/cirrus-core.min.css.svg?compression=gzip&style=flat-square" />
                         </td>
-                        <td>
-                            <img className="mx-auto" src="https://img.badgesize.io/Spiderpig86/Cirrus/master/dist/cirrus-core.min.css.svg?compression=brotli&style=flat-square" />
-                        </td>
                     </tr>
                     <tr>
                         <td>Ext (Full)</td>
@@ -32,21 +28,6 @@ export const BuildSizeTable: React.FC<any> = (props) => {
                         </td>
                         <td>
                             <img className="mx-auto" src="https://img.badgesize.io/Spiderpig86/Cirrus/master/dist/cirrus.min.css.svg?compression=gzip&style=flat-square" />
-                        </td>
-                        <td>
-                            <img className="mx-auto" src="https://img.badgesize.io/Spiderpig86/Cirrus/master/dist/cirrus.min.css.svg?compression=brotli&style=flat-square" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>All</td>
-                        <td>
-                            <img className="mx-auto" src="https://img.badgesize.io/Spiderpig86/Cirrus/master/dist/cirrus-all.min.css.svg?style=flat-square" />
-                        </td>
-                        <td>
-                            <img className="mx-auto" src="https://img.badgesize.io/Spiderpig86/Cirrus/master/dist/cirrus-all.min.css.svg?compression=gzip&style=flat-square" />
-                        </td>
-                        <td>
-                            <img className="mx-auto" src="https://img.badgesize.io/Spiderpig86/Cirrus/master/dist/cirrus-all.min.css.svg?compression=brotli&style=flat-square" />
                         </td>
                     </tr>
                 </tbody>

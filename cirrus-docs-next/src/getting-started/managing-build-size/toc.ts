@@ -21,8 +21,8 @@ export const toc: TableOfContentsEntry[] = [
                 children: null,
             },
             {
-                name: 'Disabling Viewport Variants',
-                anchor: '#disabling-viewport-variants',
+                name: 'Disabling Pseudo Variants',
+                anchor: '#disabling-psuedo-variants',
                 children: null,
             },
             {

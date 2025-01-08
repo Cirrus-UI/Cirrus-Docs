@@ -6,7 +6,7 @@ import { TableOfContents } from '../../../layouts/components/toc';
 import { Headline } from '../../../layouts/components/headline';
 import { Pagination } from '../../../layouts/components/pagination';
 import { DefaultLayout } from '../../../layouts/default';
-import { Tag } from '../../../layouts/components/tag';
+import { VersionTag } from '../../../layouts/components/tag';
 import { BuildSizeTable } from '../../../layouts/components/build-size-table';
 import { CodeBlock } from '../../../layouts/components/codeblock';
 import { ExternalLink, InternalLink } from '../../../layouts/components/link';
@@ -25,16 +25,7 @@ export const ConfigurationPage: React.FC<any> = (props) => {
                     <div className="content">
                         <Headline title="Managing Build Size" link="#managing-build-size" />
                         <div className="divider"></div>
-                        <Tag
-                            leftProps={{
-                                classes: `tag--dark`,
-                                text: `New`,
-                            }}
-                            rightProps={{
-                                classes: `tag--info`,
-                                text: `0.7.0`,
-                            }}
-                        />
+                        <VersionTag version='0.8.0' text='Updated' />
                         <p>
                             Since Cirrus is built with customization in mind, it makes sense for the framework to allow
                             features to be enabled, disabled, or modified. One of the pain point for some CSS frameworks
@@ -52,7 +43,7 @@ export const ConfigurationPage: React.FC<any> = (props) => {
                         <BuildSizeTable />
 
                         <p>
-                            Cirrus comes in 3 preset builds that cover the requirements of most users to balance the
+                            Cirrus comes in 2 preset builds that cover the requirements of most users to balance the
                             tradeoffs between build size and feature set. You can read more about the differences
                             between these builds in the{' '}
                             <InternalLink url="/getting-started/developing">development guide</InternalLink>.
@@ -89,6 +80,41 @@ export const ConfigurationPage: React.FC<any> = (props) => {
                             <ExternalLink url="https://purgecss.com/">PurgeCSS docs</ExternalLink>.
                         </p>
                         <div className="space"></div>
+
+                        <h6 className="font-alt font-normal">Example Webpack Configuration</h6>
+                        <CodeBlock language='js' code={`// webpack.config.js
+const PurgeCSSPlugin = require('purgecss-webpack-plugin');
+
+module.exports = {
+    // ...
+    plugins: [
+        new PurgeCSSPlugin({
+            paths: glob.sync(path.join(__dirname, 'src') + '/**/*', { nodir: true }),
+        }),
+    ],
+    // ...
+};`} />
+<div className="space"></div>
+                        
+                        <h6 className="font-alt font-normal">Example Gulp Configuration</h6>
+                        <CodeBlock language='js' code={`// gulp.js
+const purgeCss = require('gulp-purgecss')
+gulp.task('purge-css', () => {
+    return gulp.src('./node-modules/cirrus-ui/dist/cirrus.min.css')
+    .pipe(purgeCss({
+        content: [
+            'src/views/**/**/*.html',
+            'src/views/**/**/*.js',
+            'src/views/**/**/*.vue'
+        ],
+        defaultExtractor: content => content.match(/[w-/:()]+(?<!:)/g) || [],
+        // Add whitelisting e.g. '/-webkit-scrollbar-thumb$/'
+        whitelistPatterns: []
+    }))
+    .pipe(rename('style.css'))
+    .pipe(gulp.dest('dist/assets/css'))
+});`} />
+<div className="space"></div>
 
                         <h6 className="font-alt font-normal">Note Before Use</h6>
                         <p>
@@ -162,87 +188,62 @@ export const ConfigurationPage: React.FC<any> = (props) => {
                             exception is the letter spacing util classes found inside <code>base/fonts.scss</code> which
                             can also be used in these lists.
                         </p>
-                        <p>
-                            Below is how reducing the number of enabled features will affect build size (with all
-                            viewports enabled).
-                        </p>
-                        <table className="table bordered">
-                            <tr>
-                                <th>Disabled Features</th>
-                                <th>Original Size</th>
-                                <th>Minified Size</th>
-                            </tr>
-                            <tr>
-                                <td>Components Only</td>
-                                <td>253.31kB</td>
-                                <td>136.58kB</td>
-                            </tr>
-                            <tr>
-                                <td>Utilities Only</td>
-                                <td>294.58kB</td>
-                                <td>186.07kB</td>
-                            </tr>
-                            <tr>
-                                <td>Components and Utilities</td>
-                                <td>184.00kB</td>
-                                <td>101.65kB</td>
-                            </tr>
-                        </table>
                     </div>
                 </section>
 
-                <section className="padtop" id="disabling-viewport-variants">
+                <section className="padtop" id="disabling-psuedo-variants">
                     <div className="content">
-                        <Headline title="Disabling Viewport Variants" size="4" link="#disabling-viewport-variants" />
+                        <Headline title="Disabling Pseudo Variants" size="4" link="#disabling-psuedo-variants" />
                         <div className="divider"></div>
 
                         <p>
-                            Some classes support viewport variants where it behaves differently depending on the current
-                            screen size. This
+                            Both the <code>cirrus-core</code> and <code>cirrus-ext</code> builds use the same pseudo-variants <ExternalLink url="https://github.com/Spiderpig86/Cirrus/blob/eb3abd28282453c1b140c05fddcd8930cad6e861/src/internal/_config.scss#L79">configured</ExternalLink> for class generation, ranging from generating classes for responsive viewports to classes that apply on hover or focus. To save on build size, you can remove the ones you don't need or remove them altogether.
                         </p>
                         <p>
-                            In your project, import the Cirrus library and specify the enabled and disabled viewports
-                            similar to what's shown below:
+                            Below is a sample configuration that disables all psuedo-variant class generation.
                         </p>
 
                         <CodeBlock
                             code={`@use "cirrus-ui/src/cirrus-ext" as * with (
     $config: (
-        viewports: (
-            CLEARFIX: false,
-            DISPLAY: false,
-            FLEX: false,
-        )
+        pseudo-variants: (
+            CLEARFIX: (),
+            DISPLAY: (),
+            FLEX: (),
+            FLOAT: (),
+            OVERFLOW: (),
+            POSITION: (),
+            TEXT: (),
+            MARGIN-PADDING: (),
+            OPACITY: (),
+            BACKGROUND-OPACITY: (),
+            COLOR-OPACITY: (),
+            BORDER-OPACITY: (),
+            WIDTHS: (),
+            HEIGHTS: (),
+            ZINDEX: (),
+            ABSOLUTES: (),
+            GAP: (),
+            ROUND: (),
+            SHADOWS: (),
+            MIN-HEIGHT: (),
+            MAX-HEIGHT: (),
+            MIN-WIDTH: (),
+            MAX-WIDTH: (),
+            GRID: (),
+            BLUR: (),
+            TRANSITION-DURATION: (),
+            LETTER-SPACING: (),
+            LINE-HEIGHT: (),
+            BORDER-WIDTH: (),
+            VERTICAL-ALIGN: (),
+            CURSOR: (),
+            THEME-MODIFIERS: (),
+        ),
     ),
 );`}
                             language="scss"
                         />
-
-                        <p>
-                            All supported viewport flags can be found in the <code>cirrus-all</code> build configuration{' '}
-                            <ExternalLink url="https://github.com/Spiderpig86/Cirrus/blob/master/src/cirrus-all.scss#L4">
-                                here
-                            </ExternalLink>
-                            .
-                        </p>
-                        <p>Below is how reducing the number of enabled viewport variants will affect build size.</p>
-                        <table className="table bordered">
-                            <tr>
-                                <th>Viewport Configuration</th>
-                                <th>Original Size</th>
-                                <th>Minified Size</th>
-                            </tr>
-                            <tr>
-                                <td>None Disabled</td>
-                                <td>356.59kB</td>
-                                <td>217.63kB</td>
-                            </tr>
-                            <tr>
-                                <td>All Disabled</td>
-                                <td>189.86kB</td>
-                                <td>139.09kB</td>
-                            </tr>
-                        </table>
                     </div>
                 </section>
 
@@ -271,37 +272,6 @@ export const ConfigurationPage: React.FC<any> = (props) => {
 );`}
                             language="scss"
                         />
-
-                        <p>
-                            All supported viewport flags can be found in the <code>cirrus-all</code> build configuration{' '}
-                            <ExternalLink url="https://github.com/Spiderpig86/Cirrus/blob/master/src/cirrus-all.scss#L4">
-                                here
-                            </ExternalLink>
-                            .
-                        </p>
-                        <p>Below is how reducing the number of colors will affect build size (with all viewports and features enabled). Note that there are 12 semantic colors and 91 extended colors.</p>
-                        <table className="table bordered">
-                            <tr>
-                                <th>Number of Color Classes</th>
-                                <th>Original Size</th>
-                                <th>Minified Size</th>
-                            </tr>
-                            <tr>
-                                <td>112 <i>(Default)</i></td>
-                                <td>356.59kB</td>
-                                <td>217.63kB</td>
-                            </tr>
-                            <tr>
-                                <td>71</td>
-                                <td>352.93kB</td>
-                                <td>211.50kB</td>
-                            </tr>
-                            <tr>
-                                <td>31</td>
-                                <td>344.16kB</td>
-                                <td>204.98kB</td>
-                            </tr>
-                        </table>
                     </div>
                 </section>
                 
@@ -336,30 +306,6 @@ export const ConfigurationPage: React.FC<any> = (props) => {
 );`}
                             language="scss"
                         />
-
-                        <p>Below is how reducing the number of breakpoints would affect the build size. By default Cirrus comes with 4 breakpoints specified.</p>
-                        <table className="table bordered">
-                            <tr>
-                                <th>Number of Breakpoints</th>
-                                <th>Original Size</th>
-                                <th>Minified Size</th>
-                            </tr>
-                            <tr>
-                                <td>4 <i>(Default)</i></td>
-                                <td>356.59kB</td>
-                                <td>217.63kB</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>259.43kB</td>
-                                <td>170.64kB</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>173.44kB</td>
-                                <td>130.38kB</td>
-                            </tr>
-                        </table>
                     </div>
                 </section>
 
