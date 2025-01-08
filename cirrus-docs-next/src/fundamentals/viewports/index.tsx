@@ -14,7 +14,6 @@ import { ResizableInternal } from '../../../layouts/components/resizable';
 import { IFrame } from '../../../layouts/components/iframe';
 import { wrapContent } from '../../../utils/iframe';
 import { VersionTag } from '../../../layouts/components/tag';
-import { TITLE_FUNDAMENTALS } from '../../../config/sidebar';
 
 export const ViewportsPage: React.FC<any> = (props) => {
     return (
@@ -266,6 +265,12 @@ export const ViewportsPage: React.FC<any> = (props) => {
                                 </tbody>
                             </table>
                         </TableWrapper>
+
+                        <p>You can also use this within your CSS.</p>
+                        <CodeBlock language='scss' code={`.foo {
+    @extend
+        .md\\:u-none
+}`} />
                     </div>
                 </section>
 
@@ -382,7 +387,7 @@ export const ViewportsPage: React.FC<any> = (props) => {
                 ),
                 // 2. Add the breakpoint pair
                 breakpoint-pairs: (
-                    '2xl': 'lg',
+                    '2xl': 'xl',
                 )
             )
         )
