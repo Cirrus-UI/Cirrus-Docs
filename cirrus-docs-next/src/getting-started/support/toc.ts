@@ -4,11 +4,12 @@ export const toc: TableOfContentsEntry[] = [
     {
         name: 'Browser Support',
         anchor: '#support',
-        children: null,
-    },
-    {
-        name: 'Working with Older Browsers',
-        anchor: '#oldbrowsers',
-        children: null,
+        children: [
+            {
+                name: 'Working with Older Browsers',
+                anchor: '#oldbrowsers',
+                children: null,
+            },
+        ],
     },
 ];

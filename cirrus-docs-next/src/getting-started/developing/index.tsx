@@ -205,7 +205,7 @@ export const DevelopingPage: React.FC<any> = (props) => {
                                 .
                             </li>
                             <li>
-                                <code>gulp watch</code> - automate compiling and minication.
+                                <code>gulp watch</code> - automate compiling and minification.
                             </li>
                         </ul>
                         <div className="space" />

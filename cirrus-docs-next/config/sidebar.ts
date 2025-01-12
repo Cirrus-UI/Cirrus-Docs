@@ -152,6 +152,12 @@ export const sidebarConfig: SidebarConfig[] = [
                 text: 'Viewports',
                 url: '/fundamentals/viewports',
             },
+            {
+                fontWeight: 'semibold',
+                glyph: null,
+                text: 'Plugin API',
+                url: '/fundamentals/plugins',
+            },
         ],
     },
     {
