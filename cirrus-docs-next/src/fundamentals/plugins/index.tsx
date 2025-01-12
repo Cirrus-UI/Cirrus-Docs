@@ -252,17 +252,60 @@ using ($props...) {
 
                 <section id="usage" className="padtop">
                     <div className="content">
-                        <Headline title="Usage" link="#usage" size="4" />
+                        <Headline title="Import into Existing Sass/Scss File" link="#usage" size="4" />
                         <div className="divider"></div>
-                        <p></p>
-                    </div>
-                </section>
+                        <p>
+                            Using these APIs in an existing project's Sass/Scss files is quite simple. First, make sure
+                            that Cirrus is installed on your project. If not, see instructions on how to do it{' '}
+                            <Link href="/getting-started/setup">here</Link>.
+                        </p>
+                        <p>
+                            Next, import Cirrus directly into your project. For documentation on how to import Cirrus,
+                            check <Link href="/getting-started/setup#project-config">this</Link> out (click the
+                            Sass/Scss tab).
+                        </p>
+                        <CodeBlock
+                            language="scss"
+                            code={`// Use any flavor of Cirrus
+@use 'cirrus-ext' as *;
+`}
+                        />
 
-                <section id="custom-build" className="padtop">
-                    <div className="content">
-                        <Headline title="Custom Build" link="#custom-build" size="4" />
-                        <div className="divider"></div>
-                        <p></p>
+                        <p>Then, define the utility API you want to use and the classes you want to generate.</p>
+
+                        <CodeBlock
+                            language="scss"
+                            code={`@use 'cirrus-ext' as *;
+
+@include utility(
+    $base-class-name: 'bg',
+    $class-value-pairs: (
+        papayawhip: (
+            background-color: papayawhip,
+        ),
+        peachpuff: (
+            background-color: peachpuff,
+        ),
+        salmon: (
+            background-color: salmon,
+        ),
+        tomato: (
+            background-color: tomato,
+        ),
+    ),
+    $variants: (
+        'hover',
+    ),
+    $override: '!important'
+);`}
+                        />
+
+                        <p>
+                            Finally, run your build command or save (if you're using some monitoring job) and use the
+                            styles you have just generated.
+                        </p>
+
+                        <CodeBlock language="htmlbars" code={`<div class="bg-tomato p-3 u-round-full"></div>`} />
                     </div>
                 </section>
 
