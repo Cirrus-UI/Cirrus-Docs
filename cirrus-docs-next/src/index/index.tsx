@@ -507,25 +507,25 @@ import 'cirrus-ui';`}
                                                     <div className="col-8 pt-2">
                                                         <CodeBlock
                                                             code={`<div class="w-100p">
-    <div class="bg-indigo-500 text-white my-2 pl-2 pr-32 py-1 u-round-sm u-inline-block u-shadow-lg"><span class="font-bold">px-32</span></div>
+    <div class="bg-indigo-500 text-white my-2 pl-2 pr-32 py-1 u-round-sm u-inline-block u-shadow-lg"><span class="font-bold">pr-32</span></div>
 </div>
 <div class="w-100p">
-    <div class="bg-indigo-500 text-white my-2 pl-2 pr-24 py-1 u-round-sm u-inline-block u-shadow-lg"><span class="font-bold">px-24</span></div>
+    <div class="bg-indigo-500 text-white my-2 pl-2 pr-24 py-1 u-round-sm u-inline-block u-shadow-lg"><span class="font-bold">pr-24</span></div>
 </div>
 <div class="w-100p">
-    <div class="bg-indigo-500 text-white my-2 pl-2 pr-20 py-1 u-round-sm u-inline-block u-shadow-lg"><span class="font-bold">px-20</span></div>
+    <div class="bg-indigo-500 text-white my-2 pl-2 pr-20 py-1 u-round-sm u-inline-block u-shadow-lg"><span class="font-bold">pr-20</span></div>
 </div>
 <div class="w-100p">
-    <div class="bg-indigo-500 text-white my-2 pl-2 pr-16 py-1 u-round-sm u-inline-block u-shadow-lg"><span class="font-bold">px-16</span></div>
+    <div class="bg-indigo-500 text-white my-2 pl-2 pr-16 py-1 u-round-sm u-inline-block u-shadow-lg"><span class="font-bold">pr-16</span></div>
 </div>
 <div class="w-100p">
-    <div class="bg-indigo-500 text-white my-2 pl-2 pr-12 py-1 u-round-sm u-inline-block u-shadow-lg"><span class="font-bold">px-12</span></div>
+    <div class="bg-indigo-500 text-white my-2 pl-2 pr-12 py-1 u-round-sm u-inline-block u-shadow-lg"><span class="font-bold">pr-12</span></div>
 </div>
 <div class="w-100p">
-    <div class="bg-indigo-500 text-white my-2 pl-2 pr-10 py-1 u-round-sm u-inline-block u-shadow-lg"><span class="font-bold">px-10</span></div>
+    <div class="bg-indigo-500 text-white my-2 pl-2 pr-10 py-1 u-round-sm u-inline-block u-shadow-lg"><span class="font-bold">pr-10</span></div>
 </div>
 <div class="w-100p">
-    <div class="bg-indigo-500 text-white my-2 pl-2 pr-8 py-1 u-round-sm u-inline-block u-shadow-lg"><span class="font-bold">px-8</span></div>
+    <div class="bg-indigo-500 text-white my-2 pl-2 pr-8 py-1 u-round-sm u-inline-block u-shadow-lg"><span class="font-bold">pr-8</span></div>
 </div>`}
                                                             language="htmlbars"
                                                         />
