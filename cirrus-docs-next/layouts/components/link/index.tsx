@@ -22,7 +22,6 @@ export const InternalLink: React.FC<any> = ({ children, ...rest }: any) => {
         <Link href={rest.url}>
             <a
                 className="u u-LR"
-                target="_blank"
                 href={rest.url}
                 style={{
                     cursor: 'pointer',

@@ -11,7 +11,7 @@ import { DefaultLayout } from '../../../layouts/default';
 import { toc } from './toc';
 import { PAGE_TITLE_PREFIX } from '../../../constants';
 import { VersionTag } from '../../../layouts/components/tag';
-import Link from 'next/link';
+import { InternalLink } from '../../../layouts/components/link';
 
 export const PluginsPage: React.FC<any> = (props) => {
     return (
@@ -81,7 +81,7 @@ export const PluginsPage: React.FC<any> = (props) => {
                             <p>
                                 To use this API, import Cirrus and then declare your utility mixin. For documentation on
                                 how to import Cirrus, check{' '}
-                                <Link href="/getting-started/setup#project-config">this</Link> out (click the Sass/Scss
+                                <InternalLink url="/getting-started/setup#project-config">this</InternalLink> out (click the Sass/Scss
                                 tab).
                             </p>
                             <p>Example and explanation of each input param is listed below.</p>
@@ -257,11 +257,11 @@ using ($props...) {
                         <p>
                             Using these APIs in an existing project's Sass/Scss files is quite simple. First, make sure
                             that Cirrus is installed on your project. If not, see instructions on how to do it{' '}
-                            <Link href="/getting-started/setup">here</Link>.
+                            <InternalLink url="/getting-started/setup">here</InternalLink>.
                         </p>
                         <p>
                             Next, import Cirrus directly into your project. For documentation on how to import Cirrus,
-                            check <Link href="/getting-started/setup#project-config">this</Link> out (click the
+                            check <InternalLink url="/getting-started/setup#project-config">this</InternalLink> out (click the
                             Sass/Scss tab).
                         </p>
                         <CodeBlock
