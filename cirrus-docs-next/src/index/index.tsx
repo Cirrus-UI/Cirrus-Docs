@@ -678,9 +678,7 @@ import 'cirrus-ui';`}
                                 }}
                             >
                                 <IFrame
-                                    content={`<link href="${PLAYGROUND_ENDPOINT_MAP.get(
-                                        PLAYGROUND_ENDPOINT_MAP.get(`0.7.2`)
-                                    )}" rel="stylesheet" />
+                                    content={`<link href="${PLAYGROUND_ENDPOINT_MAP.get(`0.7.2`)}" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 <body>${ResponsiveLandingHTML}</body>`}
