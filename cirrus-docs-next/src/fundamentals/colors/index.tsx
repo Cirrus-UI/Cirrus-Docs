@@ -16,6 +16,8 @@ import { DEFAULT_PERCENTAGES, PAGE_TITLE_PREFIX } from '../../../constants';
 import { Capitalize } from '../../../utils/string';
 import { Blockquote } from '../../../layouts/components/blockquote';
 import { TITLE_FUNDAMENTALS } from '../../../config/sidebar';
+import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
+import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
 
 export const ColorsPage: React.FC<any> = (props) => {
     const v1ClassTable = DEFAULT_SEMANTIC_COLORS.flatMap((color) => {
@@ -47,11 +49,20 @@ export const ColorsPage: React.FC<any> = (props) => {
                     <div className="content">
                         <Headline title="Colors" link="#colors" />
                         <div className="divider"></div>
-                        <VersionTag text='Update' version='0.7.1' />
+                        <VersionTag text="Update" version="0.7.1" />
                         <p>
                             Cirrus comes with a semantic palette and an expanded palette to help you style your page.
                             The expanded palette is a large, hand-tuned collection of colors for the framework.
                         </p>
+                        <div className="space"></div>
+
+                        <PseudoVariant
+                            defaultEnabledPseudos={[
+                                PseudoVariantsEnum.DARK,
+                                PseudoVariantsEnum.GROUP_HOVER,
+                                PseudoVariantsEnum.HOVER,
+                            ]}
+                        />
                     </div>
                 </section>
 
@@ -61,7 +72,8 @@ export const ColorsPage: React.FC<any> = (props) => {
                         <div className="divider"></div>
                         <p>
                             Using a color within Cirrus is as simple as just prefixing the colors with <code>bg-</code>{' '}
-                            to color the background, <code>text-</code> to color the text, and <code>border-</code> to color the borders.
+                            to color the background, <code>text-</code> to color the text, and <code>border-</code> to
+                            color the borders.
                         </p>
                         <div className="space"></div>
 
@@ -103,15 +115,13 @@ export const ColorsPage: React.FC<any> = (props) => {
                                 />
                             </div>
                         </div>
-                        
+
                         <p>
                             Circle with a <b>purple-500</b> border.
                         </p>
                         <div className="row">
                             <div className="lg:col-6 mb-1 u-flex u-justify-center">
-                                <div
-                                    className="u-round-full w-8 h-8 border-purple-500 u-border-2"
-                                ></div>
+                                <div className="u-round-full w-8 h-8 border-purple-500 u-border-2"></div>
                             </div>
                             <div className="lg:col-6">
                                 <CodeBlock
@@ -217,7 +227,7 @@ export const ColorsPage: React.FC<any> = (props) => {
                         <div className="divider"></div>
 
                         <p>
-                            Docs have been moved to the
+                            Docs have been moved to the{' '}
                             <Link href="/utils/opacity#property-specific">
                                 <a className="u u-LR">Opacity</a>
                             </Link>{' '}
@@ -411,7 +421,6 @@ Error: $color: "ERROR [fill()]: [fill] Unknown color key \`gray 500\`." is not a
                         </Blockquote>
                     </div>
                 </section>
-
 
                 <Pagination
                     prevLink={{

@@ -43,7 +43,7 @@ export const PluginsPage: React.FC<any> = (props) => {
                             All of these are exposed for use, but these are the main ones to focus on.
                         </p>
                         <section id="utility" className="padtop">
-                            <Headline title="@mixin utility" link="#utility" size="6" />
+                            <Headline title="@utility mixin" link="#utility" size="6" />
                             <p>
                                 The <code>utility</code> mixin allows you to pass in a mapping of class name to map of
                                 CSS properties and values for class generation. It also takes in many different
@@ -140,7 +140,7 @@ export const PluginsPage: React.FC<any> = (props) => {
                             />
                         </section>
                         <section id="utility-with-body" className="padtop">
-                            <Headline title="@mixin utility-with-body" link="#utility-with-body" size="6" />
+                            <Headline title="@utility-with-body mixin" link="#utility-with-body" size="6" />
                             <p>
                                 This is the alternative API where you have a bunch of CSS rules you want to generate
                                 that don't necessarily confirm with the <code>utility</code> mixin. This gives you more

@@ -2,32 +2,32 @@ import { TableOfContentsEntry } from '../../layouts/components/toc';
 
 export const toc: TableOfContentsEntry[] = [
     {
-        name: `What's New in 0.7.x?`,
+        name: `What's New in 0.8.x?`,
         anchor: '#whats-new',
         children: [
             {
-                name: 'A new way to use Cirrus',
-                anchor: '#new-way',
+                name: 'Unified viewport syntax',
+                anchor: '#syntax',
                 children: null,
             },
             {
-                name: 'Focus on configurability',
-                anchor: '#configurability',
+                name: 'New pseudo-class states',
+                anchor: '#pseudo',
                 children: null,
             },
             {
-                name: 'Revamped colors',
-                anchor: '#colors',
+                name: 'Class updates',
+                anchor: '#class',
                 children: null,
             },
             {
-                name: 'Utils, utils, and more utils',
-                anchor: '#utils',
+                name: 'Plugin API',
+                anchor: '#plugin-api',
                 children: null,
             },
             {
-                name: 'Components',
-                anchor: '#components',
+                name: 'Other breaking changes',
+                anchor: '#breaking',
                 children: null,
             },
             {

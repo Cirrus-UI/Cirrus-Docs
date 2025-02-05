@@ -10,12 +10,12 @@ export const toc: TableOfContentsEntry[] = [
                 anchor: '#apis',
                 children: [
                     {
-                        name: '@mixin utility',
+                        name: '@utility mixin',
                         anchor: '#utility',
                         children: null,
                     },
                     {
-                        name: '@mixin utility-with-body',
+                        name: '@utility-with-body mixin',
                         anchor: '#utility-with-body',
                         children: null,
                     },

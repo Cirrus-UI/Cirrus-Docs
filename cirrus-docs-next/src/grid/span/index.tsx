@@ -14,6 +14,7 @@ import { TITLE_GRID } from '../../../config/sidebar';
 import { ClassTable } from '../../../layouts/components/class-table';
 import { PseudoVariant } from '../../../layouts/components/pseudo-variant';
 import { PseudoVariantsEnum } from '../../../models/psuedo-variant';
+import { VersionTag } from '../../../layouts/components/tag';
 
 export const GridSpanPage: React.FC<any> = (props) => {
     const GRID_COLUMN_CLASS_TABLE = DEFAULT_COLUMN_SIZING_SYSTEM.map((size) => {
@@ -63,10 +64,7 @@ export const GridSpanPage: React.FC<any> = (props) => {
                     <div className="content">
                         <Headline title="Grid Span" link="#span" />
                         <div className="divider"></div>
-                        <span className="tag-container group-tags">
-                            <div className="tag tag--dark">New</div>
-                            <div className="tag tag--info">0.5.5</div>
-                        </span>
+                        <VersionTag version='0.8.0' text='Updated' />
 
                         <p>
                             These classes are utility classes for determining how elements are located and stretched

@@ -1,9 +1,6 @@
 import React, { useEffect } from 'react';
 import Head from 'next/head';
-import Link from 'next/link';
 import { withLayout } from '@moxy/next-layout';
-import { ResponsiveBar } from '@nivo/bar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { TableOfContents } from '../../layouts/components/toc';
 import { Headline } from '../../layouts/components/headline';
@@ -25,14 +22,13 @@ export const NewPage: React.FC<any> = (props) => {
             <div>
                 <section id="whats-new" className="padtop">
                     <div className="content">
-                        <Headline title="What's New in 0.7.0?" link="#whats-new" />
+                        <Headline title="What's New in 0.8.0?" link="#whats-new" />
                         <div className="divider"></div>
 
                         <p>
-                            Like Cirrus 0.6.0, 0.7.0 was another large undertaking that brought a large refactor of the
-                            entire codebase to prioritize configurability and enhance overall developer experience. This
-                            rewrite represents the first step in how Cirrus is repositioning as a
-                            component-and-utility-centric SCSS framework.
+                            There are a plethora of new changes in 0.8.0, especially with class syntax and overall class
+                            generation. This update focuses on revamping the whole class generation engine and
+                            addressing other issues that existed in 0.7.x.
                         </p>
 
                         <p>
@@ -44,280 +40,309 @@ export const NewPage: React.FC<any> = (props) => {
                     </div>
                 </section>
 
-                <section className="padtop" id="new-way">
+                <section className="padtop" id="syntax">
                     <div className="content">
-                        <Headline size="4" title="A new way to use Cirrus" link="#new-way" />
+                        <Headline size="4" title="Class syntax changes" link="#syntax" />
                         <div className="divider"></div>
                         <p>
-                            With previous versions, the only ways to use Cirrus was to either{' '}
-                            <strong>linking the CDN link</strong> at the top of your page or{' '}
-                            <strong>
-                                importing <code>cirrus-ui</code>
-                            </strong>{' '}
-                            into your Node project.
+                            One of the most confusing things about the previous versions of Cirrus was the syntax used
+                            for specifying viewports for applying classes. There were a total of 3 ways of specifying
+                            this. Starting with this update, all of these will be unified to a single syntax:{' '}
+                            <code>[sm|md|lg|xl]:classname</code>. This will be the case for all classes whether it is
+                            for columns or utility classes.
                         </p>
                         <p>
-                            This is fine, but it lacked any sort of customization. The only way to change Cirrus was to
-                            clone the project and build your own version locally. Dart Sass has given me immense
-                            opportunity to improve Cirrus&#39;s usability and fix technical debt and hacks. One of the
-                            things it also enabled was directly importing Cirrus into your Sass/Scss project directly.
+                            Below are the main syntax changes:
+                            <ul>
+                                <li>
+                                    <code>col-sm-1</code> -&gt; <code>sm:col-1</code> - column classes will all have the
+                                    viewport modifier prefixed at the front.
+                                </li>
+                                <li>
+                                    <code>col-6</code> -&gt; <code>md:col-6</code> - all column classes that did not
+                                    have the modifier class must be prefixed with <code>md:</code> to get the same
+                                    behavior as before. This is to address the confusing implicit behavior where a class
+                                    like <code>col-6</code> would have 50% width for <code>md</code> and above but 100%
+                                    width for viewports below<code>`md</code>.
+                                </li>
+                                <li>
+                                    <code>u-block-md</code> -&gt; <code>md:u-block</code> - for all utility classes, the
+                                    viewport modifier will be prefixed at the front.
+                                </li>
+                            </ul>{' '}
                         </p>
                         <p>
-                            <strong>
-                                Not only can you import different pre-configured versions of Cirrus, but also take
-                                advantage of all the functions, mixins, constants, etc. that Cirrus comes built with.
-                            </strong>
-                        </p>
-
-                        <CodeBlock
-                            code={`// main.scss
-@use "cirrus-ui/cirrus-core" as *; // Core build OR
-@use "cirrus-ui/src/cirrus-ext" as *; // Extended build
-
-@screen-above($md) {
-    .my-class {
-        background-color: rgba(#{hex-to-rgb(fill('blue', '600'))}, .25);
-    }
-}`}
-                            language="scss"
-                        />
-
-                        <p>
-                            No more having to build Cirrus separately and then copying and pasting the generated styles
-                            to your project. Read more on this{' '}
-                            <InternalLink url="/getting-started/configuration">here</InternalLink>.
+                            Read more on this <InternalLink url="/fundamentals/viewports">here</InternalLink>.
                         </p>
                     </div>
                 </section>
 
-                <section className="padtop" id="configurability">
+                <section className="padtop" id="pseudo">
                     <div className="content">
-                        <Headline size="4" title="Focus on configurability" link="#configurability" />
+                        <Headline size="4" title="New pseudo-class states" link="#pseudo" />
                         <div className="divider"></div>
                         <p>
-                            One of the things this rewrite aimed to accomplish was configurability. In the past, CSS
-                            frameworks were just things we plop into our project and we either accepted styles it gave
-                            us or we spent countless hours overriding them to fit our needs. Why should we continue to
-                            subject ourselves to that amount of torture?
+                            Pseudo-class modifiers bring you the ability to apply certain classes in Cirrus based on an
+                            element's state. For instance, the <code>hover:text-white</code> pseudo-class will cause an
+                            element's text color to change to white when hovered.
                         </p>
                         <p>
-                            0.7.0 marks a big step in dynamic class generation. Whether you are building Cirrus locally
-                            or you&#39;re importing Cirrus directly into your Sass files, you can take advantage of
-                            defining a configuration object in both scenarios when you import the framework. Use the
-                            configuration object to specify viewports for classes, extend existing component and utility
-                            styles, toggle features, and more.
+                            This can be used to the dynamic behavior Cirrus lacked in the prior versions -- all made
+                            possible by the revamps made to Cirrus's class generation engine.
+                        </p>
+
+                        <p>
+                            Class generator now supports many more variants (pseudos):
+                            <ul>
+                                <li>'responsive'</li>
+                                <li>'dark', 'light'</li>
+                                <li>'reduce-motion'</li>
+                                <li>'first-of-type'</li>
+                                <li>'last-of-type'</li>
+                                <li>'portrait', 'landscape'</li>
+                                <li>'hover', 'group-hover'</li>
+                                <li>'focus', 'group-focus', 'focus-visible', 'focus-within'</li>
+                                <li>'active'</li>
+                                <li>'visited'</li>
+                                <li>'checked'</li>
+                                <li>'disabled'</li>
+                            </ul>
                         </p>
 
                         <CodeBlock
-                            code={`@use "cirrus-ui/src/cirrus-ext" as * with (
-    $config: (
-        excludes: (
-            ABSOLUTES,
+                            language="scss"
+                            code={`
+@include generator_v2.utility(
+    $base-class-name: 'text',
+    $class-value-pairs: (
+        'blue': (
+            'color': blue,
         ),
-        opacity: null, // Disable default opacity classes
-        extend: (
-            // Add your own
-            opacity: (
-                25: .25,
-                50: .5,
-                75: .75,
-            )
-        )
     ),
+    $variants: (
+        'dark',
+        'hover',
+        'reduce-motion',
+        'group-hover',
+        'group-focus',
+    ),
+    $generate-viewports: true,
+    $override: '!important'
 );`}
-                            language="scss"
                         />
-                        <p>
-                            Currently most utility classes and components can be customized through here in this
-                            release, but I hope to extend this capability a lot more in future updates. Read more on
-                            this <InternalLink url="/getting-started/configuration">here</InternalLink>.
-                        </p>
-                    </div>
-                </section>
-
-                <section className="padtop" id="colors">
-                    <div className="content">
-                        <Headline title="Revamped colors" size="4" link="#colors" />
-                        <div className="divider"></div>
-                        <p>
-                            Default colors have been tuned a bit for increased vibrancy and range. Of course, these
-                            colors can be customized via the configuration object as well.
-                        </p>
-
-                        {['pink', 'red', 'orange', 'yellow', 'green', 'teal', 'blue', 'indigo', 'purple', 'gray'].map(
-                            (color) => {
-                                return (
-                                    <div className="u-flex u-justify-center u-gap-1 mb-1" key={color}>
-                                        {v2.get(color).map((className, index) => (
-                                             <div
-                                                key={color + className.class + index}
-                                                className={`${className.class} p-3 u-round-xs p-4-xl`}
-                                            />
-                                        ))}
-                                    </div>
-                                );
-                            }
-                        )}
-                    </div>
-                </section>
-
-                <section className="padtop" id="utils">
-                    <div className="content">
-                        <Headline title="Utils, utils, and more utils" size="4" link="utils" />
-                        <div className="divider"></div>
-                        <p>
-                            Utility classes within Cirrus have grown to be quite popular. This update adds utility
-                            classes for:
-                        </p>
-                        <ul>
-                            <li>
-                                <InternalLink url="/fonts/letter-spacing">Letter Spacing</InternalLink> — utilities to
-                                control letter spacing of an element.
-                            </li>
-                            <li>
-                                <InternalLink url="/utils/flexbox#flex-wraps">Flex Wrap</InternalLink> — utiltiies to
-                                control how flex items wrap.
-                            </li>
-                            <li>
-                                <InternalLink url="/utils/flexbox#flex-grow">Flex Grow</InternalLink> — utilties to
-                                control how flex items grow.
-                            </li>
-                            <li>
-                                <InternalLink url="/utils/flexbox#flex-shrink">Flex Shrink</InternalLink> — utilities to
-                                control how flex items shrink.
-                            </li>
-                            <li>
-                                <InternalLink url="/fundamentals/colors#changing-opacity">Color Opacity</InternalLink> —
-                                utilities to control color opacity (background and text/border).
-                            </li>
-                            <li>
-                                <InternalLink url="/utils/gap">Flex/Grid Gap</InternalLink> — utilities to control
-                                gutters between grid and flexbox items.
-                            </li>
-                            <li>
-                                <InternalLink url="/fonts/size">Font Size</InternalLink> — utilities for font sizes.
-                            </li>
-                            <li>
-                                <InternalLink url="/utils/box-shadow">Box Shadow</InternalLink> — utilities to add box
-                                shadows to an element.
-                            </li>
-                            <li>
-                                <InternalLink url="/utils/border-radius">Border Radius</InternalLink> — utilities to
-                                control border radius of an element.
-                            </li>
-                            <li>
-                                <InternalLink url="/layout/min-height">Min Height</InternalLink> — utilities to set min
-                                height of an element.
-                            </li>
-                            <li>
-                                <InternalLink url="/layout/max-height">Max Height</InternalLink> — utilities to set max
-                                height of an element.
-                            </li>
-                            <li>
-                                <InternalLink url="/layout/min-width">Min Width</InternalLink> — utilities to set min
-                                width of an element.
-                            </li>
-                            <li>
-                                <InternalLink url="/layout/max-width">Max Width</InternalLink> — utilities to set max
-                                width of an element.
-                            </li>
-                            <li>
-                                <InternalLink url="/fonts/font-weights">Font Weights</InternalLink> — utiltiies to
-                                control font weight of an element.
-                            </li>
-                            <li>
-                                <InternalLink url="/utils/opacity">Opacity</InternalLink> — utilities to control the
-                                opacity of an element.
-                            </li>
-                            <li>
-                                <InternalLink url="/utils/zindex">Z-Index</InternalLink> — utilities to control the
-                                z-index of an element.
-                            </li>
-                        </ul>
-                        <p>
-                            A lot of classes have also seen the introduction of viewport variants. Those can be found in
-                            the class specific documentation in the docs page.
-                        </p>
 
                         <CodeBlock
-                            code={`<div class="u-z-50 ...">50</div>
-<div class="u-z-40 ...">40</div>
-<div class="u-z-30 ...">30</div>
-<div class="u-z-20 ...">20</div>
-<div class="u-z-10 ...">10</div>
-<div class="u-z-1 ...">1</div>
-<div class="u-z-0 ...">0</div>
-<div class="u-z-n1 ...">-1</div>
-<div class="u-z-auto ...">auto</div>`}
-                            language="scss"
+                            language="css"
+                            code={`.u-text-blue {
+    color: blue !important;
+}
+
+.hover\:u-text-blue:hover {
+    color: blue !important;
+}
+
+.group:hover .group-hover\:u-text-blue {
+    color: blue !important;
+}
+
+.group:focus .group-focus\:u-text-blue {
+    color: blue !important;
+}
+
+@media screen and (min-width: 640px) {
+    .sm\:u-text-blue {
+        color: blue !important;
+    }
+
+    .sm\:hover\:u-text-blue:hover {
+        color: blue !important;
+    }
+
+...`}
                         />
+
+                        <p>
+                            You can configure which pseudo-class states are supported for each utility class within the
+                            configuration. Read more on this{' '}
+                            <InternalLink url="/fundamentals/pseudo-variants">here</InternalLink>.
+                        </p>
                     </div>
                 </section>
 
-                <section className="padtop" id="components">
+                <section className="padtop" id="class">
                     <div className="content">
-                        <Headline title="Components" size="4" link="components" />
+                        <Headline title="Class updates" size="4" link="#class" />
+                        <div className="divider"></div>
+                        <p>This update introduces a few new utility classes.</p>
+
+                        <ul>
+                            <li>
+                                <InternalLink url="/utils/cursor">Cursor</InternalLink> — utilities to change the cursor
+                                when hovering over elements.
+                            </li>
+                            <li>
+                                <InternalLink url="/elements/tooltips">Tooltips</InternalLink> — new{' '}
+                                <code>tooltip--visible</code> class to show tooltip without hover/focus state.
+                            </li>
+                            <li>
+                                <InternalLink url="/grid/span">Grid</InternalLink> — add missing grid-row styles{' '}
+                                <code>grid-rows-</code>, <code>grid-r-</code>, <code>grid-rs-</code>, and{' '}
+                                <code>grid-re-</code>.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section className="padtop" id="plugin-api">
+                    <div className="content">
+                        <Headline title="Plugin API" size="4" link="utils" />
                         <div className="divider"></div>
 
                         <p>
-                            This update wasn't as focused on introducing new components, but it was not forgotten. Some
-                            of the new components styles are:
+                            Cirrus now documents and exposes the <code>@utility</code> and{' '}
+                            <code>@utility-with-body</code> mixins for generating your own utility classes. This helps
+                            to bridge any gap that exists between your use cases and Cirrus's offerings without having
+                            to wait for another update or trying to tinker with the source code itself.
                         </p>
+                        <p>
+                            These APIs give you the flexibility to change the class name prefix, class name, delimiters,
+                            overrides, pseudo-class variants, styles to apply, etc.
+                        </p>
+                        <p>
+                            In short, the APIs do the following:
+                            <ul>
+                                <li>
+                                    <code>@utility</code> - specify your own utility classes with class name + CSS
+                                    property pairs.
+                                </li>
+                                <li>
+                                    <code>@utility-with-body</code> - similar to <code>@utility</code>, but allows you
+                                    to specify more custom logic for class generation.
+                                </li>
+                            </ul>
+                        </p>
+
+                        <p>Example and explanation of each input param is listed below.</p>
+
+                        <CodeBlock
+                            language="scss"
+                            code={`// Use any flavor of Cirrus
+@use 'cirrus-ext' as *;
+
+// Custom plugin example
+@include utility(
+    // Defaults to 'u' from config.$utility-prefix in '_config.scss' Can be empty.
+    $class-prefix: 'custom',
+    // Defaults to '-' from config.$delimiter in '_config.scss'. Can be empty.
+    $delimiter: '-',
+    // Name that comes after the $class-prefix but before $class-value-pair keys.
+    // For example, this is the "bg" inside the generated class name of "custom-bg-peachpuff" in this example
+    $base-class-name: 'bg',
+    // Specify which styles to specify. This tells Cirrus to generate classes for "custom-bg-papayawhip", "custom-bg-peachpuff", etc.
+    $class-value-pairs: (
+        papayawhip: (
+            background-color: papayawhip,
+        ),
+        peachpuff: (
+            background-color: peachpuff,
+        ),
+        salmon: (
+            background-color: salmon,
+        ),
+        tomato: (
+            background-color: tomato,
+        ),
+    ),
+    // Specify which variants to generate
+    $variants: (
+        'hover',
+    ),
+    // Defaults to '\\:' from config.$variant-delimiter in '_config.scss'. Can be empty but not advisable.
+    $variant-delimiter: '\\:',
+    // Defaults to '!important' from config.$override in '_config.scss'. Can be empty.
+    $override: '!important'
+);
+`}
+                        />
+
+                        <p>This would generate the following classes:</p>
+
+                        <CodeBlock
+                            language="css"
+                            code={`.custom-bg-papayawhip {}
+.hover\\:custom-bg-papayawhip:hover {}
+.custom-bg-peachpuff {}
+.hover\\:custom-bg-peachpuff:hover {}
+
+/* Etc. */`}
+                        />
+
+                        <p>
+                            Read more on this <InternalLink url="/fundamentals/plugins">here</InternalLink>.
+                        </p>
+                    </div>
+                </section>
+
+                <section className="padtop" id="breaking">
+                    <div className="content">
+                        <Headline title="Other breaking changes" size="4" link="breaking" />
+                        <div className="divider"></div>
+
+                        <p><b>These breaking changes definitely deserve a callout here. Please read carefully.</b></p>
+
                         <ul>
                             <li>
-                                <InternalLink url="/elements/breadcrumbs">Breadcrumbs</InternalLink> — a component used
-                                to create a sense of hierarchy when navigating a website.
+                                New viewport syntax across all classes that support different viewports, unifying the
+                                fractured viewport system.
+                                <ul>
+                                    <li>
+                                        The main difference from before is now all viewport modifiers will use the same
+                                        syntax instead of inconsistent system from before. All classes that are meant to
+                                        apply at a certain viewport size and above will be in the form of{' '}
+                                        <code>[sm|md|lg|xl]:classname</code>. This will be the case for all classes
+                                        whether it is for columns or utility classes.
+                                    </li>
+                                    <li>
+                                        Below are the main syntax changes:
+                                        <ul>
+                                            <li>
+                                                <code>col-sm-1</code> -&gt; <code>sm:col-1</code> - column classes will
+                                                all have the viewport modifier prefixed at the front.
+                                            </li>
+                                            <li>
+                                                <code>col-6</code> -&gt; <code>md:col-6</code> - all column classes that
+                                                did not have the modifier class must be prefixed with <code>md:</code>{' '}
+                                                to get the same behavior as before. This is to address the confusing
+                                                implicit behavior where a class like <code>col-6</code> would have 50%
+                                                width for <code>md</code> and above but 100% width for viewports below{' '}
+                                                <code>md</code>.
+                                            </li>
+                                            <li>
+                                                <code>u-block-md</code> -&gt; <code>md:u-block</code> - for all utility
+                                                classes, the viewport modifier will be prefixed at the front.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
-                                <InternalLink url="/elements/progress">Progress</InternalLink> — Cirrus comes with
-                                styling right out of the box for the progress HTML element.
+                                Deprecated <code>margin:1 rem 0;</code> style for <code>p, article, blockquote</code>{' '}
+                                since it leads to unexpected behaviors for users
+                            </li>
+                            <li>Deprecating row.no-space classes</li>
+                            <li>Update Modal class names for clarity</li>
+                            <li>
+                                Deprecated <code>.modal.small</code>
+                            </li>
+                            <li>Deprecating placeholder.scss</li>
+                            <li>
+                                Deprecated <code>.title</code> and <code>.subtitle</code> classes
                             </li>
                             <li>
-                                <InternalLink url="/animations/animated-styles">New Animations</InternalLink> — new animation classes
-                                include pulse (skeleton loaders) and ping (notification).
+                                Deprecated viewports config in favor of using 'responsive' entry in pseudo-variant
+                                config
                             </li>
                         </ul>
-
-                        <div className="space space--lg"></div>
-
-                        <div className="card px-4 py-3">
-                            <div className="u-flex u-gap-3 animated pulse">
-                                <div>
-                                    <div className="bg-gray-300 u-round-full p-4"></div>
-                                </div>
-                                <div className="u-flex-grow-1">
-                                    <div className="line bg-gray-300 w-100p u-round-xs"></div>
-                                    <div className="space"></div>
-                                    <div className="line bg-gray-300 w-100p u-round-xs"></div>
-                                    <div className="grid u-gap-1 mb-0">
-                                        <div className="line bg-gray-300 grid-c-3 u-round-xs"></div>
-                                        <div className="line bg-gray-300 grid-c-9 u-round-xs"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="u-relative u-inline-flex">
-                            <div className="u-round-xs u-shadow-lg p-3 bg-blue-100">
-                                <div className="u-flex u-items-center u-gap-2">
-                                    <div>
-                                        <div className="avatar">
-                                            <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=128" />
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <b>3 new unopened messages in the last hour.</b>
-                                        <div className="text-gray-600">
-                                            @johndoe sent "About your PR, it's mostly good but..."
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <span className="notification u-inline-flex u-absolute u-top-0 u-right-0">
-                                <span className="h-100p w-100p u-absolute u-inline-flex animated ping bg-blue-400 u-round-full"></span>
-                                <span className="h-100p w-100p u-inline-flex bg-blue-400 u-round-full"></span>
-                            </span>
-                        </div>
                     </div>
                 </section>
 
