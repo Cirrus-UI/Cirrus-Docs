@@ -18,34 +18,34 @@ export const DocsPage: React.FC<any> = (props) => {
     // TODO: Move to constants
     const data = [
         {
-            id: 'Cirrus',
-            memory: 20.6,
-            color: '#f03d4d',
-        },
-        {
             id: 'Bootstrap',
-            memory: 22.4,
+            memory: 31.2,
             color: '#7952b3',
         },
         {
-            id: 'Bulma',
-            memory: 26.9,
-            color: '#01d1b2',
+            id: 'Cirrus',
+            memory: 31.6,
+            color: '#f03d4d',
         },
         {
             id: 'Foundation',
-            memory: 32.1,
+            memory: 38.5,
             color: '#8fd3ff',
         },
         {
-            id: 'Tailwind',
-            memory: 74.3,
-            color: '#9c27b0',
+            id: 'Bulma',
+            memory: 65.9,
+            color: '#01d1b2',
         },
         {
             id: 'Semantic UI',
-            memory: 79.6,
+            memory: 102.3,
             color: '#35bdb2',
+        },
+        {
+            id: 'Tailwind',
+            memory: 123.36,
+            color: '#9c27b0',
         },
     ];
 
@@ -429,7 +429,7 @@ export const DocsPage: React.FC<any> = (props) => {
                             <p>
                                 Cirrus comes with lots of functionality in a small package which only consists of a
                                 single minified CSS file. <b>No extra JS libraries required</b>. Coming in at{' '}
-                                <b>20.6 KB with Brotli compression</b>, page loads are fast and data usage is minimal.
+                                <b>31.6 KB with Gzip compression</b>, page loads are fast and data usage is minimal.
                             </p>
 
                             {/* TODO MOVE TO NEW FILE */}
@@ -482,53 +482,44 @@ export const DocsPage: React.FC<any> = (props) => {
                                         <th>Framework</th>
                                         <th>Minified</th>
                                         <th>Gzip</th>
-                                        <th>Brotli</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td>Tailwind CDN</td>
+                                        <td>407.65kb</td>
+                                        <td className="bg-green-100">123.36kb</td>
+                                    </tr>
+                                    <tr>
                                         <td>Semantic UI</td>
                                         <td>628.5kb</td>
-                                        <td>102.3kb</td>
-                                        <td className="bg-green-100">79.6kb</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tailwind</td>
-                                        <td>2927.5kb</td>
-                                        <td>297.4kb</td>
-                                        <td className="bg-green-200">74.3kb</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Foundation</td>
-                                        <td>182.0kb</td>
-                                        <td>38.5kb</td>
-                                        <td className="bg-green-300">32.1kb</td>
+                                        <td className="bg-green-200">102.3kb</td>
                                     </tr>
                                     <tr>
                                         <td>Bulma</td>
                                         <td>206.6kb</td>
-                                        <td>27.5kb</td>
-                                        <td className="bg-green-400">26.9kb</td>
+                                        <td className="bg-green-300">65.9kb</td>
                                     </tr>
                                     <tr>
-                                        <td>Bootstrap</td>
-                                        <td>155.6kb</td>
-                                        <td>23kb</td>
-                                        <td className="bg-green-500">22.4kb</td>
+                                        <td>Foundation</td>
+                                        <td>182.0kb</td>
+                                        <td className="bg-green-400">38.5kb</td>
                                     </tr>
                                     <tr className="">
                                         <td>
                                             <b>Cirrus</b>
                                         </td>
                                         <td>
-                                            <b>198kb</b>
+                                            <b>223kb</b>
                                         </td>
-                                        <td>
-                                            <b>30.4kb</b>
+                                        <td className="bg-green-500">
+                                            <b>31.6kb</b>
                                         </td>
-                                        <td className="bg-green-600 text-white">
-                                            <b>20.6kb</b>
-                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bootstrap</td>
+                                        <td>155.6kb</td>
+                                        <td className="bg-green-600 text-white">31.2kb</td>
                                     </tr>
                                 </tbody>
                             </table>

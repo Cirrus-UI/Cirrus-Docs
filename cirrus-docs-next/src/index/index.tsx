@@ -37,7 +37,7 @@ import { Counter } from '../../layouts/components/counter';
 const DURATION_SECONDS = 4.5;
 const BASE_RANGE = [0, 5000];
 const FILE_SIZE_START = 218;
-const FILE_SIZE_END = 21.4;
+const FILE_SIZE_END = 31.6;
 
 const Landing: React.FC<any> = () => {
     const { state, dispatch } = useContext(Context);
@@ -935,7 +935,7 @@ import 'cirrus-ui';`}
                                         progress={progress}
                                         inputRange={BASE_RANGE}
                                     />
-                                    <span className="text-xl">KB Brotli</span>
+                                    <span className="text-xl">KB Gzipped</span>
                                 </div>
                             </motion.div>
                         </div>
