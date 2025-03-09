@@ -63,6 +63,11 @@ export const LandingLayout = ({ children, ...rest }: any) => {
                                 </a>
                             </li>
                             <li className="menu-item">
+                                <a className="u-flex u-justify-content-center" href="https://v0-7-2.cirrus-ui.com/">
+                                    0.7.2
+                                </a>
+                            </li>
+                            <li className="menu-item">
                                 <a className="u-flex u-justify-content-center" href="https://v0-6-3.cirrus-ui.com/">
                                     0.6.3
                                 </a>
