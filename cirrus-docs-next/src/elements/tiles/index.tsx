@@ -125,7 +125,7 @@ export const TilesPage: React.FC<any> = (props) => {
 
                         <h6>Text Ellipsis</h6>
                         <p>
-                            To prevent text from wrapping, add <code>u-text-no-wrap</code> to the text element.
+                            To prevent text from wrapping, add <code>u-text-ellipsis</code> to the text element.
                         </p>
                         <div
                             style={{
@@ -142,7 +142,7 @@ export const TilesPage: React.FC<any> = (props) => {
                                     </figure>
                                 </div>
                                 <div className="tile__container">
-                                    <p className="tile__title m-0 u-text-no-wrap">
+                                    <p className="tile__title m-0 u-text-ellipsis">
                                         Robert Downey Jr. shared a post from <b>Stark Industries</b>.
                                     </p>
                                     <p className="tile__subtitle m-0">
