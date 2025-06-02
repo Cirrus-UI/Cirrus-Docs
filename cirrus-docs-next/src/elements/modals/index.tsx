@@ -272,7 +272,7 @@ export const ModalsPage: React.FC<any> = (props) => {
                         <Headline title="JS Powered Modal" link="#interact-js" size="6" />
                         <p>
                             This is the most straight forward approach for interacting with the <code>modal</code>. We
-                            can define a simple function to toggle the <code>.modal--visible</code> class on the{' '}
+                            can define a simple function to toggle the <code>.modal-content--visible</code> class on the{' '}
                             <code>modal</code> to hide and show it.
                         </p>
 
@@ -282,14 +282,14 @@ export const ModalsPage: React.FC<any> = (props) => {
 function toggleModal() {
   // Toggle modal visibility
   const modal = document.querySelector('#example-modal');
-  modal.classList.toggle("modal--visible");
+  modal.classList.toggle("modal-content--visible");
 }
 </script>
 
 <!-- Button to open/close modal -->
 <button onclick="toggleModal()">Open Modal</button>
 
-<div class="modal-container modal--visible" id="example-modal"><a onclick="toggleModal" class="modal-overlay close-btn" aria-label="Close"></a>
+<div class="modal-container modal-content--visible" id="example-modal"><a onclick="toggleModal" class="modal-overlay close-btn" aria-label="Close"></a>
   <div class="modal" role="document">
     <div class="modal-header u-flex u-justify-space-between">
       <div class="modal-title">Modal Dialog</div>
